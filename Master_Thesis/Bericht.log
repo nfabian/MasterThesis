@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  30 DEC 2013 18:27
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  2 JAN 2014 10:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -413,7 +413,7 @@ Package epstopdf Info: Source file: <pics/ethlogo.eps>
 (epstopdf)             \includegraphics on input line 86.
 Package epstopdf Info: Output file is already uptodate.
 
-<pics/ethlogo-eps-converted-to.pdf, id=60, 192.72pt x 59.22125pt>
+<pics/ethlogo-eps-converted-to.pdf, id=64, 192.72pt x 59.22125pt>
 File: pics/ethlogo-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pics/ethlogo-eps-converted-to.pdf>
@@ -434,7 +434,7 @@ Package epstopdf Info: Source file: <pics/asllogo.eps>
 -to.pdf pics/asllogo.eps>
 (epstopdf)             \includegraphics on input line 86.
 Package epstopdf Info: Output file is already uptodate.
-<pics/asllogo-eps-converted-to.pdf, id=61, 429.605pt x 196.735pt>
+<pics/asllogo-eps-converted-to.pdf, id=65, 429.605pt x 196.735pt>
 File: pics/asllogo-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pics/asllogo-eps-converted-to.pdf>
@@ -506,7 +506,12 @@ ethlogo-eps-converted-to.pdf> <./pics/asllogo-eps-converted-to.pdf>] [2
  (./introduction.tex
 Chapter 1.
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--5
+Underfull \hbox (badness 10000) in paragraph at lines 6--7
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
 
@@ -540,6 +545,9 @@ LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
 (Font)              for symbol `textbackslash' on input line 14.
 
+
+LaTeX Warning: Citation `comfilt' on page 3 undefined on input line 22.
+
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 38.
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
@@ -561,7 +569,7 @@ to.pdf pics/k_surf.eps>
 (epstopdf)             \includegraphics on input line 129.
 Package epstopdf Info: Output file is already uptodate.
 
-<pics/k_surf-eps-converted-to.pdf, id=178, 321.2pt x 245.91875pt>
+<pics/k_surf-eps-converted-to.pdf, id=185, 321.2pt x 245.91875pt>
 File: pics/k_surf-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pics/k_surf-eps-converted-to.pdf>
@@ -579,7 +587,7 @@ d-to.pdf pics/cycle_we.eps>
 (epstopdf)             \includegraphics on input line 151.
 Package epstopdf Info: Output file is already uptodate.
 
-<pics/cycle_we-eps-converted-to.pdf, id=179, 346.29375pt x 248.93pt>
+<pics/cycle_we-eps-converted-to.pdf, id=186, 346.29375pt x 248.93pt>
 File: pics/cycle_we-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pics/cycle_we-eps-converted-to.pdf>
@@ -597,7 +605,7 @@ d-to.pdf pics/cycle_ml.eps>
 (epstopdf)             \includegraphics on input line 155.
 Package epstopdf Info: Output file is already uptodate.
 
-<pics/cycle_ml-eps-converted-to.pdf, id=180, 341.275pt x 248.93pt>
+<pics/cycle_ml-eps-converted-to.pdf, id=187, 341.275pt x 248.93pt>
 File: pics/cycle_ml-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pics/cycle_ml-eps-converted-to.pdf>
@@ -643,21 +651,24 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 131.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 131.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 131.
 Package rerunfilecheck Info: File `Bericht.out' has not changed.
-(rerunfilecheck)             Checksum: 141F951ECE88BC6F3AF9345A5783F3C8;857.
+(rerunfilecheck)             Checksum: 4349B2537EB00456E74F28FBEE8287C9;920.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were undefined references.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 131.
  ) 
 Here is how much of TeX's memory you used:
- 6635 strings out of 493488
- 94754 string characters out of 3141326
- 186242 words of memory out of 3000000
- 9735 multiletter control sequences out of 15000+200000
+ 6641 strings out of 493488
+ 94811 string characters out of 3141326
+ 186311 words of memory out of 3000000
+ 9739 multiletter control sequences out of 15000+200000
  16976 words of font info for 66 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 41i,15n,43p,630b,443s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,15n,43p,639b,443s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></
@@ -673,10 +684,10 @@ ive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive
 /2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/
 2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2
 012/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Bericht.pdf (19 pages, 339507 bytes).
+Output written on Bericht.pdf (19 pages, 341392 bytes).
 PDF statistics:
- 295 PDF objects out of 1000 (max. 8388607)
- 244 compressed objects within 3 object streams
- 53 named destinations out of 1000 (max. 500000)
- 138 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 303 PDF objects out of 1000 (max. 8388607)
+ 252 compressed objects within 3 object streams
+ 55 named destinations out of 1000 (max. 500000)
+ 146 words of extra memory for PDF output out of 10000 (max. 10000000)
 
