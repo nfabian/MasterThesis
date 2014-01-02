@@ -20,9 +20,9 @@ Quadratic Programming (QP) is a special case of optimization problem in which a 
 \label{equ:quadratic}
 \end{equation}
 
-The optimization is performed under linear constraints on the optimizations variables. Whereas a distinction between equality($ E\mathbf{x} = \mathbf d $) and inequality constraints ($ A\mathbf{x} \leq \mathbf b $) has to be made. \newline
+The optimization is performed under linear constraints on the optimizations variables. Whereas a distinction between equality($ E\mathbf{x} = \mathbf d $) and inequality constraints ($ A\mathbf{x} \leq \mathbf b $) has to be made. 
 
-Quadratic programming is particularly simple when there are only equality constraints; specifically, the problem is linear. By using Lagrange multipliers and seeking the extremum of the Lagrangian, it may be readily shown that the solution to the equality constrained problem is given by the linear system:
+In case there are only equality constrains, the solution to the QP is given by the linear system in Equation \ref{equ:equality} :
 
 
 \begin{equation}
@@ -44,9 +44,16 @@ Quadratic programming is particularly simple when there are only equality constr
 \end{equation}
 
 
-where $\lambda$ is a set of Lagrange multipliers which come out of the solution alongside  $x$.
+%where $\lambda$ is a set of Lagrange multipliers.
 
 \subsection{Unconstrained Quadratic Programming}
+The constrained QP gets ill-conditioned for a large amount of segments or for high order polynomials (which both lead to large and sometimes sparse matrices). 
+To reduce the number of optimization variables, and therefore the size of the matrices, the constrained QP can be converted into a unconstrained QP. \newline
+In other words, the polynomial coefficients are no longer the optimization variables but the free endpoint derivatives are optimized. The exact formulas of the unconstrained QP can be seen in Section (........................................) \newline
+
+insert section !!!!!!!!!!!!!!!!!!!!!!!
+
+
 
 
 \section{Polynomial Trajectory}\label{sec:polynomial}
