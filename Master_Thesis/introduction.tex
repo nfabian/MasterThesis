@@ -9,3 +9,51 @@ Speaking of trajectory planning, there are two different strategies which are pu
 
 Another aspect of planning is exploring the state space in the first place. A strong tool to do so are incremental search techniques as for instance the A* \cite{lik} or the RRT* algorithm \cite{richter}. The sampling points of the solution of the incremental search can then be used as the vertices for the polynomial optimization.
 
+\section{Quadratic Programming}\label{sec:quadratic}
+
+\subsection{Constrained Quadratic Programming}
+
+Quadratic Programming (QP) is a special case of optimization problem in which a quadratic function is optimized with respect to its optimizations variables (which are represented with the vector $x$ in Equation \ref{equ:quadratic})
+
+\begin{equation}
+ f(x)  = \frac{1}{2} \cdot x^T Q x + c^T x 
+\label{equ:quadratic}
+\end{equation}
+
+The optimization is performed under linear constraints on the optimizations variables. Whereas a distinction between equality($ E\mathbf{x} = \mathbf d $) and inequality constraints ($ A\mathbf{x} \leq \mathbf b $) has to be made. \newline
+
+Quadratic programming is particularly simple when there are only equality constraints; specifically, the problem is linear. By using Lagrange multipliers and seeking the extremum of the Lagrangian, it may be readily shown that the solution to the equality constrained problem is given by the linear system:
+
+
+\begin{equation}
+\begin{bmatrix}
+   Q & E^T \\
+   E & 0
+\end{bmatrix} 
+\cdot
+\begin{bmatrix}
+   \mathbf x \\
+   \lambda
+\end{bmatrix}
+= 
+\begin{bmatrix}
+   -\mathbf c \\
+   \mathbf d
+\end{bmatrix}
+\label{equ:equality}
+\end{equation}
+
+
+where $\lambda$ is a set of Lagrange multipliers which come out of the solution alongside  $x$.
+
+\subsection{Unconstrained Quadratic Programming}
+
+
+\section{Polynomial Trajectory}\label{sec:polynomial}
+
+Regarding the differentiability of polynomials, they are a profound choice to represent a trajectory. Especially for the use in a differentially flat representation of the UAV dynamics. (Flatness in the proper sense of system theory means that all the states and inputs can be expressed in terms of the flat output and a finite number of its derivative). \newline
+Furthermore, the differentiability of polynomials enables the possibility to check the derivatives of the trajectory for bounding violations to avoid input saturation. This saturation-check can be perform during trajectory optimization and therefore guarantees the feasibility of the resulting trajectory.
+
+
+
+
