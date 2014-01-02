@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  2 JAN 2014 10:46
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  2 JAN 2014 13:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -490,15 +490,15 @@ ethlogo-eps-converted-to.pdf> <./pics/asllogo-eps-converted-to.pdf>] [2
 
 
 
-] [3
+]
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
+
+ []
+
+[3
 
 
 ] [4
-
-] [5
-
-]
-[6
 
 ])
 \openout2 = `introduction.aux'.
@@ -521,6 +521,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--9
                    \relax 
 l.108  \include{introduction}
                               [1
+
 
 
 
@@ -569,7 +570,7 @@ to.pdf pics/k_surf.eps>
 (epstopdf)             \includegraphics on input line 129.
 Package epstopdf Info: Output file is already uptodate.
 
-<pics/k_surf-eps-converted-to.pdf, id=185, 321.2pt x 245.91875pt>
+<pics/k_surf-eps-converted-to.pdf, id=176, 321.2pt x 245.91875pt>
 File: pics/k_surf-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pics/k_surf-eps-converted-to.pdf>
@@ -587,7 +588,7 @@ d-to.pdf pics/cycle_we.eps>
 (epstopdf)             \includegraphics on input line 151.
 Package epstopdf Info: Output file is already uptodate.
 
-<pics/cycle_we-eps-converted-to.pdf, id=186, 346.29375pt x 248.93pt>
+<pics/cycle_we-eps-converted-to.pdf, id=177, 346.29375pt x 248.93pt>
 File: pics/cycle_we-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pics/cycle_we-eps-converted-to.pdf>
@@ -605,7 +606,7 @@ d-to.pdf pics/cycle_ml.eps>
 (epstopdf)             \includegraphics on input line 155.
 Package epstopdf Info: Output file is already uptodate.
 
-<pics/cycle_ml-eps-converted-to.pdf, id=187, 341.275pt x 248.93pt>
+<pics/cycle_ml-eps-converted-to.pdf, id=178, 341.275pt x 248.93pt>
 File: pics/cycle_ml-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pics/cycle_ml-eps-converted-to.pdf>
@@ -662,9 +663,9 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 131.
  ) 
 Here is how much of TeX's memory you used:
- 6641 strings out of 493488
- 94811 string characters out of 3141326
- 186311 words of memory out of 3000000
+ 6639 strings out of 493488
+ 94798 string characters out of 3141326
+ 186312 words of memory out of 3000000
  9739 multiletter control sequences out of 15000+200000
  16976 words of font info for 66 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -684,10 +685,10 @@ ive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive
 /2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/
 2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2
 012/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Bericht.pdf (19 pages, 341491 bytes).
+Output written on Bericht.pdf (17 pages, 341199 bytes).
 PDF statistics:
- 303 PDF objects out of 1000 (max. 8388607)
- 252 compressed objects within 3 object streams
- 55 named destinations out of 1000 (max. 500000)
+ 293 PDF objects out of 1000 (max. 8388607)
+ 244 compressed objects within 3 object streams
+ 53 named destinations out of 1000 (max. 500000)
  146 words of extra memory for PDF output out of 10000 (max. 10000000)
 
