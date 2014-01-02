@@ -7,5 +7,5 @@ A lot of research has been done in the field of Unmanned Aerial Vehicles (UAV) i
 
 Speaking of trajectory planning, there are two different strategies which are pursued. On the one hand, the geometric and the temporal planning are decoupled  \cite{bou} on the other hand, geometric and temporal information are coupled and the trajectory is the result of a minimization problem. For the couplet problem one can make use of the differential flatness of a quadrocopter to derive constraint on the trajectory. Then formulate a cost-function which could be the trajectory-time \cite{hehn} or the total snap \cite{mellinger} (second derivation of acceleration). \newline
 
-Another aspect of planning is exploring the state space in the first place. A strong tool to do so are incremental search techniques as for instance the A* \cite{lik} or the RRT* algorithm \cite{richter}.
+Another aspect of planning is exploring the state space in the first place. A strong tool to do so are incremental search techniques as for instance the A* \cite{lik} or the RRT* algorithm \cite{richter}. The sampling points of the solution of the incremental search can then be used as the vertices for the polynomial optimization.
 
