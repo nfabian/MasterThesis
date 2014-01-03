@@ -1,0 +1,92 @@
+\chapter{Polynomial Trajectory Optimization}\label{sec:trajectory}
+
+
+\section{Polynomial Trajectory}\label{sec:polynomial}
+
+Regarding the differentiability of polynomials, they are a profound choice to represent a trajectory. Especially for the use in a differentially flat representation of the UAV dynamics. (Flatness in the proper sense of system theory means that all the states and inputs can be expressed in terms of the flat output and a finite number of its derivative). \newline
+Furthermore, the differentiability of polynomials enables the possibility to check the derivatives of the trajectory for bounding violations to avoid input saturation. This saturation-check can be perform during trajectory optimization and therefore guarantees the feasibility of the resulting trajectory.
+
+\section{Optimization}\label{sec:optimization}
+
+The goal is to optimize a trajectory which passes through way-points (also called vertices) which are defined in advance. This way-points can be chosen manually or by a path-finding algorithm such as RRT* which will be discussed in Chapter [RRT*  ref einsetzten!!!! ] \newline
+Furthermore, not only the way-points (therefore the position) can be fixed in advance but also its derivatives (such as speed, acceleration etc.). The position and its derivatives are then utilized as the equality constrains for a QP (explained in Section \ref{sec:quadratic}).
+
+\subsection{Cost Function}\label{sec:cost}
+
+Optimization in terms of trajectory planning means minimization of a cost function. The cost function in this case is a combination of temporal and geometric cost. The geometric cost penalizes the (square) of the derivatives of the trajectory. In this Master Thesis the geometric cost is represented by the squared snap which guarantees a trajectory without abrupt  control inputs. \newline
+The temporal cost is simply the total trajectory-time multiplied by a user chosen factor $k_T$ which determines the aggressiveness of the resulting trajectory. \newline
+
+To express the geometric cost in a compact way on can make use of the Hessian matrix $Q$. The Hessian matrix is defined as a squared matrix of second-order partial derivatives which follows from differentiation a function with respect to each of its coefficients (in this instance the polynomial coefficients). The geometric cost function $J(T)$ for a fixed time for one segment can now be written as
+
+\begin{equation}
+J(T)  = p^T \cdot Q(T) \cdot p
+\end{equation}
+
+where $Q(T)$ is the Hessian matrix for a fixed segment-time $T$ and $p$ is the vector containing the coefficients of the polynomial. \newline
+
+If the trajectory consists of more than one segment the Hessian matrix has to extended to a block-diagonal matrix and the geometric cost function for multiple segments with fixed bud individual segment-times can be written as
+
+\begin{equation}
+J =
+\begin{bmatrix}
+   p_1 \\
+\vdots \\
+  p_n
+\end{bmatrix}^T
+\cdot
+\begin{bmatrix}
+   Q_1(T_1) &  &  \\
+    & \ddots &  \\
+   & & Q_n(T_n)
+\end{bmatrix} 
+\cdot
+\begin{bmatrix}
+   p_1 \\
+\vdots \\
+  p_n
+\end{bmatrix}
+\end{equation}
+
+
+\subsection{Polynomial Optimization as a Constrained QP}
+
+In a first, intuitive approach the equality constraints on the endpoint derivatives (mentioned in Section \ref{sec:optimization}) are utilized in a constrained QP. Therefore a mapping matrix $E$ between endpoint derivatives and polynomial coefficients is needed. The resulting formula for the $i^{th}$ segment can be written as
+
+\begin{equation}
+E_i \cdot p_i = d_i
+\label{equ:mapping}
+\end{equation}
+
+where $p$ is the vector containing the polynomial coefficients and $d$ is the vector containing the endpoint derivatives. Regarding the total number of segments of the trajectory, Formula \ref{equ:mapping} can be written in matrix form:
+
+\begin{equation}
+\begin{bmatrix}
+   E_1 &  &  \\
+    & \ddots &  \\
+   & & E_n
+\end{bmatrix} 
+\cdot
+\begin{bmatrix}
+   p_1 \\
+\vdots \\
+  p_n
+\end{bmatrix}
+=
+\begin{bmatrix}
+   d_1 \\
+\vdots \\
+  d_n
+\end{bmatrix}
+\end{equation} 
+
+The constrained QP is suitable for a small amount of segments but gets ill-conditioned for a large amount of segments and therefore large matrices. Especially if there are matrices which are close to singularity and have coefficients which are close to zero, the constrained QP can get numerical unstable.
+
+
+
+
+
+
+
+
+
+
