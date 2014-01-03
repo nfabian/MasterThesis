@@ -45,6 +45,7 @@ J =
 \vdots \\
   p_n
 \end{bmatrix}
+\label{equ:cost}
 \end{equation}
 
 
@@ -80,6 +81,48 @@ where $p$ is the vector containing the polynomial coefficients and $d$ is the ve
 \end{equation} 
 
 The constrained QP is suitable for a small amount of segments but gets ill-conditioned for a large amount of segments and therefore large matrices. Especially if there are matrices which are close to singularity and have coefficients which are close to zero, the constrained QP can get numerical unstable.
+
+\subsection{Polynomial Optimization as a Unconstrained QP}
+
+To avoid the numerical instability of a constrained QP the optimization problem is converted into a unconstrained QP. Therefore the polynomial coefficients $p_i$ from Formula \ref{equ:cost} have to be substituted by the endpoint derivatives $d_i$ which are now the new optimizations variables. The cost function of the unconstrained QP can now be written as 
+
+\begin{equation}
+J =
+\begin{bmatrix}
+   d_1 \\
+\vdots \\
+  d_n
+\end{bmatrix}^T
+\cdot
+\begin{bmatrix}
+   E_1 &  &  \\
+    & \ddots &  \\
+   & & E_n
+\end{bmatrix} ^{-T}
+\cdot
+\begin{bmatrix}
+   Q_1 &  &  \\
+    & \ddots &  \\
+   & & Q_n
+\end{bmatrix} 
+\cdot
+\begin{bmatrix}
+   E_1 &  &  \\
+    & \ddots &  \\
+   & & E_n
+\end{bmatrix} ^{-1}
+\cdot
+\begin{bmatrix}
+   d_1 \\
+\vdots \\
+  d_n
+\end{bmatrix}
+\label{equ:uncon_cost}
+\end{equation}
+
+where $Q_i$ is the Hessian matrix according to the $i^{th}$ segment-time.\newline
+
+As mentioned above, the endpoint derivatives are the new optimization variables. Do to the equality constrains some of the endpoint derivatives are already specified consequently reducing the number of optimizations variables. Expediently, the endpoint derivatives are divided in fixed derivatives $d_f$ and unspecified derivatives $d_p$.
 
 
 
