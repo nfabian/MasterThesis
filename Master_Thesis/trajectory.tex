@@ -122,7 +122,84 @@ J =
 
 where $Q_i$ is the Hessian matrix according to the $i^{th}$ segment-time.\newline
 
-As mentioned above, the endpoint derivatives are the new optimization variables. Do to the equality constrains some of the endpoint derivatives are already specified consequently reducing the number of optimizations variables. Expediently, the endpoint derivatives are divided in fixed derivatives $d_f$ and unspecified derivatives $d_p$.
+As mentioned above, the endpoint derivatives are the new optimization variables. Do to the equality constrains some of the endpoint derivatives are already specified consequently reducing the number of optimizations variables. Expediently, the endpoint derivatives are divided in fixed derivatives $d_f$ and unspecified derivatives $d_p$ and then reordered using the matrix $C$ which consists of zeros and ones. After reordering the endpoint derivatives Formula \ref{equ:uncon_cost} can be rewritten as
+
+\begin{equation}
+J =
+\begin{bmatrix}
+   d_f \\
+  d_p
+\end{bmatrix}^T
+\underbrace{C^T E^{-T} Q E^{-1} C}_\text{R}
+\begin{bmatrix}
+   d_f \\
+  d_p
+\end{bmatrix}
+\label{equ:R_cost}
+\end{equation}
+
+where the product of the reordering matrix $C$, the mapping matrix $E$ and the Hessian matrix $Q$ han be expressed as a single Matrix $R$. The matrix $R$ for his part can be defided into four submatrices according to the fixed and unspecified endpoint derivatives which modifies Formula \ref{equ:R_cost} as follows:
+
+\begin{equation}
+J =
+\begin{bmatrix}
+   d_f \\
+  d_p
+\end{bmatrix}^T
+\begin{bmatrix}
+   R_{ff} & R_{fp} \\
+  R_{pf} & R_{pp}
+\end{bmatrix}
+\begin{bmatrix}
+   d_f \\
+  d_p
+\end{bmatrix}
+\label{equ:Rxx_cost}
+\end{equation}
+
+Partially differenting Formula \ref{equ:Rxx_cost} with respect to the unspecified derivatives $d_p$ and equate it to zero yields the optimized/minimized unspecified derivatives $d_p^*$ 
+
+\begin{equation}
+d_p^* = - R_{pp}^{-1} \cdot R_{fp}^T \cdot d_f
+\end{equation}
+
+as a function of the fixed derivatives $d_f$ and two of the submatrixes ($R_{pp}, R_{fp}$) of $R$.
+
+\subsection{Penalty on Time}\label{sec:penalty}
+
+So fare, only the geometric cost (i. e. the squared snap) was discussed. Minimization of the geometric cost ensures a smooth trajectory without abroupt input signal but has no effect on the agressivity of a trajectory. Therefore Formula \ref{equ:Rxx_cost} has to be extended by the temporal cost which results in the total cost $J_{total}$:
+
+\begin{equation}
+J_{total} =
+\begin{bmatrix}
+   d_f \\
+  d_p
+\end{bmatrix}^T
+\begin{bmatrix}
+   R_{ff} & R_{fp} \\
+  R_{pf} & R_{pp}
+\end{bmatrix}
+\begin{bmatrix}
+   d_f \\
+  d_p
+\end{bmatrix}
++ k_T \cdot \sum_{i=1}^N T_i
+\label{equ:total_cost}
+\end{equation}
+
+where $k_T$ is a user specified penalty on time and $T_i$ ist the segment-time of the $i^{th}$ segment.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

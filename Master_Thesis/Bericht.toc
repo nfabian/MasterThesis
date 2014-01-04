@@ -11,6 +11,7 @@
 \contentsline {subsection}{\numberline {2.2.1}Cost Function}{3}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Polynomial Optimization as a Constrained QP}{4}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}Polynomial Optimization as a Unconstrained QP}{4}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Penalty on Time}{5}{subsection.2.2.4}
 \contentsline {chapter}{\numberline {3}Einige wichtige Hinweise zum Arbeiten mit \LaTeX \ }{7}{chapter.3}
 \contentsline {section}{\numberline {3.1}Gliederungen}{7}{section.3.1}
 \contentsline {section}{\numberline {3.2}Referenzen und Verweise}{7}{section.3.2}
