@@ -49,9 +49,8 @@ In case there are only equality constrains, the solution to the QP is given by t
 \subsection{Unconstrained Quadratic Programming}
 The constrained QP gets ill-conditioned for a large amount of segments or for high order polynomials (which both lead to large and sometimes sparse matrices). 
 To reduce the number of optimization variables, and therefore the size of the matrices, the constrained QP can be converted into a unconstrained QP. \newline
-In other words, the polynomial coefficients are no longer the optimization variables but the free endpoint derivatives are optimized. The exact formulas of the unconstrained QP can be seen in Section (........................................) \newline
+In other words, the polynomial coefficients are no longer the optimization variables but the free endpoint derivatives are optimized. The exact formulas of the unconstrained QP can be seen in Section \ref{sec:polynomialQP}. Whereby the linear term $x^T z$ from the quadratic cost-function in Equation \ref{equ:quadratic} is equal to zero for the polynomial optimization and therefore absent in Equation \ref{equ:uncon_cost}.  \newline
 
-insert section !!!!!!!!!!!!!!!!!!!!!!!
 
 
 

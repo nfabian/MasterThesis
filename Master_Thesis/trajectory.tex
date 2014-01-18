@@ -8,7 +8,7 @@ Furthermore, the differentiability of polynomials enables the possibility to che
 
 \section{Optimization}\label{sec:optimization}
 
-The goal is to optimize a trajectory which passes through way-points (also called vertices) which are defined in advance. This way-points can be chosen manually or by a path-finding algorithm such as RRT* which will be discussed in Chapter [RRT*  ref einsetzten!!!! ] \newline
+The goal is to optimize a trajectory which passes through way-points (also called vertices) which are defined in advance. This way-points can be chosen manually or by a path-finding algorithm such as RRT* which will be discussed in Chapter \ref{chap:RRT}.
 Furthermore, not only the way-points (therefore the position) can be fixed in advance but also its derivatives (such as speed, acceleration etc.). The position and its derivatives are then utilized as the equality constrains for a QP (explained in Section \ref{sec:quadratic}).
 
 \subsection{Cost Function}\label{sec:cost}
@@ -82,7 +82,7 @@ where $p$ is the vector containing the polynomial coefficients and $d$ is the ve
 
 The constrained QP is suitable for a small amount of segments but gets ill-conditioned for a large amount of segments and therefore large matrices. Especially if there are matrices which are close to singularity and have coefficients which are close to zero, the constrained QP can get numerical unstable.
 
-\subsection{Polynomial Optimization as a Unconstrained QP}
+\subsection{Polynomial Optimization as a Unconstrained QP}\label{sec:polynomialQP}
 
 To avoid the numerical instability of a constrained QP the optimization problem is converted into a unconstrained QP. Therefore the polynomial coefficients $p_i$ from Formula \ref{equ:cost} have to be substituted by the endpoint derivatives $d_i$ which are now the new optimizations variables. The cost function of the unconstrained QP can now be written as 
 
@@ -161,9 +161,42 @@ Partially differenting Formula \ref{equ:Rxx_cost} with respect to the unspecifie
 
 \begin{equation}
 d_p^* = - R_{pp}^{-1} \cdot R_{fp}^T \cdot d_f
+\label{equ:dpstar}
 \end{equation}
 
 as a function of the fixed derivatives $d_f$ and two of the submatrixes ($R_{pp}, R_{fp}$) of $R$.
+
+
+\subsection{Initial Solution}\label{sec:initialSolution}
+
+Equation \ref{equ:dpstar} can now be used to compute the initial solution. As can be seen in Equation \ref{equ:uncon_cost} the Hessian matrix for the  $ i^{th}$ segment $Q_i$ depends on the segment-time $i$. Thus, all the segment-times has to be defined. For the initial solution the segment-times are estimated based on the 2-norm distance $d_{norm}$ and on the user specified maximal speed ($v_{max}$) and maximal acceleration ($a_{max}$). \newline
+Basically the segment-time is determined by the term $d_{norm}/v_{max} \cdot 2$ which is twice the time the UAV would need by flying at maximal speed the whole distance. Although this is a good estimation for long segments, for shorter ones the time needed to accelerate gets significant. Therefore a multiplier, which is zero for long segments and unequal to zero for short ones, is added. The segment-time $t_i$ for the $i^{th}$ segment can be computed according to 
+
+\begin{equation}
+t_i = \frac{d_{norm_i}}{v_{max}} \cdot 2 \cdot (1 + !!!!!!!!!multiplier einsetzten)
+\label{equ:segmentTime}
+\end{equation}
+
+where $d_{norm_i}$ is the 2-norm distance of the $i^{th}$ segment and $v_{max}$ is the user specified maximal speed. (!!!!!!!!!!!! comment on the multiplier). \newline
+
+The result from Equation \ref{equ:segmentTime} is depicted in Figure \ref{pic:timeEstimation} whereat the $x$-axis represents the 2-norm distance $d_{norm}$ and the $y$-axis represents the segment time $t$. For this plot the user specified limitation on speed and acceleration has been set to $v_{max} = 3 \frac{m}{s}$ and $a_{max} = 5 \frac{m}{s^2}$. The green line represent the term $d_{norm}/v_{max} \cdot 2$, the blue graph takes the time needed for acceleration into account and is therefore the exact representation of Equation \ref{equ:segmentTime}. \newpage
+
+
+\begin{figure}[h]
+   \centering
+   \includegraphics[width=1\textwidth]{pics/time_estimation.eps}
+   \caption{The segment-time $t$ depends on the 2-norm distance $d_{norm}$ of a segment and on the maximal speed $v_{max}$ (green line). The blue graph takes  the time needed for acceleration into account and is therefore a more elaborate approach to estimate the segment-time.}
+   \label{pic:timeEstimation}
+\end{figure}
+
+Once the segment-times are estimated the initial, snap minimized solution can be computed according to Equation \ref{equ:dpstar}. The initial solution for a 3 dimensional problem with 4 segments is depict in Figure \ref{pic:initialSolution}. The first of this 3 subplots shows the position, the second the velocity and the third the acceleration. The $x$-axis for all the 3 subplots is the time. The 3 graphs in the first subplot represent the 3 dimension where the colors are different for each segment. In the second and third subplot, there are also 3 graphs representing a dimension but also a fourth, thicker graph which represents the 2-norm of the velocity respectively the acceleration. Furthermore the limitation ($v_{max} = 3 \frac{m}{s}$ and $a_{max} = 2 \frac{m}{s^2}$ for this problem) are depicted.
+
+\begin{figure}[h]
+   \centering
+   \includegraphics[width=1\textwidth]{pics/initial.jpg}
+   \caption{Ein Bild.}
+   \label{pic:initialSolution}
+\end{figure}
 
 \subsection{Penalty on Time}\label{sec:penalty}
 
@@ -189,24 +222,18 @@ J_{total} =
 
 where $k_T$ is a user specified penalty on time and $T_i$ ist the segment-time of the $i^{th}$ segment.
 
-\begin{figure}[h]
-   \centering
-   \includegraphics[width=1\textwidth]{pics/initial.jpg}
-   \caption{Ein Bild.}
-\end{figure}
-
-\begin{figure}[h]
-   \centering
-   \includegraphics[width=1\textwidth]{pics/optimized.eps}
-   \caption{Ein Bild.}
-\end{figure}
-
-
-\begin{figure}[h]
-   \centering
-   \includegraphics[scale=0.3]{pics/optimized.eps}
-   \caption{Ein Bild.}
-\end{figure}
+%\begin{figure}[h]
+%   \centering
+%   \includegraphics[width=1\textwidth]{pics/optimized.eps}
+%   \caption{Ein Bild.}
+%\end{figure}
+%
+%
+%\begin{figure}[h]
+%   \centering
+%   \includegraphics[scale=0.3]{pics/optimized.eps}
+%   \caption{Ein Bild.}
+%\end{figure}
 
 
 
@@ -222,6 +249,7 @@ where $k_T$ is a user specified penalty on time and $T_i$ ist the segment-time o
 %   \caption{Schematic of a rough foot surface.}
 %   \label{pics:profile2}
 %\end{figure}
+
 
 
 
