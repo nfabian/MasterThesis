@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  18 JAN 2014 12:14
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  24 JAN 2014 15:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -342,8 +342,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 )))
 (./Bericht.aux (./declaration.aux) (./preamble.aux) (./introduction.aux)
-(./trajectory.aux) (./RRT.aux) (./chapter.aux) (./appendix.aux)
-(./bibliography.aux))
+(./trajectory.aux) (./RRT.aux) (./appendix.aux) (./bibliography.aux))
 \openout1 = `Bericht.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 80.
@@ -414,7 +413,7 @@ Package epstopdf Info: Source file: <pics/ethlogo.eps>
 (epstopdf)             \includegraphics on input line 86.
 Package epstopdf Info: Output file is already uptodate.
 
-<pics/ethlogo-eps-converted-to.pdf, id=116, 192.72pt x 59.22125pt>
+<pics/ethlogo-eps-converted-to.pdf, id=88, 192.72pt x 59.22125pt>
 File: pics/ethlogo-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pics/ethlogo-eps-converted-to.pdf>
@@ -435,7 +434,7 @@ Package epstopdf Info: Source file: <pics/asllogo.eps>
 -to.pdf pics/asllogo.eps>
 (epstopdf)             \includegraphics on input line 86.
 Package epstopdf Info: Output file is already uptodate.
-<pics/asllogo-eps-converted-to.pdf, id=117, 429.605pt x 196.735pt>
+<pics/asllogo-eps-converted-to.pdf, id=89, 429.605pt x 196.735pt>
 File: pics/asllogo-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pics/asllogo-eps-converted-to.pdf>
@@ -568,11 +567,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 123--124
  []
 
 [4]
+Overfull \hbox (0.57686pt too wide) in paragraph at lines 180--181
+\OT1/cmr/m/n/10 mal speed and $\OML/cmm/m/it/10 a[]$ \OT1/cmr/m/n/10 the user s
+pec-i-fied max-i-mal ac-cel-er-a-tion. The fraction$\OML/cmm/m/it/10 v[]=a[]$
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 180--181
 
  []
 
-[5]
+
+Underfull \hbox (badness 10000) in paragraph at lines 182--183
+
+ []
+
 Package epstopdf Info: Source file: <pics/time_estimation.eps>
 (epstopdf)                    date: 2014-01-07 17:10:45
 (epstopdf)                    size: 11192 bytes
@@ -585,7 +594,7 @@ onverted-to.pdf pics/time_estimation.eps>
 (epstopdf)             \includegraphics on input line 187.
 Package epstopdf Info: Output file is already uptodate.
 
-<pics/time_estimation-eps-converted-to.pdf, id=272, 595.22375pt x 539.01375pt>
+<pics/time_estimation-eps-converted-to.pdf, id=225, 595.22375pt x 539.01375pt>
 File: pics/time_estimation-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pics/time_estimation-eps-converted-to.pdf>
@@ -593,66 +602,77 @@ Package pdftex.def Info: pics/time_estimation-eps-converted-to.pdf used on inpu
 t line 187.
 (pdftex.def)             Requested size: 361.34999pt x 327.22699pt.
 
-<pics/initial.jpg, id=275, 1251.67625pt x 1337.99875pt>
-File: pics/initial.jpg Graphic file (type jpg)
- <use pics/initial.jpg>
-Package pdftex.def Info: pics/initial.jpg used on input line 196.
-(pdftex.def)             Requested size: 361.34999pt x 386.27432pt.
-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[6 <./pics/time_estimation-eps-converted-to.pdf>]) [7 <./pics/initial.jpg>]
-[8
+[5] [6 <./pics/time_estimation-eps-converted-to.pdf>]
+<pics/initial.jpg, id=252, 1251.67625pt x 1337.99875pt>
+File: pics/initial.jpg Graphic file (type jpg)
+ <use pics/initial.jpg>
+Package pdftex.def Info: pics/initial.jpg used on input line 220.
+(pdftex.def)             Requested size: 361.34999pt x 386.27432pt.
 
+Underfull \hbox (badness 10000) in paragraph at lines 225--228
 
-]
+ []
+
+[7 <./pics/initial.jpg>]
+<pics/optimized.jpg, id=262, 1251.67625pt x 1337.99875pt>
+File: pics/optimized.jpg Graphic file (type jpg)
+
+<use pics/optimized.jpg>
+Package pdftex.def Info: pics/optimized.jpg used on input line 235.
+(pdftex.def)             Requested size: 361.34999pt x 386.27432pt.
+) [8 <./pics/optimized.jpg>]
 \openout2 = `RRT.aux'.
 
  (./RRT.tex
 Chapter 3.
-<pics/initialSolution.png, id=299, 992.70876pt x 749.80125pt>
+<pics/initialSolution.png, id=268, 992.70876pt x 749.80125pt>
 File: pics/initialSolution.png Graphic file (type png)
 
 <use pics/initialSolution.png>
-Package pdftex.def Info: pics/initialSolution.png used on input line 8.
+Package pdftex.def Info: pics/initialSolution.png used on input line 17.
 (pdftex.def)             Requested size: 361.34999pt x 272.9258pt.
 
-<pics/Vertex_in_middle_2.png, id=300, 1001.7425pt x 794.97pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<pics/Vertex_in_middle_2.png, id=269, 1001.7425pt x 794.97pt>
 File: pics/Vertex_in_middle_2.png Graphic file (type png)
 
 <use pics/Vertex_in_middle_2.png>
-Package pdftex.def Info: pics/Vertex_in_middle_2.png used on input line 15.
+Package pdftex.def Info: pics/Vertex_in_middle_2.png used on input line 24.
 (pdftex.def)             Requested size: 361.34999pt x 286.75911pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<pics/section.png, id=301, 995.72pt x 770.88pt>
+<pics/section.png, id=270, 995.72pt x 770.88pt>
 File: pics/section.png Graphic file (type png)
  <use pics/section.png>
-Package pdftex.def Info: pics/section.png used on input line 21.
+Package pdftex.def Info: pics/section.png used on input line 30.
 (pdftex.def)             Requested size: 361.34999pt x 279.76326pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<pics/section_and_time.png, id=302, 989.6975pt x 799.98875pt>
+<pics/section_and_time.png, id=271, 989.6975pt x 799.98875pt>
 File: pics/section_and_time.png Graphic file (type png)
 
 <use pics/section_and_time.png>
-Package pdftex.def Info: pics/section_and_time.png used on input line 29.
+Package pdftex.def Info: pics/section_and_time.png used on input line 38.
 (pdftex.def)             Requested size: 361.34999pt x 292.08502pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<pics/Nlopt_after_sectionAndTime.png, id=303, 1017.8025pt x 774.895pt>
+<pics/Nlopt_after_sectionAndTime.png, id=272, 1017.8025pt x 774.895pt>
 File: pics/Nlopt_after_sectionAndTime.png Graphic file (type png)
 
 <use pics/Nlopt_after_sectionAndTime.png>
 Package pdftex.def Info: pics/Nlopt_after_sectionAndTime.png used on input line
- 36.
+ 45.
 (pdftex.def)             Requested size: 361.34999pt x 275.10739pt.
 
 
@@ -661,118 +681,32 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 ) [9
 
 
- <./pics/initialSolution.png>] [10 <./pics/Vertex_in_middle_2.png> <./pics/sect
-ion.png>] [11 <./pics/section_and_time.png> <./pics/Nlopt_after_sectionAndTime.
-png>] [12
 
 
-]
-\openout2 = `chapter.aux'.
-
- (./chapter.tex
-Chapter 4.
-LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 14.
-
-LaTeX Font Info:    No file OMScmtt.fd. on input line 14.
-
-LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
-(Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbackslash' on input line 14.
-
-
-LaTeX Warning: Citation `comfilt' on page 13 undefined on input line 22.
-
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 38.
-(/usr/local/texlive/2012/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 38.
- [13
-
-
-] [14]
-Package epstopdf Info: Source file: <pics/k_surf.eps>
-(epstopdf)                    date: 2002-02-24 15:59:00
-(epstopdf)                    size: 49147 bytes
-(epstopdf)             Output file: <pics/k_surf-eps-converted-to.pdf>
-(epstopdf)                    date: 2013-12-30 11:00:39
-(epstopdf)                    size: 12499 bytes
-(epstopdf)             Command: <repstopdf --outfile=pics/k_surf-eps-converted-
-to.pdf pics/k_surf.eps>
-(epstopdf)             \includegraphics on input line 129.
-Package epstopdf Info: Output file is already uptodate.
-
-<pics/k_surf-eps-converted-to.pdf, id=342, 321.2pt x 245.91875pt>
-File: pics/k_surf-eps-converted-to.pdf Graphic file (type pdf)
-
-<use pics/k_surf-eps-converted-to.pdf>
-Package pdftex.def Info: pics/k_surf-eps-converted-to.pdf used on input line 12
-9.
-(pdftex.def)             Requested size: 271.01248pt x 207.50093pt.
-Package epstopdf Info: Source file: <pics/cycle_we.eps>
-(epstopdf)                    date: 2002-02-26 17:27:00
-(epstopdf)                    size: 46382 bytes
-(epstopdf)             Output file: <pics/cycle_we-eps-converted-to.pdf>
-(epstopdf)                    date: 2013-12-30 11:00:40
-(epstopdf)                    size: 14793 bytes
-(epstopdf)             Command: <repstopdf --outfile=pics/cycle_we-eps-converte
-d-to.pdf pics/cycle_we.eps>
-(epstopdf)             \includegraphics on input line 151.
-Package epstopdf Info: Output file is already uptodate.
-
-<pics/cycle_we-eps-converted-to.pdf, id=343, 346.29375pt x 248.93pt>
-File: pics/cycle_we-eps-converted-to.pdf Graphic file (type pdf)
-
-<use pics/cycle_we-eps-converted-to.pdf>
-Package pdftex.def Info: pics/cycle_we-eps-converted-to.pdf used on input line 
-151.
-(pdftex.def)             Requested size: 173.44644pt x 124.68118pt.
-Package epstopdf Info: Source file: <pics/cycle_ml.eps>
-(epstopdf)                    date: 2002-02-26 17:27:00
-(epstopdf)                    size: 47147 bytes
-(epstopdf)             Output file: <pics/cycle_ml-eps-converted-to.pdf>
-(epstopdf)                    date: 2013-12-30 11:00:41
-(epstopdf)                    size: 14755 bytes
-(epstopdf)             Command: <repstopdf --outfile=pics/cycle_ml-eps-converte
-d-to.pdf pics/cycle_ml.eps>
-(epstopdf)             \includegraphics on input line 155.
-Package epstopdf Info: Output file is already uptodate.
-
-<pics/cycle_ml-eps-converted-to.pdf, id=344, 341.275pt x 248.93pt>
-File: pics/cycle_ml-eps-converted-to.pdf Graphic file (type pdf)
-
-<use pics/cycle_ml-eps-converted-to.pdf>
-Package pdftex.def Info: pics/cycle_ml-eps-converted-to.pdf used on input line 
-155.
-(pdftex.def)             Requested size: 173.44644pt x 126.5158pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[15 <./pics/k_surf-eps-converted-to.pdf>]) [16 <./pics/cycle_we-eps-converted-t
-o.pdf> <./pics/cycle_ml-eps-converted-to.pdf>]
+] [10 <./pics/initialSolution.png> <./pics/Vertex_in_middle_2.png>]
+[11 <./pics/section.png> <./pics/section_and_time.png>] [12 <./pics/Nlopt_after
+_sectionAndTime.png>]
 \openout2 = `appendix.aux'.
 
  (./appendix.tex
 Appendix A.
-[17
+[13
 
 
 
 
-] [18
+] [14
 
 ]
 Appendix B.
-[19
+[15
 
-] [20
+] [16
 
 ])
 \openout2 = `bibliography.aux'.
 
- (./bibliography.tex) [21
+ (./bibliography.tex) [17
 
 
 
@@ -781,50 +715,49 @@ Package atveryend Info: Empty hook `BeforeClearDocument' on input line 135.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 135.
  (./Bericht.aux (./declaration.aux)
 (./preamble.aux) (./introduction.aux) (./trajectory.aux) (./RRT.aux)
-(./chapter.aux) (./appendix.aux) (./bibliography.aux))
+(./appendix.aux) (./bibliography.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 135.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 135.
-Package rerunfilecheck Info: File `Bericht.out' has not changed.
-(rerunfilecheck)             Checksum: 9D1B0485604701721CBAA825003F373B;1856.
 
 
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+Package rerunfilecheck Warning: File `Bericht.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
 
-
-LaTeX Warning: There were undefined references.
-
+Package rerunfilecheck Info: Checksums for `Bericht.out':
+(rerunfilecheck)             Before: 3497A472503B4851B0FE072F836D7EDC;1334
+(rerunfilecheck)             After:  1610C3EE7442E493057A79CF629CFF23;1449.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 135.
  ) 
 Here is how much of TeX's memory you used:
- 6777 strings out of 493488
- 97082 string characters out of 3141326
- 199498 words of memory out of 3000000
- 9810 multiletter control sequences out of 15000+200000
- 18818 words of font info for 72 fonts, out of 3000000 for 9000
+ 6671 strings out of 493488
+ 95411 string characters out of 3141326
+ 199014 words of memory out of 3000000
+ 9736 multiletter control sequences out of 15000+200000
+ 12603 words of font info for 48 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 41i,15n,43p,870b,443s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,15n,43p,870b,436s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></
-usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></
-usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
-sr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
-r/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/
-local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/lo
-cal/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loca
-l/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/
-texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/tex
-live/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texliv
-e/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2
-012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2012
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2012/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2012/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2012/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Bericht.pdf (27 pages, 1618368 bytes).
+</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
+</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></us
+r/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
+local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
+cal/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/loca
+l/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/t
+exlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texl
+ive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive
+/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/20
+12/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/201
+2/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2012/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2012/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on Bericht.pdf (23 pages, 1744688 bytes).
 PDF statistics:
- 475 PDF objects out of 1000 (max. 8388607)
- 403 compressed objects within 5 object streams
- 95 named destinations out of 1000 (max. 500000)
- 285 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 395 PDF objects out of 1000 (max. 8388607)
+ 334 compressed objects within 4 object streams
+ 79 named destinations out of 1000 (max. 500000)
+ 219 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -170,16 +170,16 @@ as a function of the fixed derivatives $d_f$ and two of the submatrixes ($R_{pp}
 \subsection{Initial Solution}\label{sec:initialSolution}
 
 Equation \ref{equ:dpstar} can now be used to compute the initial solution. As can be seen in Equation \ref{equ:uncon_cost} the Hessian matrix for the  $ i^{th}$ segment $Q_i$ depends on the segment-time $i$. Thus, all the segment-times has to be defined. For the initial solution the segment-times are estimated based on the 2-norm distance $d_{norm}$ and on the user specified maximal speed ($v_{max}$) and maximal acceleration ($a_{max}$). \newline
-Basically the segment-time is determined by the term $d_{norm}/v_{max} \cdot 2$ which is twice the time the UAV would need by flying at maximal speed the whole distance. Although this is a good estimation for long segments, for shorter ones the time needed to accelerate gets significant. Therefore a multiplier, which is zero for long segments and unequal to zero for short ones, is added. The segment-time $t_i$ for the $i^{th}$ segment can be computed according to 
+Basically the segment-time is determined by the term $d_{norm}/v_{max} \cdot 2$ which is twice the time the UAV would need for a segment by flying at maximal speed the whole distance. Although this is a good estimation for long segments, for shorter ones the time needed to accelerate gets significant. Therefore a multiplier, which is zero for long segments and unequal to zero for short ones, is added. The segment-time $t_i$ for the $i^{th}$ segment can be computed according to 
 
 \begin{equation}
-t_i = \frac{d_{norm_i}}{v_{max}} \cdot 2 \cdot (1 + !!!!!!!!!multiplier einsetzten)
+t_i = \frac{d_{norm_i}}{v_{max}} \cdot 2 \cdot \left( 1 + 6.5 \cdot \frac {v_{max}}{a_{max}} \cdot \frac{1}{e^{\frac{d_{norm_i}}{v_{max}} \cdot 2}} \right)
 \label{equ:segmentTime}
 \end{equation}
 
-where $d_{norm_i}$ is the 2-norm distance of the $i^{th}$ segment and $v_{max}$ is the user specified maximal speed. (!!!!!!!!!!!! comment on the multiplier). \newline
+where $d_{norm_i}$ is the 2-norm distance of the $i^{th}$ segment, $v_{max}$ the user specified maximal speed and $a_{max}$ the user specified maximal acceleration. The fraction$v_{max}/a_{max}$ gives an idea how much time is needed to accelerate to max. velocity whereas $6.5$ is a empirical correction factor. \newline
 
-The result from Equation \ref{equ:segmentTime} is depicted in Figure \ref{pic:timeEstimation} whereat the $x$-axis represents the 2-norm distance $d_{norm}$ and the $y$-axis represents the segment time $t$. For this plot the user specified limitation on speed and acceleration has been set to $v_{max} = 3 \frac{m}{s}$ and $a_{max} = 5 \frac{m}{s^2}$. The green line represent the term $d_{norm}/v_{max} \cdot 2$, the blue graph takes the time needed for acceleration into account and is therefore the exact representation of Equation \ref{equ:segmentTime}. \newpage
+The result from Equation \ref{equ:segmentTime} is depicted in Figure \ref{pic:timeEstimation} whereat the $x$-axis represents the 2-norm distance $d_{norm}$ and the $y$-axis represents the segment time $t$. For this plot the user specified limitation on speed and acceleration has been set to $v_{max} = 3 \frac{m}{s}$ and $a_{max} = 5 \frac{m}{s^2}$. The green line represent the term $d_{norm}/v_{max} \cdot 2$, the blue graph takes the time needed for acceleration into account and is therefore the exact representation of Equation \ref{equ:segmentTime}. \newline
 
 
 \begin{figure}[h]
@@ -191,16 +191,9 @@ The result from Equation \ref{equ:segmentTime} is depicted in Figure \ref{pic:ti
 
 Once the segment-times are estimated the initial, snap minimized solution can be computed according to Equation \ref{equ:dpstar}. The initial solution for a 3 dimensional problem with 4 segments is depict in Figure \ref{pic:initialSolution}. The first of this 3 subplots shows the position, the second the velocity and the third the acceleration. The $x$-axis for all the 3 subplots is the time. The 3 graphs in the first subplot represent the 3 dimension where the colors are different for each segment. In the second and third subplot, there are also 3 graphs representing a dimension but also a fourth, thicker graph which represents the 2-norm of the velocity respectively the acceleration. Furthermore the limitation ($v_{max} = 3 \frac{m}{s}$ and $a_{max} = 2 \frac{m}{s^2}$ for this problem) are depicted.
 
-\begin{figure}[h]
-   \centering
-   \includegraphics[width=1\textwidth]{pics/initial.jpg}
-   \caption{Ein Bild.}
-   \label{pic:initialSolution}
-\end{figure}
-
 \subsection{Penalty on Time}\label{sec:penalty}
 
-So fare, only the geometric cost (i. e. the squared snap) was discussed. Minimization of the geometric cost ensures a smooth trajectory without abroupt input signal but has no effect on the agressivity of a trajectory. Therefore Formula \ref{equ:Rxx_cost} has to be extended by the temporal cost which results in the total cost $J_{total}$:
+So fare, only the geometric cost (i. e. the squared snap) was discussed. Minimization of the geometric cost ensures a smooth trajectory without abrupt input signal but has no effect on the aggressiveness of a trajectory. Therefore Formula \ref{equ:Rxx_cost} has to be extended by the temporal cost which results in the total cost $J_{total}$:
 
 \begin{equation}
 J_{total} =
@@ -220,7 +213,29 @@ J_{total} =
 \label{equ:total_cost}
 \end{equation}
 
-where $k_T$ is a user specified penalty on time and $T_i$ ist the segment-time of the $i^{th}$ segment.
+where $k_T$ is a user specified penalty on time and $T_i$ is the segment-time of the $i^{th}$ segment.
+
+\begin{figure}[h]
+   \centering
+   \includegraphics[width=1\textwidth]{pics/initial.jpg}
+   \caption{Initial solution: The first subplot shows the position, the second the velocity and the third the acceleration of the initial solution. A thicker graph represents the 2-norm of the velocity respectively the acceleration.}
+   \label{pic:initialSolution}
+\end{figure}
+
+In contrast to Equation \ref{equ:Rxx_cost}, Equation \ref{equ:total_cost} cannot be solved analytically. Due to that a nonlinear solver is used. In this thesis NLopt,  a open-source library for nonlinear optimization, is applied. The optimizations variables of the nonlinear optimization are the estimated segment-times and the unspecified endpoint derivatives $dp$. The computational cost of the nonlinear optimization is highly depending on the quality of the initial solution. \newline
+The termination condition of the optimization can be specified on the optimization variables as well as on the total cost. Generally, the termination conditions are formulated relative to the current value(s). For instance, if the relative termination condition for the total cost $J_{rel}$ is set to $0.01$ the optimization ends if the total cost changes less than a percent during a iteration. The relative termination condition for the optimization variables $x_{rel}$ is only fulfilled if all of the optimization variables change less then the threshold. Additionally, a absolute termination condition $x_{abs}$ is applied to the optimization variables but is only called into action if one or several optimization variables are close to zero and the relative criteria therefore don't work properly.
+During the optimization the constraints on velocity and acceleration are checked every iteration. \newline
+
+The result of the nonlinear optimization is depicted in Figure \ref{pic:optimizedSolution}. As can be seen, the trajectory passing the same way-points as in Figure \ref{pic:initialSolution} only needs around 18 seconds where as the initial solution required around 27 second. 
+
+
+
+\begin{figure}[h]
+   \centering
+   \includegraphics[width=1\textwidth]{pics/optimized.jpg}
+   \caption{Optimized solution: The first subplot shows the position, the second the velocity and the third the acceleration of the optimized solution. A thicker graph represents the 2-norm of the velocity respectively the acceleration. }
+   \label{pic:optimizedSolution}
+\end{figure}
 
 %\begin{figure}[h]
 %   \centering
