@@ -8,7 +8,22 @@ The goal of this Thesis was not only to generate a numerical stable, snap optimi
 
 \subsection{RRT}
 
+RRT is a computational efficient algorithm to find a path in a high dimensional space by randomly building a space-filling tree. The sampling points are drawn randomly from the sample space and the tree grows incrementally. 
+For each new sample the algorithm attempts to build a collision-free connection to the nearest state in the tree. If a collision-free connection is possible the sample and the connection are added to the tree. \newline
+
+The RRT algorithm can depicted schematically:
+
+
+\begin{enumerate}
+  \item Sample
+  \item Find nearest state in tree
+  \item Try to build a collision-free connection to the nearest state
+  \item If feasible, add the sampled state and the connection to the tree
+\end{enumerate}
+
 \subsection{RRT*}
+
+In contrast to the RRT algorithm the RRT* (or RRT Star) algorithm not only tries to connect to the nearest state in the tree but to several states near the sampled state.
 
 
 
