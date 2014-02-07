@@ -4,24 +4,22 @@
 \section{State of the Art}\label{sec:state}
 
 A lot of research has been done in the field of Unmanned Aerial Vehicles (UAV) in the last years leading to a strong improvement in planning \cite{he} as well as in control [\cite{colling}, \cite{hehn}].  Another research field is machine learning \cite{lup} which is suitable to enhance the performance of aerobatic maneuvers but seams to have a downside regarding motion planning and trajectory generation in dense environments. \newline
-
 Speaking of trajectory planning, there are two different strategies which are pursued. On the one hand, the geometric and the temporal planning are decoupled  \cite{bou} on the other hand, geometric and temporal information are coupled and the trajectory is the result of a minimization problem. For the couplet problem one can make use of the differential flatness of a quadrocopter to derive constraint on the trajectory. Then formulate a cost-function which could be the trajectory-time \cite{hehn} or the total snap \cite{mellinger} (second derivation of acceleration). \newline
 
-Another aspect of planning is exploring the state space in the first place. A strong tool to do so are incremental search techniques as for instance the A* \cite{lik} or the RRT* algorithm \cite{richter}. The sampling points of the solution of the incremental search can then be used as the vertices for the polynomial optimization.
+Another aspect of planning is exploring the state space in the first place. A strong tool to do so are incremental search techniques as for instance the A* \cite{lik} or the RRT* algorithm \cite{richter}. The sampling points of the solution of the incremental search can then be used as the nodes for the polynomial optimization.
 
 \section{Quadratic Programming}\label{sec:quadratic}
 
 \subsection{Constrained Quadratic Programming}
 
-Quadratic Programming (QP) is a special case of optimization problem in which a quadratic function is optimized with respect to its optimizations variables (which are represented with the vector $x$ in Equation \ref{equ:quadratic})
+Quadratic Programming (QP) is a special case of an optimization problem in which a quadratic function $f(x)$ is optimized with respect to its optimizations variables (which are represented with the vector $x$ in Equation \ref{equ:quadratic})
 
 \begin{equation}
  f(x)  = \frac{1}{2} \cdot x^T Q x + c^T x 
 \label{equ:quadratic}
 \end{equation}
 
-The optimization is performed under linear constraints on the optimizations variables. Whereas a distinction between equality($ E\mathbf{x} = \mathbf d $) and inequality constraints ($ A\mathbf{x} \leq \mathbf b $) has to be made. 
-
+The optimization can be performed under linear constraints on the optimizations variables. Whereas a distinction between equality($ E\mathbf{x} = \mathbf d $) and inequality constraints ($ A\mathbf{x} \leq \mathbf b $) has to be made. 
 In case there are only equality constrains, the solution to the QP is given by the linear system in Equation \ref{equ:equality} :
 
 
@@ -44,12 +42,40 @@ In case there are only equality constrains, the solution to the QP is given by t
 \end{equation}
 
 
-%where $\lambda$ is a set of Lagrange multipliers.
+where $\lambda$ is a set of Lagrange multipliers.
+
+The constrained QP gets ill-conditioned for a large number of optimization variables which lead to large matrices. The performance of the constraint QP deteriorate even more if the matrices are sparse. This particular case often appears in polynomial optimization for high order polynomials where some polynomial coefficients are close to zero. \newline
+
+To reduce the number of optimization variables, and therefore the size of the matrices, the constrained QP can be converted into a numerical robust unconstrained QP.
 
 \subsection{Unconstrained Quadratic Programming}
-The constrained QP gets ill-conditioned for a large amount of segments or for high order polynomials (which both lead to large and sometimes sparse matrices). 
-To reduce the number of optimization variables, and therefore the size of the matrices, the constrained QP can be converted into a unconstrained QP. \newline
-In other words, the polynomial coefficients are no longer the optimization variables but the free endpoint derivatives are optimized. The exact formulas of the unconstrained QP can be seen in Section \ref{sec:polynomialQP}. Whereby the linear term $x^T z$ from the quadratic cost-function in Equation \ref{equ:quadratic} is equal to zero for the polynomial optimization and therefore absent in Equation \ref{equ:uncon_cost}.  \newline
+
+For the unconstrained QP the equality constraints $E \mathbf{x} = \mathbf{d}$ resp. $\mathbf{x} = E^{-1} \mathbf{d}$ are embedded into the quadratic cost-function from Equation \ref{equ:quadratic} resulting in Equation \ref{equ:quadratic_unconstrained}:
+
+\begin{equation}
+ f(d)  = \frac{1}{2} \cdot d^T  E^{-T}  Q  E^{-1}  d + c^T  E^{-1} d
+\label{equ:quadratic_unconstrained}
+\end{equation}
+
+
+Referring to polynomial trajectory optimization, the vector $x$ containing the polynomial coefficients is now replaced by the vector $d$ containing the endpoint derivatives and the mapping matrix $E$. In other words, the polynomial coefficients are no longer the optimization variables but the free endpoint derivatives are optimized. Furthermore the polynomial trajectory optimization does not have a linear term $c^T \mathbf{x}$. Hence Equation \ref{equ:quadratic_unconstrained} can be simplified to:  
+
+\begin{equation}
+ f(d)  = \frac{1}{2} \cdot d^T  E^{-T}  Q  E^{-1}  d 
+\label{equ:quadratic_simple}
+\end{equation}
+
+Since we are interested in the optimal endpoint derivatives $d^*$ and not in the cost itself, the constant multiplier $1/2$ can be dropped:
+
+\begin{equation}
+ f(d)  = d^T  E^{-T}  Q  E^{-1}  d 
+\label{equ:quadratic_short}
+\end{equation}
+
+Equation \ref{equ:quadratic_short} can be compared to to multidimensional cost function in Equation   \ref{equ:uncon_cost} in the Section \ref{sec:polynomialQP}  "Polynomial Optimization as a Unconstrained QP".
+
+
+
 
 
 
