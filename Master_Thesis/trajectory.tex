@@ -3,7 +3,7 @@
 
 \section{Polynomial Trajectory}\label{sec:polynomial}
 
-Regarding the differentiability of polynomials, they are a profound choice to represent a trajectory. Especially for the use in a differentially flat representation of the UAV dynamics. (Flatness in the proper sense of system theory means that all the states and inputs can be expressed in terms of the flat output and a finite number of its derivative). \newline
+Regarding the differentiability of polynomials, they are a profound choice to represent a trajectory. Especially for the use in a differentially flat representation of the UAV dynamics. (Flatness in the proper sense of system theory means that all the states and inputs can be expressed in terms of the flat output and a finite number of its derivative).
 Furthermore, the differentiability of polynomials enables the possibility to check the derivatives of the trajectory for bounding violations to avoid input saturation. This saturation-check can be perform during trajectory optimization and therefore guarantees the feasibility of the resulting trajectory.
 
 \section{Optimization}\label{sec:optimization}
@@ -13,8 +13,8 @@ Furthermore, not only the way-points (therefore the position) can be fixed in ad
 
 \subsection{Cost Function}\label{sec:cost}
 
-Optimization in terms of trajectory planning means minimization of a cost function. The cost function in this case is a combination of temporal and geometric cost. The geometric cost penalizes the (square) of the derivatives of the trajectory. In this Master Thesis the geometric cost is represented by the squared snap which guarantees a trajectory without abrupt  control inputs. \newline
-The temporal cost is simply the total trajectory-time multiplied by a user chosen factor $k_T$ which determines the aggressiveness of the resulting trajectory. \newline
+Optimization for the purpose of trajectory planning means to minimize a cost function. The cost function in this case is a combination of temporal and geometric cost. The geometric cost penalizes the (square) of the derivatives of the trajectory. In this Master Thesis the geometric cost is represented by the squared snap which guarantees a trajectory without abrupt  control inputs. \newline
+The temporal cost is simply the total trajectory-time multiplied by a user chosen factor $k_T$ which determines the aggressiveness of the resulting trajectory. The usage of  $k_T$  can be seen in Equation \ref{equ:total_cost} which represents the combined geometric and temporal cost. \newline
 
 To express the geometric cost in a compact way on can make use of the Hessian matrix $Q$. The Hessian matrix is defined as a squared matrix of second-order partial derivatives which follows from differentiation a function with respect to each of its coefficients (in this instance the polynomial coefficients). The geometric cost function $J(T)$ for a fixed time for one segment can now be written as
 
@@ -177,15 +177,14 @@ t_i = \frac{d_{norm_i}}{v_{max}} \cdot 2 \cdot \left( 1 + 6.5 \cdot \frac {v_{ma
 \label{equ:segmentTime}
 \end{equation}
 
-where $d_{norm_i}$ is the 2-norm distance of the $i^{th}$ segment, $v_{max}$ the user specified maximal speed and $a_{max}$ the user specified maximal acceleration. The fraction$v_{max}/a_{max}$ gives an idea how much time is needed to accelerate to max. velocity whereas $6.5$ is a empirical correction factor. \newline
+where $d_{norm_i}$ is the 2-norm distance of the $i^{th}$ segment, $v_{max}$ the user specified maximal velocity and $a_{max}$ the user specified maximal acceleration. The fraction $v_{max}/a_{max}$ gives an idea how much time is needed to accelerate to maximum velocity whereas $6.5$ is a empirical correction factor. \newline
 
 The result from Equation \ref{equ:segmentTime} is depicted in Figure \ref{pic:timeEstimation} whereat the $x$-axis represents the 2-norm distance $d_{norm}$ and the $y$-axis represents the segment time $t$. For this plot the user specified limitation on speed and acceleration has been set to $v_{max} = 3 \frac{m}{s}$ and $a_{max} = 5 \frac{m}{s^2}$. The green line represent the term $d_{norm}/v_{max} \cdot 2$, the blue graph takes the time needed for acceleration into account and is therefore the exact representation of Equation \ref{equ:segmentTime}. \newline
-
 
 \begin{figure}[h]
    \centering
    \includegraphics[width=1\textwidth]{pics/time_estimation.eps}
-   \caption{The segment-time $t$ depends on the 2-norm distance $d_{norm}$ of a segment and on the maximal speed $v_{max}$ (green line). The blue graph takes  the time needed for acceleration into account and is therefore a more elaborate approach to estimate the segment-time.}
+   \caption{The segment-time $t$ depends on the distance $d_{norm}$ of a segment and on the maximal velocity $v_{max}$. The blue graph additionally considers the time needed for acceleration and is therefore a more elaborate approach to estimate the segment-time.}
    \label{pic:timeEstimation}
 \end{figure}
 
@@ -222,8 +221,8 @@ where $k_T$ is a user specified penalty on time and $T_i$ is the segment-time of
    \label{pic:initialSolution}
 \end{figure}
 
-In contrast to Equation \ref{equ:Rxx_cost}, Equation \ref{equ:total_cost} cannot be solved analytically. Due to that a nonlinear solver is used. In this thesis NLopt,  a open-source library for nonlinear optimization, is applied. The optimizations variables of the nonlinear optimization are the estimated segment-times and the unspecified endpoint derivatives $dp$. The computational cost of the nonlinear optimization is highly depending on the quality of the initial solution. \newline
-The termination condition of the optimization can be specified on the optimization variables as well as on the total cost. Generally, the termination conditions are formulated relative to the current value(s). For instance, if the relative termination condition for the total cost $J_{rel}$ is set to $0.01$ the optimization ends if the total cost changes less than a percent during a iteration. The relative termination condition for the optimization variables $x_{rel}$ is only fulfilled if all of the optimization variables change less then the threshold. Additionally, a absolute termination condition $x_{abs}$ is applied to the optimization variables but is only called into action if one or several optimization variables are close to zero and the relative criteria therefore don't work properly.
+In contrast to Equation \ref{equ:Rxx_cost}, Equation \ref{equ:total_cost} cannot be solved analytically. Due to that a nonlinear solver is used. In this Master Thesis NLopt,  a open-source library for nonlinear optimization, is applied. The optimizations variables of the nonlinear optimization are the estimated segment-times and the unspecified endpoint derivatives $dp$. The computational cost of the nonlinear optimization is highly depending on the quality of the initial solution. \newline
+The termination condition of the optimization can be specified on the optimization variables as well as on the total cost. Generally, the termination conditions are formulated relative to the current value(s). For instance, if the relative termination condition for the total cost $J_{rel}$ is set to $0.01$ the optimization ends if the total cost changes less than a percent during an iteration. The relative termination condition for the optimization variables $x_{rel}$ is only fulfilled if all of the optimization variables change less then the threshold. Additionally, a absolute termination condition $x_{abs}$ is applied to the optimization variables but is only called into action if one or several optimization variables are close to zero and the relative criteria therefore don't work properly.
 During the optimization the constraints on velocity and acceleration are checked every iteration. \newline
 
 The result of the nonlinear optimization is depicted in Figure \ref{pic:optimizedSolution}. As can be seen, the trajectory passing the same way-points as in Figure \ref{pic:initialSolution} only needs around 18 seconds where as the initial solution required around 27 second. 

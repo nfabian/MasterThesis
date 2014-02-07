@@ -19,5 +19,4 @@
 \contentsline {subsection}{\numberline {3.2.1}RRT}{9}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}RRT*}{9}{subsection.3.2.2}
 \contentsline {chapter}{\numberline {A}Irgendwas}{13}{appendix.A}
-\contentsline {chapter}{\numberline {B}Nochmals irgendwas}{15}{appendix.B}
-\contentsline {chapter}{Bibliography}{17}{appendix*.8}
+\contentsline {chapter}{Bibliography}{15}{appendix*.9}
