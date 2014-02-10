@@ -13,11 +13,11 @@
 \BOOKMARK [2][-]{subsection.2.2.3}{Polynomial Optimization as a Unconstrained QP}{section.2.2}% 13
 \BOOKMARK [2][-]{subsection.2.2.4}{Initial Solution}{section.2.2}% 14
 \BOOKMARK [2][-]{subsection.2.2.5}{Penalty on Time}{section.2.2}% 15
-\BOOKMARK [0][-]{chapter.3}{RRT}{}% 16
+\BOOKMARK [0][-]{chapter.3}{Rapidly-Exploring Random Tree \(RRT\)}{}% 16
 \BOOKMARK [1][-]{section.3.1}{General}{chapter.3}% 17
 \BOOKMARK [1][-]{section.3.2}{Algorithm}{chapter.3}% 18
 \BOOKMARK [2][-]{subsection.3.2.1}{RRT}{section.3.2}% 19
 \BOOKMARK [2][-]{subsection.3.2.2}{RRT*}{section.3.2}% 20
-\BOOKMARK [0][-]{appendix.A}{Irgendwas}{}% 21
-\BOOKMARK [0][-]{appendix.B}{Nochmals irgendwas}{}% 22
+\BOOKMARK [2][-]{subsection.3.2.3}{Goal State}{section.3.2}% 21
+\BOOKMARK [0][-]{appendix.A}{Irgendwas}{}% 22
 \BOOKMARK [0][-]{appendix*.8}{Bibliography}{}% 23
