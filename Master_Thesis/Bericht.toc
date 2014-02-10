@@ -18,5 +18,6 @@
 \contentsline {section}{\numberline {3.2}Algorithm}{9}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}RRT}{9}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}RRT*}{9}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Goal State}{10}{subsection.3.2.3}
 \contentsline {chapter}{\numberline {A}Irgendwas}{13}{appendix.A}
 \contentsline {chapter}{Bibliography}{15}{appendix*.9}
