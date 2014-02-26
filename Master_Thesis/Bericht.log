@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.9.19)  10 FEB 2014 09:27
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.9.19)  26 FEB 2014 15:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -336,7 +336,8 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 )))
 (./Bericht.aux (./declaration.aux) (./preamble.aux) (./introduction.aux)
-(./trajectory.aux) (./RRT.aux) (./appendix.aux) (./bibliography.aux))
+(./trajectory.aux) (./RRT.aux) (./Planning.aux) (./appendix.aux)
+(./bibliography.aux))
 \openout1 = `Bericht.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 80.
@@ -407,7 +408,7 @@ Package epstopdf Info: Source file: <pics/ethlogo.eps>
 (epstopdf)             \includegraphics on input line 86.
 Package epstopdf Info: Output file is already uptodate.
 
-<pics/ethlogo-eps-converted-to.pdf, id=92, 192.72pt x 59.22125pt>
+<pics/ethlogo-eps-converted-to.pdf, id=112, 192.72pt x 59.22125pt>
 File: pics/ethlogo-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pics/ethlogo-eps-converted-to.pdf>
@@ -428,7 +429,7 @@ Package epstopdf Info: Source file: <pics/asllogo.eps>
 -to.pdf pics/asllogo.eps>
 (epstopdf)             \includegraphics on input line 86.
 Package epstopdf Info: Output file is already uptodate.
-<pics/asllogo-eps-converted-to.pdf, id=93, 429.605pt x 196.735pt>
+<pics/asllogo-eps-converted-to.pdf, id=113, 429.605pt x 196.735pt>
 File: pics/asllogo-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pics/asllogo-eps-converted-to.pdf>
@@ -577,7 +578,7 @@ onverted-to.pdf pics/time_estimation.eps>
 (epstopdf)             \includegraphics on input line 186.
 Package epstopdf Info: Output file is already uptodate.
 
-<pics/time_estimation-eps-converted-to.pdf, id=239, 595.22375pt x 539.01375pt>
+<pics/time_estimation-eps-converted-to.pdf, id=264, 595.22375pt x 539.01375pt>
 File: pics/time_estimation-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pics/time_estimation-eps-converted-to.pdf>
@@ -589,7 +590,7 @@ t line 186.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [5] [6 <./pics/time_estimation-eps-converted-to.pdf>]
-<pics/initial.jpg, id=265, 1251.67625pt x 1337.99875pt>
+<pics/initial.jpg, id=291, 1251.67625pt x 1337.99875pt>
 File: pics/initial.jpg Graphic file (type jpg)
  <use pics/initial.jpg>
 Package pdftex.def Info: pics/initial.jpg used on input line 219.
@@ -600,7 +601,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 224--227
  []
 
 [7 <./pics/initial.jpg>]
-<pics/optimized.jpg, id=275, 1251.67625pt x 1337.99875pt>
+<pics/optimized.jpg, id=301, 1251.67625pt x 1337.99875pt>
 File: pics/optimized.jpg Graphic file (type jpg)
 
 <use pics/optimized.jpg>
@@ -612,12 +613,12 @@ Package pdftex.def Info: pics/optimized.jpg used on input line 234.
  (./RRT.tex
 Chapter 3.
 
-Underfull \hbox (badness 10000) in paragraph at lines 11--13
+Underfull \hbox (badness 10000) in paragraph at lines 10--12
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--28
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
  []
 
@@ -626,87 +627,212 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--28
 
 
 
-] <pics/initialSolution.png, id=290, 992.70876pt x 749.80125pt>
-File: pics/initialSolution.png Graphic file (type png)
+]
+Underfull \hbox (badness 10000) in paragraph at lines 37--38
 
-<use pics/initialSolution.png>
-Package pdftex.def Info: pics/initialSolution.png used on input line 54.
-(pdftex.def)             Requested size: 361.34999pt x 272.9258pt.
+ []
 
-<pics/Vertex_in_middle_2.png, id=291, 1001.7425pt x 794.97pt>
-File: pics/Vertex_in_middle_2.png Graphic file (type png)
+<pics/smallGammaP.png, id=318, 1343.0175pt x 1124.2pt>
+File: pics/smallGammaP.png Graphic file (type png)
 
-<use pics/Vertex_in_middle_2.png>
-Package pdftex.def Info: pics/Vertex_in_middle_2.png used on input line 61.
-(pdftex.def)             Requested size: 361.34999pt x 286.75911pt.
+<use pics/smallGammaP.png>
+Package pdftex.def Info: pics/smallGammaP.png used on input line 43.
+(pdftex.def)             Requested size: 361.34999pt x 302.47452pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--54
+
+ []
+
+[10 <./pics/smallGammaP.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
+
+ []
+
+<pics/smallBBXP.png, id=331, 1365.1pt x 1197.47375pt>
+File: pics/smallBBXP.png Graphic file (type png)
+ <use pics/smallBBXP.png>
+Package pdftex.def Info: pics/smallBBXP.png used on input line 90.
+(pdftex.def)             Requested size: 361.34999pt x 316.9636pt.
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 98--100
+
+ []
+
+[12 <./pics/smallBBXP.png>]
+<pics/extensionLongP.png, id=355, 1180.41pt x 1142.2675pt>
+File: pics/extensionLongP.png Graphic file (type png)
+
+<use pics/extensionLongP.png>
+Package pdftex.def Info: pics/extensionLongP.png used on input line 105.
+(pdftex.def)             Requested size: 361.34999pt x 349.67215pt.
+) [13 <./pics/extensionLongP.png>] [14
+
+
+]
+\openout2 = `Planning.aux'.
+
+
+(./Planning.tex
+Chapter 4.
+File: pics/extensionLongP.png Graphic file (type png)
+<use pics/extensionLongP.png>
+Package pdftex.def Info: pics/extensionLongP.png used on input line 5.
+(pdftex.def)             Requested size: 361.34999pt x 349.67215pt.
+
+<pics/extensionALongP.png, id=365, 1222.5675pt x 1131.22626pt>
+File: pics/extensionALongP.png Graphic file (type png)
+
+<use pics/extensionALongP.png>
+Package pdftex.def Info: pics/extensionALongP.png used on input line 11.
+(pdftex.def)             Requested size: 361.34999pt x 334.34752pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<pics/section.png, id=292, 995.72pt x 770.88pt>
-File: pics/section.png Graphic file (type png)
- <use pics/section.png>
-Package pdftex.def Info: pics/section.png used on input line 67.
-(pdftex.def)             Requested size: 361.34999pt x 279.76326pt.
+<pics/extensionBLongP.png, id=366, 1213.53375pt x 1120.185pt>
+File: pics/extensionBLongP.png Graphic file (type png)
+
+<use pics/extensionBLongP.png>
+Package pdftex.def Info: pics/extensionBLongP.png used on input line 18.
+(pdftex.def)             Requested size: 361.34999pt x 333.54547pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<pics/Nlopt_after_sectionAndTime.png, id=293, 1017.8025pt x 774.895pt>
-File: pics/Nlopt_after_sectionAndTime.png Graphic file (type png)
+<pics/extensionCLongP.png, id=367, 1202.4925pt x 1124.2pt>
+File: pics/extensionCLongP.png Graphic file (type png)
 
-<use pics/Nlopt_after_sectionAndTime.png>
-Package pdftex.def Info: pics/Nlopt_after_sectionAndTime.png used on input line
- 82.
-(pdftex.def)             Requested size: 361.34999pt x 275.10739pt.
+<use pics/extensionCLongP.png>
+Package pdftex.def Info: pics/extensionCLongP.png used on input line 25.
+(pdftex.def)             Requested size: 361.34999pt x 337.82867pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [10 <./pics/initialSolution.png>] [11 <./pics/Vertex_in_middle_2.png> <./pics
-/section.png>] [12 <./pics/Nlopt_after_sectionAndTime.png>]
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 32.
+
+<pics/1LongP.png, id=368, 643.40375pt x 592.2125pt>
+File: pics/1LongP.png Graphic file (type png)
+ <use pics/1LongP.png>
+Package pdftex.def Info: pics/1LongP.png used on input line 36.
+(pdftex.def)             Requested size: 361.34999pt x 332.61267pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<pics/1aLongP.png, id=369, 653.44125pt x 585.18625pt>
+File: pics/1aLongP.png Graphic file (type png)
+ <use pics/1aLongP.png>
+Package pdftex.def Info: pics/1aLongP.png used on input line 44.
+(pdftex.def)             Requested size: 361.34999pt x 323.60355pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<pics/1bLongP.png, id=370, 650.43pt x 568.1225pt>
+File: pics/1bLongP.png Graphic file (type png)
+ <use pics/1bLongP.png>
+Package pdftex.def Info: pics/1bLongP.png used on input line 51.
+(pdftex.def)             Requested size: 361.34999pt x 315.63246pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<pics/1cLongP.png, id=371, 657.45625pt x 575.14874pt>
+File: pics/1cLongP.png Graphic file (type png)
+ <use pics/1cLongP.png>
+Package pdftex.def Info: pics/1cLongP.png used on input line 57.
+(pdftex.def)             Requested size: 361.34999pt x 316.11339pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<pics/1dLongP.png, id=372, 652.4375pt x 577.15625pt>
+File: pics/1dLongP.png Graphic file (type png)
+ <use pics/1dLongP.png>
+Package pdftex.def Info: pics/1dLongP.png used on input line 63.
+(pdftex.def)             Requested size: 361.34999pt x 319.66501pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<pics/MapLine.png, id=373, 896.34875pt x 1264.725pt>
+File: pics/MapLine.png Graphic file (type png)
+ <use pics/MapLine.png>
+Package pdftex.def Info: pics/MapLine.png used on input line 70.
+(pdftex.def)             Requested size: 361.34999pt x 509.85646pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<pics/MapPoly.png, id=375, 887.315pt x 1266.7325pt>
+File: pics/MapPoly.png Graphic file (type png)
+ <use pics/MapPoly.png>
+Package pdftex.def Info: pics/MapPoly.png used on input line 77.
+(pdftex.def)             Requested size: 361.34999pt x 515.84586pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<pics/MapNlopt.png, id=376, 890.32625pt x 1264.725pt>
+File: pics/MapNlopt.png Graphic file (type png)
+ <use pics/MapNlopt.png>
+Package pdftex.def Info: pics/MapNlopt.png used on input line 84.
+(pdftex.def)             Requested size: 361.34999pt x 513.31082pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [15
+
+
+] [16 <./pics/extensionALongP.png>] [17 <./pics/extensionBLongP.png>]
+[18 <./pics/extensionCLongP.png>] [19 <./pics/1LongP.png>] [20 <./pics/1aLongP.
+png>] [21 <./pics/1bLongP.png>] [22 <./pics/1cLongP.png>] [23 <./pics/1dLongP.p
+ng>] [24 <./pics/MapLine.png>] [25 <./pics/MapPoly.png>] [26 <./pics/MapNlopt.p
+ng>]
 \openout2 = `appendix.aux'.
 
  (./appendix.tex
 Appendix A.
-[13
+[27
 
 
 
 
-] [14
+] [28
 
 ])
 \openout2 = `bibliography.aux'.
 
- (./bibliography.tex) [15
+ (./bibliography.tex) [29
 
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 135.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 135.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 137.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 137.
  (./Bericht.aux (./declaration.aux)
 (./preamble.aux) (./introduction.aux) (./trajectory.aux) (./RRT.aux)
-(./appendix.aux) (./bibliography.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 135.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 135.
+(./Planning.aux) (./appendix.aux) (./bibliography.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 137.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 137.
+Package rerunfilecheck Info: File `Bericht.out' has not changed.
+(rerunfilecheck)             Checksum: 627BA3EC6C8B7185676C585CDB62AAE8;1721.
 
 
-Package rerunfilecheck Warning: File `Bericht.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package rerunfilecheck Info: Checksums for `Bericht.out':
-(rerunfilecheck)             Before: 8E79A89985C4E9621C6FA08B5B180FAB;1394
-(rerunfilecheck)             After:  3D8AE8FA1B266EBE445AF4B245C098B1;1458.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 135.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 137.
  ) 
 Here is how much of TeX's memory you used:
- 6683 strings out of 495059
- 95193 string characters out of 3182030
- 197856 words of memory out of 3000000
- 9611 multiletter control sequences out of 15000+200000
+ 6789 strings out of 495059
+ 96717 string characters out of 3182030
+ 198956 words of memory out of 3000000
+ 9665 multiletter control sequences out of 15000+200000
  12603 words of font info for 48 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  41i,15n,43p,870b,436s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -726,10 +852,10 @@ are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Bericht.pdf (21 pages, 1529818 bytes).
+Output written on Bericht.pdf (35 pages, 4759894 bytes).
 PDF statistics:
- 410 PDF objects out of 1000 (max. 8388607)
- 352 compressed objects within 4 object streams
- 91 named destinations out of 1000 (max. 500000)
- 222 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 540 PDF objects out of 1000 (max. 8388607)
+ 454 compressed objects within 5 object streams
+ 125 named destinations out of 1000 (max. 500000)
+ 312 words of extra memory for PDF output out of 10000 (max. 10000000)
 

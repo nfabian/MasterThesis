@@ -15,9 +15,13 @@
 \BOOKMARK [2][-]{subsection.2.2.5}{Penalty on Time}{section.2.2}% 15
 \BOOKMARK [0][-]{chapter.3}{RRT}{}% 16
 \BOOKMARK [1][-]{section.3.1}{General}{chapter.3}% 17
-\BOOKMARK [1][-]{section.3.2}{Algorithm}{chapter.3}% 18
-\BOOKMARK [2][-]{subsection.3.2.1}{RRT}{section.3.2}% 19
-\BOOKMARK [2][-]{subsection.3.2.2}{RRT*}{section.3.2}% 20
-\BOOKMARK [2][-]{subsection.3.2.3}{Goal State}{section.3.2}% 21
-\BOOKMARK [0][-]{appendix.A}{Irgendwas}{}% 22
-\BOOKMARK [0][-]{appendix*.9}{Bibliography}{}% 23
+\BOOKMARK [1][-]{section.3.2}{RRT Algorithm}{chapter.3}% 18
+\BOOKMARK [2][-]{subsection.3.2.1}{Goal State}{section.3.2}% 19
+\BOOKMARK [1][-]{section.3.3}{RRT* Algorithm}{chapter.3}% 20
+\BOOKMARK [2][-]{subsection.3.3.1}{Rewiring}{section.3.3}% 21
+\BOOKMARK [2][-]{subsection.3.3.2}{Bounding Box}{section.3.3}% 22
+\BOOKMARK [2][-]{subsection.3.3.3}{Ray Check}{section.3.3}% 23
+\BOOKMARK [0][-]{chapter.4}{Plananing}{}% 24
+\BOOKMARK [1][-]{subsection.4.0.4}{Multiple Vertex Extension}{chapter.4}% 25
+\BOOKMARK [0][-]{appendix.A}{Irgendwas}{}% 26
+\BOOKMARK [0][-]{appendix*.9}{Bibliography}{}% 27

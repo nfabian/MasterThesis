@@ -15,9 +15,13 @@
 \contentsline {subsection}{\numberline {2.2.5}Penalty on Time}{6}{subsection.2.2.5}
 \contentsline {chapter}{\numberline {3}RRT}{9}{chapter.3}
 \contentsline {section}{\numberline {3.1}General}{9}{section.3.1}
-\contentsline {section}{\numberline {3.2}Algorithm}{9}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}RRT}{9}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}RRT*}{9}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Goal State}{10}{subsection.3.2.3}
-\contentsline {chapter}{\numberline {A}Irgendwas}{13}{appendix.A}
-\contentsline {chapter}{Bibliography}{15}{appendix*.9}
+\contentsline {section}{\numberline {3.2}RRT Algorithm}{9}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Goal State}{9}{subsection.3.2.1}
+\contentsline {section}{\numberline {3.3}RRT* Algorithm}{11}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Rewiring}{11}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Bounding Box}{12}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Ray Check}{13}{subsection.3.3.3}
+\contentsline {chapter}{\numberline {4}Plananing}{15}{chapter.4}
+\contentsline {subsection}{\numberline {4.0.4}Multiple Vertex Extension}{15}{subsection.4.0.4}
+\contentsline {chapter}{\numberline {A}Irgendwas}{27}{appendix.A}
+\contentsline {chapter}{Bibliography}{29}{appendix*.9}
