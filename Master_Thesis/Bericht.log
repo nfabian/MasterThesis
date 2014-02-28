@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  28 FEB 2014 10:40
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  28 FEB 2014 10:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -341,10 +341,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 )))
-(./Bericht.aux (./declaration.aux) (./preamble.aux) (./introduction.aux)
-(./trajectory.aux) (./RRT.aux)
-No file Planning.aux.
-(./appendix.aux) (./bibliography.aux))
+(./Bericht.aux)
 \openout1 = `Bericht.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 80.
@@ -405,17 +402,17 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 86.
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
 Package epstopdf Info: Source file: <pics/ethlogo.eps>
-(epstopdf)                    date: 2007-03-20 19:06:38
+(epstopdf)                    date: 2014-01-06 14:05:23
 (epstopdf)                    size: 72851 bytes
 (epstopdf)             Output file: <pics/ethlogo-eps-converted-to.pdf>
-(epstopdf)                    date: 2013-12-30 11:00:37
+(epstopdf)                    date: 2014-01-06 14:05:23
 (epstopdf)                    size: 14321 bytes
 (epstopdf)             Command: <repstopdf --outfile=pics/ethlogo-eps-converted
 -to.pdf pics/ethlogo.eps>
 (epstopdf)             \includegraphics on input line 86.
 Package epstopdf Info: Output file is already uptodate.
 
-<pics/ethlogo-eps-converted-to.pdf, id=112, 192.72pt x 59.22125pt>
+<pics/ethlogo-eps-converted-to.pdf, id=4, 192.72pt x 59.22125pt>
 File: pics/ethlogo-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pics/ethlogo-eps-converted-to.pdf>
@@ -427,16 +424,16 @@ Overfull \vbox (18.81508pt too high) detected at line 86
  []
 
 Package epstopdf Info: Source file: <pics/asllogo.eps>
-(epstopdf)                    date: 2007-12-06 18:44:22
+(epstopdf)                    date: 2014-01-06 14:05:23
 (epstopdf)                    size: 146459 bytes
 (epstopdf)             Output file: <pics/asllogo-eps-converted-to.pdf>
-(epstopdf)                    date: 2013-12-30 11:00:38
+(epstopdf)                    date: 2014-01-06 14:05:23
 (epstopdf)                    size: 86114 bytes
 (epstopdf)             Command: <repstopdf --outfile=pics/asllogo-eps-converted
 -to.pdf pics/asllogo.eps>
 (epstopdf)             \includegraphics on input line 86.
 Package epstopdf Info: Output file is already uptodate.
-<pics/asllogo-eps-converted-to.pdf, id=113, 429.605pt x 196.735pt>
+<pics/asllogo-eps-converted-to.pdf, id=5, 429.605pt x 196.735pt>
 File: pics/asllogo-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pics/asllogo-eps-converted-to.pdf>
@@ -484,11 +481,14 @@ ethlogo-eps-converted-to.pdf> <./pics/asllogo-eps-converted-to.pdf>] [2
 ]
 \openout2 = `preamble.aux'.
 
- (./preamble.tex (./Bericht.toc)
+ (./preamble.tex
+
+Package hyperref Warning: old toc file detected, not used; run LaTeX again.
+
 \tf@toc=\write4
 \openout4 = `Bericht.toc'.
 
- [2
+[2
 
 
 
@@ -508,9 +508,42 @@ Underfull \hbox (badness 10000) in paragraph at lines 33--34
  (./introduction.tex
 Chapter 1.
 
+LaTeX Warning: Citation `he' on page 1 undefined on input line 6.
+
+
+LaTeX Warning: Citation `colling' on page 1 undefined on input line 6.
+
+
+LaTeX Warning: Citation `hehn' on page 1 undefined on input line 6.
+
+
+LaTeX Warning: Citation `lup' on page 1 undefined on input line 6.
+
+
+LaTeX Warning: Citation `bou' on page 1 undefined on input line 7.
+
+
+LaTeX Warning: Citation `hehn' on page 1 undefined on input line 7.
+
+
+LaTeX Warning: Citation `mellinger' on page 1 undefined on input line 7.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 6--8
 
  []
+
+
+LaTeX Warning: Citation `lik' on page 1 undefined on input line 9.
+
+
+LaTeX Warning: Citation `richter' on page 1 undefined on input line 9.
+
+
+LaTeX Warning: Reference `equ:quadratic' on page 1 undefined on input line 15.
+
+
+LaTeX Warning: Reference `equ:equality' on page 1 undefined on input line 23.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 47--48
@@ -527,8 +560,32 @@ l.48
 
 
 
-])pdfTeX warning (ext4): destination with the same identifier (name{page.2}) ha
-s been already used, duplicate ignored
+]
+
+LaTeX Warning: Reference `equ:quadratic' on page 2 undefined on input line 53.
+
+
+LaTeX Warning: Reference `equ:quadratic_unconstrained' on page 2 undefined on i
+nput line 53.
+
+
+LaTeX Warning: Reference `equ:quadratic_unconstrained' on page 2 undefined on i
+nput line 61.
+
+
+LaTeX Warning: Reference `equ:quadratic_short' on page 2 undefined on input lin
+e 75.
+
+
+LaTeX Warning: Reference `equ:uncon_cost' on page 2 undefined on input line 75.
+
+
+
+LaTeX Warning: Reference `sec:polynomialQP' on page 2 undefined on input line 7
+5.
+
+)pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
+ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.108  \include{introduction}
@@ -537,6 +594,16 @@ l.108  \include{introduction}
 
  (./trajectory.tex
 Chapter 2.
+
+LaTeX Warning: Reference `chap:RRT' on page 3 undefined on input line 11.
+
+
+LaTeX Warning: Reference `sec:quadratic' on page 3 undefined on input line 12.
+
+
+LaTeX Warning: Reference `equ:total_cost' on page 3 undefined on input line 17.
+
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 16--18
 
@@ -553,20 +620,60 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--26
  []
 
 
+LaTeX Warning: Reference `sec:optimization' on page 4 undefined on input line 5
+4.
+
+
+LaTeX Warning: Reference `equ:mapping' on page 4 undefined on input line 61.
+
+
 Overfull \hbox (4.78844pt too wide) in paragraph at lines 83--84
 []\OT1/cmr/m/n/10 The con-strained QP is suit-able for a small amount of seg-me
 nts but gets ill-conditioned
  []
 
 
+LaTeX Warning: Reference `equ:cost' on page 4 undefined on input line 87.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 123--124
 
  []
 
+
+LaTeX Warning: Reference `equ:uncon_cost' on page 4 undefined on input line 125
+.
+
 [4]
+
+LaTeX Warning: Reference `equ:R_cost' on page 5 undefined on input line 141.
+
+
+LaTeX Warning: Reference `equ:Rxx_cost' on page 5 undefined on input line 160.
+
+
+LaTeX Warning: Reference `equ:dpstar' on page 5 undefined on input line 172.
+
+
+LaTeX Warning: Reference `equ:uncon_cost' on page 5 undefined on input line 172
+.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 180--181
 
  []
+
+
+LaTeX Warning: Reference `equ:segmentTime' on page 5 undefined on input line 18
+2.
+
+
+LaTeX Warning: Reference `pic:timeEstimation' on page 5 undefined on input line
+ 182.
+
+
+LaTeX Warning: Reference `equ:segmentTime' on page 5 undefined on input line 18
+2.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 182--183
@@ -574,13 +681,252 @@ Underfull \hbox (badness 10000) in paragraph at lines 182--183
  []
 
 Package epstopdf Info: Source file: <pics/time_estimation.eps>
-(epstopdf)                    date: 2014-01-07 17:10:45
+(epstopdf)                    date: 2014-01-29 11:34:21
 (epstopdf)                    size: 11192 bytes
 (epstopdf)             Output file: <pics/time_estimation-eps-converted-to.pdf>
 
-(epstopdf)                    date: 2014-01-18 11:05:52
+(epstopdf)                    date: 2014-01-29 11:34:21
 (epstopdf)                    size: 7442 bytes
 (epstopdf)             Command: <repstopdf --outfile=pics/time_estimation-eps-c
 onverted-to.pdf pics/time_estimation.eps>
 (epstopdf)             \includegraphics on input line 186.
 Package epstopdf Info: Output file is already uptodate.
+
+<pics/time_estimation-eps-converted-to.pdf, id=101, 595.22375pt x 539.01375pt>
+File: pics/time_estimation-eps-converted-to.pdf Graphic file (type pdf)
+
+<use pics/time_estimation-eps-converted-to.pdf>
+Package pdftex.def Info: pics/time_estimation-eps-converted-to.pdf used on inpu
+t line 186.
+(pdftex.def)             Requested size: 361.34999pt x 327.22699pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `equ:dpstar' on page 5 undefined on input line 191.
+
+
+LaTeX Warning: Reference `pic:initialSolution' on page 5 undefined on input lin
+e 191.
+
+[5]
+
+LaTeX Warning: Reference `equ:Rxx_cost' on page 6 undefined on input line 195.
+
+[6 <./pics/time_estimation-eps-converted-to.pdf>]
+<pics/initial.jpg, id=126, 1251.67625pt x 1337.99875pt>
+File: pics/initial.jpg Graphic file (type jpg)
+ <use pics/initial.jpg>
+Package pdftex.def Info: pics/initial.jpg used on input line 219.
+(pdftex.def)             Requested size: 361.34999pt x 386.27432pt.
+
+
+LaTeX Warning: Reference `equ:Rxx_cost' on page 7 undefined on input line 224.
+
+
+LaTeX Warning: Reference `equ:total_cost' on page 7 undefined on input line 224
+.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--227
+
+ []
+
+[7 <./pics/initial.jpg>]
+
+LaTeX Warning: Reference `pic:optimizedSolution' on page 8 undefined on input l
+ine 228.
+
+
+LaTeX Warning: Reference `pic:initialSolution' on page 8 undefined on input lin
+e 228.
+
+<pics/optimized.jpg, id=133, 1251.67625pt x 1337.99875pt>
+File: pics/optimized.jpg Graphic file (type jpg)
+
+<use pics/optimized.jpg>
+Package pdftex.def Info: pics/optimized.jpg used on input line 234.
+(pdftex.def)             Requested size: 361.34999pt x 386.27432pt.
+) [8 <./pics/optimized.jpg>]
+\openout2 = `RRT.aux'.
+
+ (./RRT.tex
+Chapter 3.
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--12
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
+
+ []
+
+
+LaTeX Warning: Reference `sec:RRT' on page 9 undefined on input line 28.
+
+[9
+
+
+
+
+]
+
+LaTeX Warning: Reference `sec:RRT' on page 10 undefined on input line 37.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--38
+
+ []
+
+
+LaTeX Warning: Reference `pic:smallGamma' on page 10 undefined on input line 39
+.
+
+<pics/smallGammaP.png, id=152, 1343.0175pt x 1124.2pt>
+File: pics/smallGammaP.png Graphic file (type png)
+
+<use pics/smallGammaP.png>
+Package pdftex.def Info: pics/smallGammaP.png used on input line 43.
+(pdftex.def)             Requested size: 361.34999pt x 302.47452pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--54
+
+ []
+
+[10 <./pics/smallGammaP.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
+
+ []
+
+
+LaTeX Warning: Reference `sec:RRTstar' on page 11 undefined on input line 84.
+
+
+LaTeX Warning: Reference `pic:smallBBX' on page 11 undefined on input line 86.
+
+
+LaTeX Warning: Reference `pic:smallGamma' on page 11 undefined on input line 86
+.
+
+<pics/smallBBXP.png, id=162, 1365.1pt x 1197.47375pt>
+File: pics/smallBBXP.png Graphic file (type png)
+ <use pics/smallBBXP.png>
+Package pdftex.def Info: pics/smallBBXP.png used on input line 90.
+(pdftex.def)             Requested size: 361.34999pt x 316.9636pt.
+
+[11]
+
+LaTeX Warning: Reference `pic:smallBBX' on page 12 undefined on input line 98.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--100
+
+ []
+
+
+LaTeX Warning: Reference `pic:bbx' on page 12 undefined on input line 101.
+
+
+LaTeX Warning: Reference `pic:smallBBX' on page 12 undefined on input line 101.
+
+
+
+LaTeX Warning: Reference `pic:smallBBX' on page 12 undefined on input line 101.
+
+
+
+LaTeX Warning: Reference `pic:bbx' on page 12 undefined on input line 101.
+
+[12 <./pics/smallBBXP.png>]
+<pics/extensionLongP.png, id=183, 1180.41pt x 1142.2675pt>
+File: pics/extensionLongP.png Graphic file (type png)
+
+<use pics/extensionLongP.png>
+Package pdftex.def Info: pics/extensionLongP.png used on input line 105.
+(pdftex.def)             Requested size: 361.34999pt x 349.67215pt.
+) [13 <./pics/extensionLongP.png>] [14
+
+
+]
+\openout2 = `Planning.aux'.
+
+
+No file Planning.tex.
+\openout2 = `appendix.aux'.
+
+(./appendix.tex
+Appendix A.
+[15
+
+
+
+
+
+] [16
+
+])
+\openout2 = `bibliography.aux'.
+
+ (./bibliography.tex) [17
+
+
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 137.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 137.
+ (./Bericht.aux (./declaration.aux)
+(./preamble.aux) (./introduction.aux) (./trajectory.aux) (./RRT.aux)
+(./Planning.aux) (./appendix.aux) (./bibliography.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 137.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 137.
+
+
+Package rerunfilecheck Warning: File `Bericht.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Bericht.out':
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
+(rerunfilecheck)             After:  C4D0B166849E1C1C5CE578B5238142D7;1599.
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 137.
+ ) 
+Here is how much of TeX's memory you used:
+ 6649 strings out of 493488
+ 94802 string characters out of 3141326
+ 193999 words of memory out of 3000000
+ 9708 multiletter control sequences out of 15000+200000
+ 12603 words of font info for 48 fonts, out of 3000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 41i,15n,43p,870b,436s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
+</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></us
+r/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
+local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
+cal/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/loca
+l/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/t
+exlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texl
+ive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive
+/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/20
+12/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/201
+2/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2012/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2012/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on Bericht.pdf (23 pages, 1822811 bytes).
+PDF statistics:
+ 296 PDF objects out of 1000 (max. 8388607)
+ 238 compressed objects within 3 object streams
+ 99 named destinations out of 1000 (max. 500000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+

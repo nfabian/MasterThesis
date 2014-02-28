@@ -1,0 +1,25 @@
+\BOOKMARK [0][-]{chapter*.3}{Abstract}{}% 1
+\BOOKMARK [0][-]{chapter*.4}{Symbols}{}% 2
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 3
+\BOOKMARK [1][-]{section.1.1}{State of the Art}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.2}{Quadratic Programming}{chapter.1}% 5
+\BOOKMARK [2][-]{subsection.1.2.1}{Constrained Quadratic Programming}{section.1.2}% 6
+\BOOKMARK [2][-]{subsection.1.2.2}{Unconstrained Quadratic Programming}{section.1.2}% 7
+\BOOKMARK [0][-]{chapter.2}{Polynomial Trajectory Optimization}{}% 8
+\BOOKMARK [1][-]{section.2.1}{Polynomial Trajectory}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.2}{Optimization}{chapter.2}% 10
+\BOOKMARK [2][-]{subsection.2.2.1}{Cost Function}{section.2.2}% 11
+\BOOKMARK [2][-]{subsection.2.2.2}{Polynomial Optimization as a Constrained QP}{section.2.2}% 12
+\BOOKMARK [2][-]{subsection.2.2.3}{Polynomial Optimization as a Unconstrained QP}{section.2.2}% 13
+\BOOKMARK [2][-]{subsection.2.2.4}{Initial Solution}{section.2.2}% 14
+\BOOKMARK [2][-]{subsection.2.2.5}{Penalty on Time}{section.2.2}% 15
+\BOOKMARK [0][-]{chapter.3}{RRT}{}% 16
+\BOOKMARK [1][-]{section.3.1}{General}{chapter.3}% 17
+\BOOKMARK [1][-]{section.3.2}{RRT Algorithm}{chapter.3}% 18
+\BOOKMARK [2][-]{subsection.3.2.1}{Goal State}{section.3.2}% 19
+\BOOKMARK [1][-]{section.3.3}{RRT* Algorithm}{chapter.3}% 20
+\BOOKMARK [2][-]{subsection.3.3.1}{Rewiring}{section.3.3}% 21
+\BOOKMARK [2][-]{subsection.3.3.2}{Bounding Box}{section.3.3}% 22
+\BOOKMARK [2][-]{subsection.3.3.3}{Ray Check}{section.3.3}% 23
+\BOOKMARK [0][-]{appendix.A}{Irgendwas}{}% 24
+\BOOKMARK [0][-]{appendix*.9}{Bibliography}{}% 25
