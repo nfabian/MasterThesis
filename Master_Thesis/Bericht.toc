@@ -22,5 +22,7 @@
 \contentsline {subsection}{\numberline {3.3.1}Rewiring}{13}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}Bounding Box}{14}{subsection.3.3.2}
 \contentsline {subsection}{\numberline {3.3.3}Ray Check}{15}{subsection.3.3.3}
-\contentsline {chapter}{\numberline {A}Irgendwas}{17}{appendix.A}
-\contentsline {chapter}{Bibliography}{19}{appendix*.9}
+\contentsline {chapter}{\numberline {4}Plananing}{17}{chapter.4}
+\contentsline {subsection}{\numberline {4.0.4}Multiple Vertex Extension}{17}{subsection.4.0.4}
+\contentsline {chapter}{\numberline {A}Irgendwas}{29}{appendix.A}
+\contentsline {chapter}{Bibliography}{31}{appendix*.9}

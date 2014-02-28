@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  28 FEB 2014 19:34
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  28 FEB 2014 19:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -700,23 +700,142 @@ Package pdftex.def Info: pics/extensionLongP.png used on input line 105.
 \openout2 = `Planning.aux'.
 
 
-No file Planning.tex.
+(./Planning.tex
+Chapter 4.
+File: pics/extensionLongP.png Graphic file (type png)
+<use pics/extensionLongP.png>
+Package pdftex.def Info: pics/extensionLongP.png used on input line 5.
+(pdftex.def)             Requested size: 361.34999pt x 349.67215pt.
+
+<pics/extensionALongP.png, id=373, 1222.5675pt x 1131.22626pt>
+File: pics/extensionALongP.png Graphic file (type png)
+
+<use pics/extensionALongP.png>
+Package pdftex.def Info: pics/extensionALongP.png used on input line 11.
+(pdftex.def)             Requested size: 361.34999pt x 334.34752pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<pics/extensionBLongP.png, id=374, 1213.53375pt x 1120.185pt>
+File: pics/extensionBLongP.png Graphic file (type png)
+
+<use pics/extensionBLongP.png>
+Package pdftex.def Info: pics/extensionBLongP.png used on input line 18.
+(pdftex.def)             Requested size: 361.34999pt x 333.54547pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<pics/extensionCLongP.png, id=375, 1202.4925pt x 1124.2pt>
+File: pics/extensionCLongP.png Graphic file (type png)
+
+<use pics/extensionCLongP.png>
+Package pdftex.def Info: pics/extensionCLongP.png used on input line 25.
+(pdftex.def)             Requested size: 361.34999pt x 337.82867pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 32.
+
+<pics/1LongP.png, id=376, 643.40375pt x 592.2125pt>
+File: pics/1LongP.png Graphic file (type png)
+ <use pics/1LongP.png>
+Package pdftex.def Info: pics/1LongP.png used on input line 36.
+(pdftex.def)             Requested size: 361.34999pt x 332.61267pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<pics/1aLongP.png, id=377, 653.44125pt x 585.18625pt>
+File: pics/1aLongP.png Graphic file (type png)
+ <use pics/1aLongP.png>
+Package pdftex.def Info: pics/1aLongP.png used on input line 44.
+(pdftex.def)             Requested size: 361.34999pt x 323.60355pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<pics/1bLongP.png, id=378, 650.43pt x 568.1225pt>
+File: pics/1bLongP.png Graphic file (type png)
+ <use pics/1bLongP.png>
+Package pdftex.def Info: pics/1bLongP.png used on input line 51.
+(pdftex.def)             Requested size: 361.34999pt x 315.63246pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<pics/1cLongP.png, id=379, 657.45625pt x 575.14874pt>
+File: pics/1cLongP.png Graphic file (type png)
+ <use pics/1cLongP.png>
+Package pdftex.def Info: pics/1cLongP.png used on input line 57.
+(pdftex.def)             Requested size: 361.34999pt x 316.11339pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<pics/1dLongP.png, id=380, 652.4375pt x 577.15625pt>
+File: pics/1dLongP.png Graphic file (type png)
+ <use pics/1dLongP.png>
+Package pdftex.def Info: pics/1dLongP.png used on input line 63.
+(pdftex.def)             Requested size: 361.34999pt x 319.66501pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<pics/MapLine.png, id=381, 896.34875pt x 1264.725pt>
+File: pics/MapLine.png Graphic file (type png)
+ <use pics/MapLine.png>
+Package pdftex.def Info: pics/MapLine.png used on input line 70.
+(pdftex.def)             Requested size: 361.34999pt x 509.85646pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<pics/MapPoly.png, id=383, 887.315pt x 1266.7325pt>
+File: pics/MapPoly.png Graphic file (type png)
+ <use pics/MapPoly.png>
+Package pdftex.def Info: pics/MapPoly.png used on input line 77.
+(pdftex.def)             Requested size: 361.34999pt x 515.84586pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<pics/MapNlopt.png, id=384, 890.32625pt x 1264.725pt>
+File: pics/MapNlopt.png Graphic file (type png)
+ <use pics/MapNlopt.png>
+Package pdftex.def Info: pics/MapNlopt.png used on input line 84.
+(pdftex.def)             Requested size: 361.34999pt x 513.31082pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [17
+
+
+] [18 <./pics/extensionALongP.png>] [19 <./pics/extensionBLongP.png>]
+[20 <./pics/extensionCLongP.png>] [21 <./pics/1LongP.png>] [22 <./pics/1aLongP.
+png>] [23 <./pics/1bLongP.png>] [24 <./pics/1cLongP.png>] [25 <./pics/1dLongP.p
+ng>] [26 <./pics/MapLine.png>] [27 <./pics/MapPoly.png>] [28 <./pics/MapNlopt.p
+ng>]
 \openout2 = `appendix.aux'.
 
-(./appendix.tex
+ (./appendix.tex
 Appendix A.
-[17
+[29
 
 
 
 
-
-] [18
+] [30
 
 ])
 \openout2 = `bibliography.aux'.
 
- (./bibliography.tex) [19
+ (./bibliography.tex) [31
 
 
 
@@ -728,15 +847,25 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 137.
 (./Planning.aux) (./appendix.aux) (./bibliography.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 137.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 137.
-Package rerunfilecheck Info: File `Bericht.out' has not changed.
-(rerunfilecheck)             Checksum: 82D31DD37FF5B564B7651FDD760C6D45;1679.
+
+
+Package rerunfilecheck Warning: File `Bericht.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Bericht.out':
+(rerunfilecheck)             Before: 82D31DD37FF5B564B7651FDD760C6D45;1679
+(rerunfilecheck)             After:  C620E3681DD16DB68B23CE4B7C39AC0B;1801.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 137.
  ) 
 Here is how much of TeX's memory you used:
- 6709 strings out of 493488
- 95560 string characters out of 3141326
+ 6793 strings out of 493488
+ 96987 string characters out of 3141326
  201654 words of memory out of 3000000
- 9745 multiletter control sequences out of 15000+200000
+ 9790 multiletter control sequences out of 15000+200000
  12603 words of font info for 48 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
  41i,15n,43p,1115b,436s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -757,10 +886,10 @@ ive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive
 2/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2012/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2012/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Bericht.pdf (25 pages, 1843013 bytes).
+Output written on Bericht.pdf (37 pages, 4772812 bytes).
 PDF statistics:
- 468 PDF objects out of 1000 (max. 8388607)
- 407 compressed objects within 5 object streams
- 104 named destinations out of 1000 (max. 500000)
- 249 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 554 PDF objects out of 1000 (max. 8388607)
+ 467 compressed objects within 5 object streams
+ 130 named destinations out of 1000 (max. 500000)
+ 304 words of extra memory for PDF output out of 10000 (max. 10000000)
 
