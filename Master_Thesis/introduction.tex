@@ -3,8 +3,12 @@
 
 \section{State of the Art}\label{sec:state}
 
-A lot of research has been done in the field of Unmanned Aerial Vehicles (UAV) in the last years leading to a strong improvement in planning \cite{he} as well as in control [\cite{colling}, \cite{hehn}].  Another research field is machine learning \cite{lup} which is suitable to enhance the performance of aerobatic maneuvers but seams to have a downside regarding motion planning and trajectory generation in dense environments. \newline
-Speaking of trajectory planning, there are two different strategies which are pursued. On the one hand, the geometric and the temporal planning are decoupled  \cite{bou} on the other hand, geometric and temporal information are coupled and the trajectory is the result of a minimization problem. For the couplet problem one can make use of the differential flatness of a quadrocopter to derive constraint on the trajectory. Then formulate a cost-function which could be the trajectory-time \cite{hehn} or the total snap \cite{mellinger} (second derivation of acceleration). \newline
+A lot of research has been performed in the field of Unmanned Aerial Vehicles (UAV) in the last years leading to a strong improvement in trjectory planning \cite{he} as well as in control (\cite{colling}, \cite{hehn}).  Another research field is machine learning \cite{lup} which is suitable to enhance the performance of aerobatic maneuvers but seams to have a downside regarding motion planning and trajectory generation in dense environments. \newline
+
+Speaking of trajectory planning, there are two different strategies which are pursued. On the one hand, the geometric and the temporal planning are decoupled  \cite{bou}, on the other hand geometric and temporal information are coupled and the trajectory is the result of a minimization problem. For the couplet problem one can make use of the differential flatness of a quadrocopter to derive constraint on the trajectory. A cost function which could be the total trajectory-time \cite{hehn} or the total snap \cite{mellinger} can be formulated. \newline
+
+
+%Then formulate a cost-function which could be the trajectory-time \cite{hehn} or the total snap \cite{mellinger} (second %derivation of acceleration). \newline
 
 Another aspect of planning is exploring the state space in the first place. A strong tool to do so are incremental search techniques as for instance the A* \cite{lik} or the RRT* algorithm \cite{richter}. The sampling points of the solution of the incremental search can then be used as the nodes for the polynomial optimization.
 
@@ -12,15 +16,34 @@ Another aspect of planning is exploring the state space in the first place. A st
 
 \subsection{Constrained Quadratic Programming}
 
-Quadratic Programming (QP) is a special case of an optimization problem in which a quadratic function $f(x)$ is optimized with respect to its optimizations variables (which are represented with the vector $x$ in Equation \ref{equ:quadratic})
+Quadratic Programming (QP) is a special case of an optimization problem in which a quadratic function $f(x)$ is optimized with respect to its optimization variables (which are represented with the vector $x$ in equation \ref{equ:quadratic})
 
 \begin{equation}
  f(x)  = \frac{1}{2} \cdot x^T Q x + c^T x 
 \label{equ:quadratic}
 \end{equation}
 
-The optimization can be performed under linear constraints on the optimizations variables. Whereas a distinction between equality($ E\mathbf{x} = \mathbf d $) and inequality constraints ($ A\mathbf{x} \leq \mathbf b $) has to be made. 
-In case there are only equality constrains, the solution to the QP is given by the linear system in Equation \ref{equ:equality} :
+The optimization can be performed under linear constraints on the optimization variables. The linear constraints can be divided in two groups. For one thing there are the inequality constraints
+
+\begin{equation}
+A  x \leq b
+\label{equ:inequalityConstraintsQP}
+\end{equation}
+
+where the vector $b$ contains the inequality constraints. \newline
+
+For another thing there are the equality constraints
+
+\begin{equation}
+E  x = d
+\end{equation}
+
+where the vector $d$ contains the equality constraints. In case there are only equality constrains, the solution to the QP is given by the linear system in equation \ref{equ:equality} :
+
+
+
+% Whereas a distinction between equality($ E\mathbf{x} = \mathbf d $) and inequality constraints ($ A\mathbf{x} \leq \mathbf b $) has to be made. 
+%In case there are only equality constrains, the solution to the QP is given by the linear system in equation \ref{equ:equality} :
 
 
 \begin{equation}
@@ -42,37 +65,40 @@ In case there are only equality constrains, the solution to the QP is given by t
 \end{equation}
 
 
-where $\lambda$ is a set of Lagrange multipliers.
+where $\lambda$ is a set of Lagrange multipliers and $c$ is the linear term of the cost function in equation \ref{equ:quadratic}. \newline
 
 The constrained QP gets ill-conditioned for a large number of optimization variables which lead to large matrices. The performance of the constraint QP deteriorate even more if the matrices are sparse. This particular case often appears in polynomial optimization for high order polynomials where some polynomial coefficients are close to zero. \newline
 
-To reduce the number of optimization variables, and therefore the size of the matrices, the constrained QP can be converted into a numerical robust unconstrained QP.
+To reduce the number of optimization variables, and therefore the size of the matrices, the constrained QP with equality constraints can be converted into a numerical robust unconstrained QP.
 
 \subsection{Unconstrained Quadratic Programming}
 
-For the unconstrained QP the equality constraints $E \mathbf{x} = \mathbf{d}$ resp. $\mathbf{x} = E^{-1} \mathbf{d}$ are embedded into the quadratic cost-function from Equation \ref{equ:quadratic} resulting in Equation \ref{equ:quadratic_unconstrained}:
+For the unconstrained QP the equality constraints $E \mathbf{x} = \mathbf{d}$ resp. $\mathbf{x} = E^{-1} \mathbf{d}$ are embedded into the quadratic cost function from equation \ref{equ:quadratic} resulting in equation \ref{equ:quadratic_unconstrained}:
 
 \begin{equation}
  f(d)  = \frac{1}{2} \cdot d^T  E^{-T}  Q  E^{-1}  d + c^T  E^{-1} d
 \label{equ:quadratic_unconstrained}
 \end{equation}
 
+Since the vector $x$ is replaced by $E^{-1} d$ and $E$ is a constant matrix, the new optimization variables are now stored in the vector $d$. \newline
+ 
+%Referring to polynomial trajectory optimization, the vector $x$ containing the polynomial coefficients is now replaced by the vector $d$ containing the endpoint derivatives and the mapping matrix $E$. In other words, the polynomial coefficients are no longer the optimization variables but the free endpoint derivatives are optimized. Furthermore the polynomial trajectory optimization does not have a linear term $c^T \mathbf{x}$. Hence Equation \ref{equ:quadratic_unconstrained} can be simplified to:  
 
-Referring to polynomial trajectory optimization, the vector $x$ containing the polynomial coefficients is now replaced by the vector $d$ containing the endpoint derivatives and the mapping matrix $E$. In other words, the polynomial coefficients are no longer the optimization variables but the free endpoint derivatives are optimized. Furthermore the polynomial trajectory optimization does not have a linear term $c^T \mathbf{x}$. Hence Equation \ref{equ:quadratic_unconstrained} can be simplified to:  
+If the cost function defined in equation \ref{equ:quadratic} does not have a linear term, i.e. the vector $c$ is equal to zero, equation \ref{equ:quadratic_unconstrained} can be simplified to:
 
 \begin{equation}
  f(d)  = \frac{1}{2} \cdot d^T  E^{-T}  Q  E^{-1}  d 
 \label{equ:quadratic_simple}
 \end{equation}
 
-Since we are interested in the optimal endpoint derivatives $d^*$ and not in the cost itself, the constant multiplier $1/2$ can be dropped:
+If we are not interested  in the cost itself but only in the optimization variables stored in $d$, the constant multiplier $1/2$ can be dropped:
 
 \begin{equation}
  f(d)  = d^T  E^{-T}  Q  E^{-1}  d 
 \label{equ:quadratic_short}
 \end{equation}
 
-Equation \ref{equ:quadratic_short} can be compared to to multidimensional cost function in Equation   \ref{equ:uncon_cost} in the Section \ref{sec:polynomialQP}  "Polynomial Optimization as a Unconstrained QP".
+The theoretical derived equation \ref{equ:quadratic_short} can be compared to to multidimensional cost function in equation \ref{equ:uncon_cost}. Equation \ref{equ:uncon_cost} establishes a connection between the numerical advantages of a unconstrained QP and the polynomial coefficients representing a trajectory.
 
 
 

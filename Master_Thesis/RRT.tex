@@ -2,7 +2,7 @@
 
 \section{General}
 
-The goal of this Thesis was not only to generate a numerical stable, snap optimized polynomial trajectory but also to explore a dense (indoor) environment and plan an aggressive trajectory in between the obstacles. Hence, the Rapidly-Exploring Random Tree (RRT) algorithm is used to find a collision free straight-line solution through dense environments. The sampling points oft the RRT (or RRT*) algorithm are then used as the vertices in the polynomial optimization.
+The goal of this thesis was not only to generate a numerically stable, snap optimized polynomial trajectory but also to explore a densely packed (indoor) environment and plan an aggressive trajectory in between the obstacles. Hence, the Rapidly-Exploring Random Tree (RRT) algorithm is used to find a collision-free straight line solution through densely packed environments. The sampling points oft the RRT (or RRT*) algorithm are then used as the vertices in the polynomial optimization.
 
 
 \section{RRT Algorithm}\label{sec:RRT}
@@ -66,7 +66,7 @@ An iteration of the RRT* algorithm can be depicted schematically:
 \end{enumerate}
 
 
-Because the RRT* algorithm tries to connect to several states each iteration, the procedure of finding a path takes longer and is computationally more expensive. However, solution with lower cost can be found which is more important for most real life applications.
+Because the RRT* algorithm tries to connect to several states each iteration, the procedure to find a path takes longer and is computationally more expensive. However, solutions with lower cost can be found which is more important for most real life applications.
 
 \subsection{Rewiring}
 
