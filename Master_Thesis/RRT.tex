@@ -98,11 +98,11 @@ Figure \ref{pic:smallBBX} depicts the straight line solution of the RRT* algorit
 The straight line solution in figure \ref{pic:smallBBX} is collision-free but passes by very close to the walls. In real life application not only a point mass but a object (in this master thesis a UAV) should follow the trajectory. Therefore a bounding box is installed around the trajectory. \newline
 The bounding box is implemented as a cuboid. The 3 dimension of the cuboid can be defined individually. The trajectory is then divided into a discrete trajectory and the bounding box is installed around the discrete points. If there is a obstacle in one of the bounding boxes the hole straight line is considered as  in collision. \newline
 
-Figure \ref{pic:bbx} depicts the straight line solution of the RRT* algorithm with a bounding box. In contrast to figure \ref{pic:smallBBX} the trajectory is now located more central in the hallway because the bounding box makes it impossible to pass by the wall very close. Because the trajectory proceeds less direct from start to goal state the total distance of the trajectory increases. Although the the number of segments increases as well from 3 segments in figure \ref{pic:smallBBX} to 4 segments in figure \ref{pic:bbx} this is not necessarily a consequence of the bounding box. Performing additional iterations (including more sampling points and more rewiring) could lead to a solution with 3 segments.
+Figure \ref{pic:bbx} depicts the straight line solution of the RRT* algorithm with a bounding box. In contrast to figure \ref{pic:smallBBX} the trajectory is now located more central in the hallway because the bounding box makes it impossible to pass by the wall very close. Because the trajectory proceeds less direct from start to goal state the total distance of the trajectory increases. 
 
 \begin{figure}[H]
    \centering
-   \includegraphics[width=1\textwidth]{pics/extensionLongP.png}
+   \includegraphics[width=1\textwidth]{pics/largeBBXP.png}
    \caption{Straight line solution of the RRT* algorithm with bounding box. Due to the bounding box the trajectory is located more central in the hallway because the bounding box makes it impossible to pass by the wall very close. The $\gamma$ parameter in this example was set to $\gamma = 1.5$.}
    \label{pic:bbx}
 \end{figure}
