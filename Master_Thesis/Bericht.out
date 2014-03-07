@@ -15,17 +15,18 @@
 \BOOKMARK [2][-]{subsection.2.3.1}{Drawbacks of the Initial Solution}{section.2.3}% 15
 \BOOKMARK [1][-]{section.2.4}{Time Allocation}{chapter.2}% 16
 \BOOKMARK [2][-]{subsection.2.4.1}{Nonlinear Optimization}{section.2.4}% 17
-\BOOKMARK [1][-]{section.2.5}{NLopt}{chapter.2}% 18
-\BOOKMARK [1][-]{section.2.6}{Reduce the Optimization Variables}{chapter.2}% 19
-\BOOKMARK [0][-]{chapter.3}{RRT}{}% 20
-\BOOKMARK [1][-]{section.3.1}{General}{chapter.3}% 21
-\BOOKMARK [1][-]{section.3.2}{RRT Algorithm}{chapter.3}% 22
-\BOOKMARK [2][-]{subsection.3.2.1}{Goal State}{section.3.2}% 23
-\BOOKMARK [1][-]{section.3.3}{RRT* Algorithm}{chapter.3}% 24
-\BOOKMARK [2][-]{subsection.3.3.1}{Rewiring}{section.3.3}% 25
-\BOOKMARK [2][-]{subsection.3.3.2}{Bounding Box}{section.3.3}% 26
-\BOOKMARK [2][-]{subsection.3.3.3}{Ray Check}{section.3.3}% 27
-\BOOKMARK [0][-]{chapter.4}{Plananing}{}% 28
-\BOOKMARK [1][-]{subsection.4.0.4}{Multiple Vertex Extension}{chapter.4}% 29
-\BOOKMARK [0][-]{appendix.A}{Irgendwas}{}% 30
-\BOOKMARK [0][-]{appendix*.7}{Bibliography}{}% 31
+\BOOKMARK [1][-]{section.2.5}{Pathway of the Trajectory}{chapter.2}% 18
+\BOOKMARK [1][-]{section.2.6}{NLopt}{chapter.2}% 19
+\BOOKMARK [1][-]{section.2.7}{Reduction of the Optimization Variables}{chapter.2}% 20
+\BOOKMARK [0][-]{chapter.3}{RRT}{}% 21
+\BOOKMARK [1][-]{section.3.1}{General}{chapter.3}% 22
+\BOOKMARK [1][-]{section.3.2}{RRT Algorithm}{chapter.3}% 23
+\BOOKMARK [2][-]{subsection.3.2.1}{Goal State}{section.3.2}% 24
+\BOOKMARK [1][-]{section.3.3}{RRT* Algorithm}{chapter.3}% 25
+\BOOKMARK [2][-]{subsection.3.3.1}{Rewiring}{section.3.3}% 26
+\BOOKMARK [2][-]{subsection.3.3.2}{Bounding Box}{section.3.3}% 27
+\BOOKMARK [2][-]{subsection.3.3.3}{Ray Check}{section.3.3}% 28
+\BOOKMARK [0][-]{chapter.4}{Plananing}{}% 29
+\BOOKMARK [1][-]{subsection.4.0.4}{Multiple Vertex Extension}{chapter.4}% 30
+\BOOKMARK [0][-]{appendix.A}{Irgendwas}{}% 31
+\BOOKMARK [0][-]{appendix*.7}{Bibliography}{}% 32

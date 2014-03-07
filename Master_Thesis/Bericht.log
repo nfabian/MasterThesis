@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.9.19)  5 MAR 2014 17:15
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.9.19)  7 MAR 2014 14:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -408,7 +408,7 @@ Package epstopdf Info: Source file: <pics/ethlogo.eps>
 (epstopdf)             \includegraphics on input line 86.
 Package epstopdf Info: Output file is already uptodate.
 
-<pics/ethlogo-eps-converted-to.pdf, id=128, 192.72pt x 59.22125pt>
+<pics/ethlogo-eps-converted-to.pdf, id=132, 192.72pt x 59.22125pt>
 File: pics/ethlogo-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pics/ethlogo-eps-converted-to.pdf>
@@ -429,7 +429,7 @@ Package epstopdf Info: Source file: <pics/asllogo.eps>
 -to.pdf pics/asllogo.eps>
 (epstopdf)             \includegraphics on input line 86.
 Package epstopdf Info: Output file is already uptodate.
-<pics/asllogo-eps-converted-to.pdf, id=129, 429.605pt x 196.735pt>
+<pics/asllogo-eps-converted-to.pdf, id=133, 429.605pt x 196.735pt>
 File: pics/asllogo-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pics/asllogo-eps-converted-to.pdf>
@@ -597,7 +597,7 @@ Package epstopdf Info: Source file: <pics/time_estimation.eps>
 onverted-to.pdf pics/time_estimation.eps>
 (epstopdf)             \includegraphics on input line 187.
 Package epstopdf Info: Output file is already uptodate.
-<pics/time_estimation-eps-converted-to.pdf, id=286, 664.4825pt x 441.65pt>
+<pics/time_estimation-eps-converted-to.pdf, id=291, 664.4825pt x 441.65pt>
 File: pics/time_estimation-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pics/time_estimation-eps-converted-to.pdf>
@@ -616,7 +616,7 @@ erted-to.pdf pics/2SegInit7s43.eps>
 (epstopdf)             \includegraphics on input line 216.
 Package epstopdf Info: Output file is already uptodate.
 
-<pics/2SegInit7s43-eps-converted-to.pdf, id=312, 1000.73875pt x 1038.88126pt>
+<pics/2SegInit7s43-eps-converted-to.pdf, id=317, 1000.73875pt x 1038.88126pt>
 File: pics/2SegInit7s43-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pics/2SegInit7s43-eps-converted-to.pdf>
@@ -661,7 +661,7 @@ converted-to.pdf pics/2SegOpti6s52k100.eps>
 (epstopdf)             \includegraphics on input line 270.
 Package epstopdf Info: Output file is already uptodate.
 
-<pics/2SegOpti6s52k100-eps-converted-to.pdf, id=340, 1000.73875pt x 1038.88126p
+<pics/2SegOpti6s52k100-eps-converted-to.pdf, id=345, 1000.73875pt x 1038.88126p
 t>
 File: pics/2SegOpti6s52k100-eps-converted-to.pdf Graphic file (type pdf)
  <use pics/2SegOpti6s52k100-eps-converted-to.pdf>
@@ -686,7 +686,7 @@ converted-to.pdf pics/2SegOpti6s01k190.eps>
 (epstopdf)             \includegraphics on input line 285.
 Package epstopdf Info: Output file is already uptodate.
 
-<pics/2SegOpti6s01k190-eps-converted-to.pdf, id=360, 1000.73875pt x 1038.88126p
+<pics/2SegOpti6s01k190-eps-converted-to.pdf, id=365, 1000.73875pt x 1038.88126p
 t>
 File: pics/2SegOpti6s01k190-eps-converted-to.pdf Graphic file (type pdf)
  <use pics/2SegOpti6s01k190-eps-converted-to.pdf>
@@ -706,7 +706,7 @@ f>
 (epstopdf)             \includegraphics on input line 296.
 Package epstopdf Info: Output file is already uptodate.
 
-<pics/2SegOpti5s16k2000-eps-converted-to.pdf, id=376, 1000.73875pt x 1038.88126
+<pics/2SegOpti5s16k2000-eps-converted-to.pdf, id=381, 1000.73875pt x 1038.88126
 pt>
 File: pics/2SegOpti5s16k2000-eps-converted-to.pdf Graphic file (type pdf)
  <use pics/2SegOpti5s16k2000-eps-converted-to.pdf>
@@ -727,25 +727,91 @@ Package epstopdf Info: Source file: <pics/4SegInit15s67.eps>
 (epstopdf)                    size: 86364 bytes
 (epstopdf)             Command: <repstopdf --outfile=pics/4SegInit15s67-eps-con
 verted-to.pdf pics/4SegInit15s67.eps>
-(epstopdf)             \includegraphics on input line 326.
+(epstopdf)             \includegraphics on input line 329.
 Package epstopdf Info: Output file is already uptodate.
 
-<pics/4SegInit15s67-eps-converted-to.pdf, id=393, 1000.73875pt x 1038.88126pt>
+<pics/4SegInit15s67-eps-converted-to.pdf, id=399, 1000.73875pt x 1038.88126pt>
 File: pics/4SegInit15s67-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pics/4SegInit15s67-eps-converted-to.pdf>
 Package pdftex.def Info: pics/4SegInit15s67-eps-converted-to.pdf used on input 
-line 326.
-(pdftex.def)             Requested size: 361.34999pt x 390.8519pt.
+line 329.
+(pdftex.def)             Requested size: 361.34999pt x 388.33128pt.
+ [12 <./pics/4SegInit15s67-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <pics/4SegOpti10s01k2000.eps>
+(epstopdf)                    date: 2014-03-05 11:23:53
+(epstopdf)                    size: 71139 bytes
+(epstopdf)             Output file: <pics/4SegOpti10s01k2000-eps-converted-to.p
+df>
+(epstopdf)                    date: 2014-03-05 11:25:52
+(epstopdf)                    size: 63284 bytes
+(epstopdf)             Command: <repstopdf --outfile=pics/4SegOpti10s01k2000-ep
+s-converted-to.pdf pics/4SegOpti10s01k2000.eps>
+(epstopdf)             \includegraphics on input line 350.
+Package epstopdf Info: Output file is already uptodate.
 
-Underfull \hbox (badness 10000) in paragraph at lines 335--337
+<pics/4SegOpti10s01k2000-eps-converted-to.pdf, id=416, 1000.73875pt x 1038.8812
+6pt>
+File: pics/4SegOpti10s01k2000-eps-converted-to.pdf Graphic file (type pdf)
+ <use pics/4SegOpti10s01k2000-eps-converted-to.pdf>
+Package pdftex.def Info: pics/4SegOpti10s01k2000-eps-converted-to.pdf used on i
+nput line 350.
+(pdftex.def)             Requested size: 361.34999pt x 380.76945pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [13 <./pics/4SegOpti10s01k2000-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <pics/4SegInitSpace.eps>
+(epstopdf)                    date: 2014-03-05 11:37:22
+(epstopdf)                    size: 46439 bytes
+(epstopdf)             Output file: <pics/4SegInitSpace-eps-converted-to.pdf>
+(epstopdf)                    date: 2014-03-05 11:42:49
+(epstopdf)                    size: 19086 bytes
+(epstopdf)             Command: <repstopdf --outfile=pics/4SegInitSpace-eps-con
+verted-to.pdf pics/4SegInitSpace.eps>
+(epstopdf)             \includegraphics on input line 366.
+Package epstopdf Info: Output file is already uptodate.
+
+<pics/4SegInitSpace-eps-converted-to.pdf, id=438, 1000.73875pt x 1038.88126pt>
+File: pics/4SegInitSpace-eps-converted-to.pdf Graphic file (type pdf)
+
+<use pics/4SegInitSpace-eps-converted-to.pdf>
+Package pdftex.def Info: pics/4SegInitSpace-eps-converted-to.pdf used on input 
+line 366.
+(pdftex.def)             Requested size: 361.34999pt x 364.41959pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 372--373
 
  []
 
-[12 <./pics/4SegInit15s67-eps-converted-to.pdf>]) [13] [14
 
+Underfull \vbox (badness 2326) has occurred while \output is active []
 
-]
+ [14 <./pics/4SegInitSpace-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <pics/4SegOptiSpace.eps>
+(epstopdf)                    date: 2014-03-05 11:40:06
+(epstopdf)                    size: 35823 bytes
+(epstopdf)             Output file: <pics/4SegOptiSpace-eps-converted-to.pdf>
+(epstopdf)                    date: 2014-03-05 11:42:49
+(epstopdf)                    size: 15632 bytes
+(epstopdf)             Command: <repstopdf --outfile=pics/4SegOptiSpace-eps-con
+verted-to.pdf pics/4SegOptiSpace.eps>
+(epstopdf)             \includegraphics on input line 381.
+Package epstopdf Info: Output file is already uptodate.
+
+<pics/4SegOptiSpace-eps-converted-to.pdf, id=455, 1000.73875pt x 1038.88126pt>
+File: pics/4SegOptiSpace-eps-converted-to.pdf Graphic file (type pdf)
+
+<use pics/4SegOptiSpace-eps-converted-to.pdf>
+Package pdftex.def Info: pics/4SegOptiSpace-eps-converted-to.pdf used on input 
+line 381.
+(pdftex.def)             Requested size: 361.34999pt x 364.41959pt.
+ [15 <./pics/4SegOptiSpace-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 390--395
+
+ []
+
+) [16]
 \openout2 = `RRT.aux'.
 
  (./RRT.tex
@@ -760,7 +826,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
  []
 
-[15
+[17
+
+
 
 
 ]
@@ -768,7 +836,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--38
 
  []
 
-<pics/smallGammaP.png, id=429, 1343.0175pt x 1124.2pt>
+<pics/smallGammaP.png, id=482, 1343.0175pt x 1124.2pt>
 File: pics/smallGammaP.png Graphic file (type png)
 
 <use pics/smallGammaP.png>
@@ -779,29 +847,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 52--54
 
  []
 
-[16 <./pics/smallGammaP.png>]
+[18 <./pics/smallGammaP.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 82--83
 
  []
 
-<pics/smallBBXP.png, id=442, 1365.1pt x 1197.47375pt>
+<pics/smallBBXP.png, id=495, 1365.1pt x 1197.47375pt>
 File: pics/smallBBXP.png Graphic file (type png)
  <use pics/smallBBXP.png>
 Package pdftex.def Info: pics/smallBBXP.png used on input line 90.
 (pdftex.def)             Requested size: 361.34999pt x 316.9636pt.
 
-[17]
+[19]
 Underfull \hbox (badness 10000) in paragraph at lines 98--100
 
  []
 
-<pics/largeBBXP.png, id=458, 1334.9875pt x 1245.65375pt>
+<pics/largeBBXP.png, id=512, 1334.9875pt x 1245.65375pt>
 File: pics/largeBBXP.png Graphic file (type png)
 
 <use pics/largeBBXP.png>
 Package pdftex.def Info: pics/largeBBXP.png used on input line 105.
 (pdftex.def)             Requested size: 361.34999pt x 337.16731pt.
- [18 <./pics/smallBBXP.png>]) [19 <./pics/largeBBXP.png>] [20
+ [20 <./pics/smallBBXP.png>]) [21 <./pics/largeBBXP.png>] [22
 
 
 ]
@@ -809,14 +877,14 @@ Package pdftex.def Info: pics/largeBBXP.png used on input line 105.
 
  (./Planning.tex
 Chapter 4.
-<pics/extensionLongP.png, id=474, 1180.41pt x 1142.2675pt>
+<pics/extensionLongP.png, id=527, 1180.41pt x 1142.2675pt>
 File: pics/extensionLongP.png Graphic file (type png)
 
 <use pics/extensionLongP.png>
 Package pdftex.def Info: pics/extensionLongP.png used on input line 5.
 (pdftex.def)             Requested size: 361.34999pt x 349.67215pt.
 
-<pics/extensionALongP.png, id=475, 1222.5675pt x 1131.22626pt>
+<pics/extensionALongP.png, id=528, 1222.5675pt x 1131.22626pt>
 File: pics/extensionALongP.png Graphic file (type png)
 
 <use pics/extensionALongP.png>
@@ -826,7 +894,7 @@ Package pdftex.def Info: pics/extensionALongP.png used on input line 11.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<pics/extensionBLongP.png, id=476, 1213.53375pt x 1120.185pt>
+<pics/extensionBLongP.png, id=529, 1213.53375pt x 1120.185pt>
 File: pics/extensionBLongP.png Graphic file (type png)
 
 <use pics/extensionBLongP.png>
@@ -836,7 +904,7 @@ Package pdftex.def Info: pics/extensionBLongP.png used on input line 18.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<pics/extensionCLongP.png, id=477, 1202.4925pt x 1124.2pt>
+<pics/extensionCLongP.png, id=530, 1202.4925pt x 1124.2pt>
 File: pics/extensionCLongP.png Graphic file (type png)
 
 <use pics/extensionCLongP.png>
@@ -850,7 +918,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 32.
 
-<pics/1LongP.png, id=478, 643.40375pt x 592.2125pt>
+<pics/1LongP.png, id=531, 643.40375pt x 592.2125pt>
 File: pics/1LongP.png Graphic file (type png)
  <use pics/1LongP.png>
 Package pdftex.def Info: pics/1LongP.png used on input line 36.
@@ -859,7 +927,7 @@ Package pdftex.def Info: pics/1LongP.png used on input line 36.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<pics/1aLongP.png, id=479, 653.44125pt x 585.18625pt>
+<pics/1aLongP.png, id=532, 653.44125pt x 585.18625pt>
 File: pics/1aLongP.png Graphic file (type png)
  <use pics/1aLongP.png>
 Package pdftex.def Info: pics/1aLongP.png used on input line 44.
@@ -868,7 +936,7 @@ Package pdftex.def Info: pics/1aLongP.png used on input line 44.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<pics/1bLongP.png, id=480, 650.43pt x 568.1225pt>
+<pics/1bLongP.png, id=533, 650.43pt x 568.1225pt>
 File: pics/1bLongP.png Graphic file (type png)
  <use pics/1bLongP.png>
 Package pdftex.def Info: pics/1bLongP.png used on input line 51.
@@ -877,7 +945,7 @@ Package pdftex.def Info: pics/1bLongP.png used on input line 51.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<pics/1cLongP.png, id=481, 657.45625pt x 575.14874pt>
+<pics/1cLongP.png, id=534, 657.45625pt x 575.14874pt>
 File: pics/1cLongP.png Graphic file (type png)
  <use pics/1cLongP.png>
 Package pdftex.def Info: pics/1cLongP.png used on input line 57.
@@ -886,7 +954,7 @@ Package pdftex.def Info: pics/1cLongP.png used on input line 57.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<pics/1dLongP.png, id=482, 652.4375pt x 577.15625pt>
+<pics/1dLongP.png, id=535, 652.4375pt x 577.15625pt>
 File: pics/1dLongP.png Graphic file (type png)
  <use pics/1dLongP.png>
 Package pdftex.def Info: pics/1dLongP.png used on input line 63.
@@ -895,7 +963,7 @@ Package pdftex.def Info: pics/1dLongP.png used on input line 63.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<pics/MapLine.png, id=483, 896.34875pt x 1264.725pt>
+<pics/MapLine.png, id=536, 896.34875pt x 1264.725pt>
 File: pics/MapLine.png Graphic file (type png)
  <use pics/MapLine.png>
 Package pdftex.def Info: pics/MapLine.png used on input line 70.
@@ -904,7 +972,7 @@ Package pdftex.def Info: pics/MapLine.png used on input line 70.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<pics/MapPoly.png, id=485, 887.315pt x 1266.7325pt>
+<pics/MapPoly.png, id=538, 887.315pt x 1266.7325pt>
 File: pics/MapPoly.png Graphic file (type png)
  <use pics/MapPoly.png>
 Package pdftex.def Info: pics/MapPoly.png used on input line 77.
@@ -913,7 +981,7 @@ Package pdftex.def Info: pics/MapPoly.png used on input line 77.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<pics/MapNlopt.png, id=486, 890.32625pt x 1264.725pt>
+<pics/MapNlopt.png, id=539, 890.32625pt x 1264.725pt>
 File: pics/MapNlopt.png Graphic file (type png)
  <use pics/MapNlopt.png>
 Package pdftex.def Info: pics/MapNlopt.png used on input line 84.
@@ -922,29 +990,29 @@ Package pdftex.def Info: pics/MapNlopt.png used on input line 84.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [21
+) [23
 
 
- <./pics/extensionLongP.png>] [22 <./pics/extensionALongP.png>] [23 <./pics/ext
-ensionBLongP.png>] [24 <./pics/extensionCLongP.png>] [25 <./pics/1LongP.png>] [
-26 <./pics/1aLongP.png>] [27 <./pics/1bLongP.png>] [28 <./pics/1cLongP.png>] [2
-9 <./pics/1dLongP.png>] [30 <./pics/MapLine.png>] [31 <./pics/MapPoly.png>] [32
+ <./pics/extensionLongP.png>] [24 <./pics/extensionALongP.png>] [25 <./pics/ext
+ensionBLongP.png>] [26 <./pics/extensionCLongP.png>] [27 <./pics/1LongP.png>] [
+28 <./pics/1aLongP.png>] [29 <./pics/1bLongP.png>] [30 <./pics/1cLongP.png>] [3
+1 <./pics/1dLongP.png>] [32 <./pics/MapLine.png>] [33 <./pics/MapPoly.png>] [34
  <./pics/MapNlopt.png>]
 \openout2 = `appendix.aux'.
 
  (./appendix.tex
 Appendix A.
-[33
+[35
 
 
 
 
-] [34
+] [36
 
 ])
 \openout2 = `bibliography.aux'.
 
- (./bibliography.tex) [35
+ (./bibliography.tex) [37
 
 
 
@@ -957,17 +1025,17 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 137.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 137.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 137.
 Package rerunfilecheck Info: File `Bericht.out' has not changed.
-(rerunfilecheck)             Checksum: 2F5829F9B93746FD6D58064AF3AB555F;2002.
+(rerunfilecheck)             Checksum: A83A07C582D9022463431EC05FB84119;2080.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 137.
  ) 
 Here is how much of TeX's memory you used:
- 6833 strings out of 495059
- 97972 string characters out of 3182030
- 201352 words of memory out of 3000000
- 9693 multiletter control sequences out of 15000+200000
+ 6860 strings out of 495059
+ 98739 string characters out of 3182030
+ 202055 words of memory out of 3000000
+ 9711 multiletter control sequences out of 15000+200000
  12603 words of font info for 48 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 41i,15n,43p,1115b,436s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,15n,43p,1088b,436s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
@@ -984,10 +1052,10 @@ are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Bericht.pdf (41 pages, 5063761 bytes).
+Output written on Bericht.pdf (43 pages, 5158429 bytes).
 PDF statistics:
- 654 PDF objects out of 1000 (max. 8388607)
- 547 compressed objects within 6 object streams
- 138 named destinations out of 1000 (max. 500000)
- 364 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 709 PDF objects out of 1000 (max. 8388607)
+ 593 compressed objects within 6 object streams
+ 144 named destinations out of 1000 (max. 500000)
+ 387 words of extra memory for PDF output out of 10000 (max. 10000000)
 
