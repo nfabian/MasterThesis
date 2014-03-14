@@ -190,6 +190,10 @@ The result of equation \ref{equ:segmentTime} is depicted in figure \ref{pic:time
 \end{figure}
 
 Once the segment times are calculated, the initial snap minimized solution can be computed according to equation \ref{equ:dpstar}. The initial solution for a 3 dimensional problem with 2 segments is depict in figure \ref{pic:initialSolution}. The start of the trajectory is the origin of the Cartesian coordinate system (0/0/0). For both, start and goal state, the velocity, the acceleration, the jerk and the snap are fixed and set to zero. For all the other sampling points (vertices) the derivatives are unspecified. The Cartesian coordinates of the sampling points are chosen manually and are listed in the following table: 
+<<<<<<< HEAD
+=======
+
+>>>>>>> FETCH_HEAD
 
 \begin{table}[H] 
 \begin{center}
@@ -204,15 +208,29 @@ Once the segment times are calculated, the initial snap minimized solution can b
     \caption{3 manually chosen  vertices}
     \label{tab:vertices}
 \end{center}
+<<<<<<< HEAD
 \end{table}
+=======
+\vspace*{2\baselineskip}
+>>>>>>> FETCH_HEAD
 
+The initial solution depicted in figure \ref{pic:initialSolution} is divided into 3 plots. Plot a) shows the position (i.e. the Cartesian coordinates) whereby each of the 3 dimensions is depicted as a single graph. The Cartesian coordinates from the above-noted table are depicted as circles. 
+Plot b) shows the velocity of the individual direction as a solid graph. Additional, the velocity in the three-dimensional space (i.e. the Euclidean norm of the velocity vector) is depicted as a dashed graph.
+Plot c) depicts the acceleration in the individual directions (solid) and the acceleration in the three-dimensional space (dashed). Furthermore the limitation for velocity and acceleration ($v_{max} = 3 \frac{m}{s}$ and $a_{max} = 4 \frac{m}{s^2}$ for this problem) are depicted in plot b) resp. c) . The $x$-axis for all the 3 plots is the time. \newpage
 
 The initial solution depicted in figure \ref{pic:initialSolution} is divided into 3 plots. Plot a) shows the position (i.e. the Cartesian coordinates) whereby each of the 3 dimensions is depicted as a single graph. The Cartesian coordinates from the above-noted table are depicted as circles. 
 Plot b) shows the velocity of the individual direction as a solid graph. Additional, the velocity in the three-dimensional space (i.e. the Euclidean norm of the velocity vector) is depicted as a dashed graph.
 Plot c) depicts the acceleration in the individual directions (solid) and the acceleration in the three-dimensional space (dashed). Furthermore the limitation for velocity and acceleration ($v_{max} = 3 \frac{m}{s}$ and $a_{max} = 4 \frac{m}{s^2}$ for this problem) are depicted in plot b) resp. c) . The $x$-axis for all the 3 plots is the time. \newpage
 
 
+\begin{figure}[h]
+   \centering
+   \includegraphics[trim = 33mm 20mm 30mm 33mm,width=1\textwidth]{pics/2SegInit7s43.eps}
+   \caption{Initial solution of a trajectory with 2 segments: Plot a) shows the position (i.e. the Cartesian coordinates). Plot b) shows the velocity and plot c) the acceleration. A dashed graph represents the velocity respectively the acceleration in the three-dimensional space.}
+   \label{pic:initialSolution}
+\end{figure}
 
+<<<<<<< HEAD
 \begin{figure}[h]
    \centering
    \includegraphics[trim = 35mm 30mm 30mm 15mm,clip,width=1\textwidth]{pics/2SegInit7s43.eps}
@@ -222,6 +240,10 @@ Plot c) depicts the acceleration in the individual directions (solid) and the ac
 
 As can be seen in plot b) the maximal spacial velocity is less then the user specified maximal velocity $v_{max} = 3\frac{m}{s}$. The same applies to plot c) where the maximal acceleration is far below the user specified maximal acceleration of $a_{max} = 4 \frac{m}{s^2}$. Hence, the trajectory could be more aggressive/faster without violating the limitations. \newline
 
+=======
+As can be seen in plot b) the maximal spacial velocity is less then the user specified maximal velocity $v_{max} = 3\frac{m}{s}$. The same applies to plot c) where the maximal acceleration is far below the user specified maximal acceleration of $a_{max} = 4 \frac{m}{s^2}$. Hence, the trajectory could be more aggressive/faster without violating the limitations. \newline
+
+>>>>>>> FETCH_HEAD
 \subsection{Drawbacks of the Initial Solution}\label{sec:drawbackInitial}
 
 
@@ -261,6 +283,7 @@ A hight value for $k_T$ lays weight to the temporal cost and therefore leads to 
 
 The geometric cost function in equation \ref{equ:Rxx_cost} has only the unspecified endpoint derivatives $d_p$ as optimization variables. This optimization problem can be solved analytically as performed in equation \ref{equ:dpstar}. The cost function in equation \ref{equ:total_cost} has the segment times $T_i$ as additional optimization variables. Meaning the segment times $T_i$ are directly represented in the cost function and not only indirectly via the Hessian matrices $Q_{T_i}$. Since the segment times are now optimization variables, the Hessian matrices $Q_{T_i}$ are no longer defined in advance and the problem cannot be solved analytically. Due to that a nonlinear solver is used. In this master thesis NLopt, a open-source library for nonlinear optimization, is applied. The unspecified endpoint derivatives $d_p$ and the segment times $T_i$ of the initial solution are the initial values for the nonlinear solver. Meaning, the initial solution has to be computed in advance to start a nonlinear optimization \newline
 
+<<<<<<< HEAD
 To illustrate the nonlinear optimization the trajectory with the same 3 vertices (defined in the table  \ref{tab:vertices}) is reused. In this master thesis position, velocity, acceleration, jerk and snap are fixed for the start and for the goal vertex since we want to start from complete rest and want to end up in standstill. For the vertex in the middle the position is fixed but velocity, acceleration, jerk and snap are unspecified, resulting in the first 4 optimization variables. Since this is a 3 dimensional problem, the number of geometric optimization variables triple to 12. Together with the segment time of the two segments, the problem ends up with a total number of 14 optimization variables. \pagebreak 
 
 %The influence of the number of optimization varibales on the performance is discussed in section: TODO \newline
@@ -271,6 +294,17 @@ The result of the nonlinear optimization is depicted in figure \ref{pic:optimize
 \begin{figure}[h]
    \centering
    \includegraphics[trim = 35mm 20mm 30mm 8mm,clip,width=1\textwidth]{pics/2SegOpti6s52k100.eps}
+=======
+
+To illustrate the nonlinear optimization the trajectory with the same 3 vertices (defined in the table in section \ref{tab:vertices}) is reused. In this master thesis position, velocity, acceleration, jerk and snap are fixed for the start and for the goal vertex since we want to start from complete rest and want to end up in standstill. For the vertex in the middle the position is fixed but velocity, acceleration, jerk and snap are unspecified, resulting in the first 4 optimization variables. Since this is a 3 dimensional problem, the number of geometric optimization variables triple to 12. Together with the segment time of the two segments, the problem ends up with a total number of 14 optimization variables. The influence of the number of optimization varibales on the performance is discussed in section: TODO \newpage
+
+The result of the nonlinear optimization is depicted in figure \ref{pic:optimizedSolution}. Plot a) depicts the position (i.e. the Cartesian coordinates) whereby each of the 3 dimensions is depicted as a single graph. Plot b) shows the velocity of the individual direction as a solid graph. Additional, the velocity in the three-dimensional space (i.e. the Euclidean norm of the velocity vector) is depicted as a dashed graph. Plot c) depicts the acceleration in the individual directions (solid) and the acceleration in the three-dimensional space (dashed). Furthermore the limitation ($v_{max} = 3 \frac{m}{s}$ and $a_{max} = 4 \frac{m}{s^2}$ for this problem) are depicted.
+\vspace*{3\baselineskip}
+
+\begin{figure}[h]
+   \centering
+   \includegraphics[trim = 33mm 20mm 30mm 33mm,width=1\textwidth]{pics/2SegOpti6s52k100.eps}
+>>>>>>> FETCH_HEAD
    \caption{Optimized solution of a trajectory with 2 segments: Plot a) shows the position (i.e. the Cartesian coordinates). Plot b) shows the velocity and plot c) the acceleration. A dashed graph represents the velocity respectively the acceleration in the three-dimensional space. Weighting factor $k_T$ was set to 100.}
    \label{pic:optimizedSolution}
 \end{figure}
@@ -281,22 +315,38 @@ As can be seen in figure \ref{pic:optimizedSolution} a) the trajectory passes th
 In this optimization the user specified weighting factor was set to $k_T = 100$. This rather small value for $k_T$ leads to a trajectory which is neither affected by the limitation on the velocity (the spacial velocity in plot b) is always below the velocity limit) nor by the limitation on acceleration(the spacial acceleration in plot c) is always below the acceleration limit). Nevertheless, the optimized trajectory with a duration of $6.52 s$ is faster then the initial solution with a duration of $7.43 s$.\newline
 
 To get a more aggressive trajectory the value for $k_T$ has to be increased. In figure \ref{pic:optimizedSolution2k190} the optimize trajectory for $k_T = 190$ is depicted. As can be seen in plot b) the limitation on the velocity comes into play, i.e. the spacial velocity is restricted to $v_{max} = 3 \frac{m}{s}$. The duration of the trajectory depicted in figure \ref{pic:optimizedSolution2k190} is $6.01s$. Although the maximal velocity and the maximal acceleration are higher than in figure \ref{pic:optimizedSolution}, the pathway of the spacial velocity and of the spacial acceleration look very similar for $k_T = 100$ and $k_T = 190$.
+<<<<<<< HEAD
 %\vspace*{3\baselineskip}
 
 \begin{figure}[H]
    \centering
    \includegraphics[trim = 35mm 20mm 30mm 15mm,clip,width=1\textwidth]{pics/2SegOpti6s01k190.eps}
+=======
+\vspace*{3\baselineskip}
+
+\begin{figure}[H]
+   \centering
+   \includegraphics[trim = 33mm 20mm 30mm 33mm,width=1\textwidth]{pics/2SegOpti6s01k190.eps}
+>>>>>>> FETCH_HEAD
    \caption{Optimized solution of a trajectory with 2 segments: Plot a) shows the position (i.e. the Cartesian coordinates). Plot b) shows the velocity and plot c) the acceleration. A dashed graph represents the velocity respectively the acceleration in the three-dimensional space. Weighting factor $k_T$ was set to 190.}
    \label{pic:optimizedSolution2k190}
 \end{figure}
 
 
 In a next step the value for $k_T$ is increased even more and set to $k_T = 2000$. The resulting trajectory is depicted in figure \ref{pic:optimizedSolution2k2000}. The duration of this aggressive trajectory is $5.16s$. The pathway of the spacial velocity looks now different than in the previous figures. The spacial velocity not only touches the velocity limit but stays at the limit for circa one second.
+<<<<<<< HEAD
 %\vspace*{3.2\baselineskip}
 
 \begin{figure}[H]
    \centering
    \includegraphics[trim = 35mm 30mm 30mm 15mm,clip,width=1\textwidth]{pics/2SegOpti5s16k2000.eps}
+=======
+\vspace*{3.2\baselineskip}
+
+\begin{figure}[H]
+   \centering
+   \includegraphics[trim = 35mm 23mm 30mm 40mm,width=1\textwidth]{pics/2SegOpti5s16k2000.eps}
+>>>>>>> FETCH_HEAD
    \caption{Optimized solution of a trajectory with 2 segments: Plot a) shows the position (i.e. the Cartesian coordinates). Plot b) shows the velocity and plot c) the acceleration. A dashed graph represents the velocity respectively the acceleration in the three-dimensional space. Weighting factor $k_T$ was set to 2000.}
    \label{pic:optimizedSolution2k2000}
 \end{figure}
@@ -309,7 +359,10 @@ A factor which is independent from the user specified choice of $k_T$ is the pat
 
 To depict the features of a trajectory with more curves an other set of vertices is chosen:
 
+<<<<<<< HEAD
 \begin{table}[H] 
+=======
+>>>>>>> FETCH_HEAD
 \begin{center}
     \begin{tabular}{ | l | c | c | c |}
     \hline
@@ -321,6 +374,7 @@ To depict the features of a trajectory with more curves an other set of vertices
     Goal-Vertex & 1 & -1 & -2\\
     \hline
     \end{tabular}
+<<<<<<< HEAD
 \caption{5 manually chosen  vertices}
     \label{tab:5vertices}
 \end{center}
@@ -333,12 +387,28 @@ The initial solution with 4 segments passing through  the above-noted vertices i
 \begin{figure}[H]
    \centering
    \includegraphics[trim = 35mm 30mm 30mm 15mm,clip,width=1\textwidth]{pics/4SegInit15s67.eps}
+=======
+    \label{tab:5vertices}
+\end{center}
+\vspace*{0.7\baselineskip}
+
+The initial solution is required to define the initial values of the nonlinear optimization. The initial solution with 4 segments passing through  the above-noted vertices is depicted in figure \ref{pic:optimizedSolution4init}. violated.
+\vspace*{3\baselineskip}
+
+\begin{figure}[H]
+   \centering
+   \includegraphics[trim = 35mm 20mm 30mm 37mm,width=1\textwidth]{pics/4SegInit15s67.eps}
+>>>>>>> FETCH_HEAD
    \caption{Initial solution of a trajectory with 4 segments: A dashed graph represents the velocity respectively the acceleration in the three-dimensional space.}
    \label{pic:optimizedSolution4init}
 \end{figure}
 \newpage
 
+<<<<<<< HEAD
 The initial solution is required to define the initial values of the nonlinear optimization.
+=======
+
+>>>>>>> FETCH_HEAD
 As can be seen in plot b) and plot c) neither the limitation on the velocity nor the limitation on the acceleration are violated.
 
 %\begin{figure}[h]
@@ -349,11 +419,19 @@ As can be seen in plot b) and plot c) neither the limitation on the velocity nor
 
 
 Using the unspecified enpoint derivatives $d_P$ and the segment times $T_i$ of the initial solution as initial values for the optimization variables the nonlinear optimization was performed with a weighting factor of $k_T = 2000$. The optimized trajectory is depicted in figure \ref{pic:optimizedSolution4optik2000}. The duration of the optimized trajectory is $10.02s$ whereas the duration of the initial trajectory depicted in figure \ref{pic:optimizedSolution4init} is $15.67s$.
+<<<<<<< HEAD
 
 
 \begin{figure}[H]
    \centering
    \includegraphics[trim = 35mm 30mm 30mm 15mm,clip,width=1\textwidth]{pics/4SegOpti10s01k2000.eps}
+=======
+\vspace*{2.65\baselineskip}
+
+\begin{figure}[H]
+   \centering
+   \includegraphics[trim = 35mm 28mm 30mm 35mm,width=1\textwidth]{pics/4SegOpti10s01k2000.eps}
+>>>>>>> FETCH_HEAD
    \caption{Optimized solution of a trajectory with 4 segments: A dashed graph represents the velocity respectively the acceleration in the three-dimensional space. Weighting factor $k_T$ was set to 2000.}
    \label{pic:optimizedSolution4optik2000} 
 \end{figure}
@@ -364,11 +442,19 @@ In contrast to the aggressive trajectory depicted in figure \ref{pic:optimizedSo
 
 The pathway of a trajectory is mainly determined by the ratio of the segment times and not by the segment times themselves or by the total trajectory time. As mention in section \ref{sec:drawbackInitial}, the segment times from the initial solution do not incorporate the circumstances from one segment to an other. Hence, it is likely to find a better trajectory with the same total time but a different ratio between the segment time. The process of optimizing the ratio of the segment times is implicitly performed during the process of nonlinear optimization. In other words, the nonlinear optimization not only changes the total trajectory time according to the weighting factor $k_T$ but also optimizes the ratio of the segment times. \newline
 Such a change in the pathway is distinguishable between the initial trajectory in figure \ref{pic:optimizedSolution4init} a) and the optimized trajectory in figure \ref{pic:optimizedSolution4optik2000} a). The easiest notable difference is the peak of the $x$ graph with a peak value of 6.95 in the initial trajectory and a peak value of 5.58 in the optimized trajectory. Nevertheless, the changes in the pathway are more presentable in a 3D plot. 
+<<<<<<< HEAD
+=======
+\vspace*{2.6\baselineskip}
+>>>>>>> FETCH_HEAD
 
 
 \begin{figure}[H]
    \centering
+<<<<<<< HEAD
    \includegraphics[trim = 36mm 30mm 33mm 30mm,clip,width=1\textwidth]{pics/4SegInitSpace.eps}
+=======
+   \includegraphics[trim = 36mm 30mm 33mm 50mm,width=1\textwidth]{pics/4SegInitSpace.eps}
+>>>>>>> FETCH_HEAD
    \caption{3D plot of the initial trajectory with 4 segments.The start vertex is located at (0/0/0) and the trajectory proceeds clockwisely.}
    \label{pic:initiSpace} 
 \end{figure}
@@ -378,12 +464,20 @@ Figure \ref{pic:initiSpace} depicts the initial trajectory (from figure \ref{pic
 
 The optimization of the ratio of the segment times, which is implicitly performed during the nonlinear optimization, modifies the pathway of the trajectory which gets smoother, i.e. no sharp corner exist in the optimized trajectory.\newline 
 Figure \ref{pic:optiSpace} depicts the optimized trajectory (from figure \ref{pic:optimizedSolution4optik2000}) in 3D space. Especially the second segment of the optimized trajectory is now more suitable for a dynamic flight. But also the pathway in the region of the 4. vertex (in the upper left corner) is enhanced. The initial trajectory mad a detour before passing the 4 Vertex. This detour, accrued by the suboptimal segment time ratio, is vanished in the optimized trajectory.
+<<<<<<< HEAD
 
+=======
+\vspace*{2.5\baselineskip}
+>>>>>>> FETCH_HEAD
 
 
 \begin{figure}[H]
    \centering
+<<<<<<< HEAD
    \includegraphics[trim = 36mm 30mm 33mm 30mm,clip,width=1\textwidth]{pics/4SegOptiSpace.eps}
+=======
+   \includegraphics[trim = 36mm 30mm 33mm 50mm,width=1\textwidth]{pics/4SegOptiSpace.eps}
+>>>>>>> FETCH_HEAD
    \caption{3D plot of the optimized trajectory with 4 segments.The start vertex is located at (0/0/0) and the trajectory proceeds clockwisely.}
     \label{pic:optiSpace} 
 \end{figure}

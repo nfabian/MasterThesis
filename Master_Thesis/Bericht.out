@@ -26,8 +26,15 @@
 \BOOKMARK [2][-]{subsection.3.3.1}{Rewiring}{section.3.3}% 26
 \BOOKMARK [2][-]{subsection.3.3.2}{Bounding Box}{section.3.3}% 27
 \BOOKMARK [2][-]{subsection.3.3.3}{Ray Check}{section.3.3}% 28
+<<<<<<< HEAD
 \BOOKMARK [0][-]{chapter.4}{Path Plananing}{}% 29
 \BOOKMARK [1][-]{section.4.1}{Usage of the RRT* Vertices}{chapter.4}% 30
 \BOOKMARK [2][-]{subsection.4.1.1}{Vertex Extension}{section.4.1}% 31
 \BOOKMARK [0][-]{appendix.A}{Irgendwas}{}% 32
 \BOOKMARK [0][-]{appendix*.11}{Bibliography}{}% 33
+=======
+\BOOKMARK [0][-]{chapter.4}{Plananing}{}% 29
+\BOOKMARK [1][-]{subsection.4.0.4}{Multiple Vertex Extension}{chapter.4}% 30
+\BOOKMARK [0][-]{appendix.A}{Irgendwas}{}% 31
+\BOOKMARK [0][-]{appendix*.7}{Bibliography}{}% 32
+>>>>>>> FETCH_HEAD
