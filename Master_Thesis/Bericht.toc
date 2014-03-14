@@ -11,18 +11,27 @@
 \contentsline {subsection}{\numberline {2.2.1}Cost Function}{3}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Polynomial Optimization as a Constrained QP}{4}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}Polynomial Optimization as a Unconstrained QP}{4}{subsection.2.2.3}
-\contentsline {subsection}{\numberline {2.2.4}Initial Solution}{5}{subsection.2.2.4}
-\contentsline {subsection}{\numberline {2.2.5}Time Allocation}{7}{subsection.2.2.5}
-\contentsline {section}{\numberline {2.3}Reduce the Optimization Variables}{9}{section.2.3}
-\contentsline {chapter}{\numberline {3}RRT}{11}{chapter.3}
-\contentsline {section}{\numberline {3.1}General}{11}{section.3.1}
-\contentsline {section}{\numberline {3.2}RRT Algorithm}{11}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Goal State}{11}{subsection.3.2.1}
-\contentsline {section}{\numberline {3.3}RRT* Algorithm}{13}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Rewiring}{13}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Bounding Box}{14}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Ray Check}{15}{subsection.3.3.3}
-\contentsline {chapter}{\numberline {4}Plananing}{17}{chapter.4}
-\contentsline {subsection}{\numberline {4.0.4}Multiple Vertex Extension}{17}{subsection.4.0.4}
+\contentsline {section}{\numberline {2.3}Initial Solution}{5}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Drawbacks of the Initial Solution}{7}{subsection.2.3.1}
+\contentsline {section}{\numberline {2.4}Time Allocation}{8}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Nonlinear Optimization}{8}{subsection.2.4.1}
+\contentsline {section}{\numberline {2.5}Pathway of the Trajectory}{14}{section.2.5}
+\contentsline {section}{\numberline {2.6}NLopt}{16}{section.2.6}
+\contentsline {section}{\numberline {2.7}Reduction of the Optimization Variables}{16}{section.2.7}
+\contentsline {chapter}{\numberline {3}RRT}{17}{chapter.3}
+\contentsline {section}{\numberline {3.1}General}{17}{section.3.1}
+\contentsline {section}{\numberline {3.2}RRT Algorithm}{17}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Goal State}{17}{subsection.3.2.1}
+\contentsline {section}{\numberline {3.3}RRT* Algorithm}{19}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Rewiring}{19}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Bounding Box}{20}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Ray Check}{21}{subsection.3.3.3}
+\contentsline {chapter}{\numberline {4}Path Plananing}{23}{chapter.4}
+\contentsline {section}{\numberline {4.1}Usage of the RRT* Vertices}{23}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Vertex Extension}{23}{subsection.4.1.1}
+\contentsline {subsubsection}{Generate a collision-free straight line solution using the RRT* algorithm.}{24}{section*.7}
+\contentsline {subsubsection}{Create an initial trajectory passing through the vertices of the straight line solution.}{25}{section*.8}
+\contentsline {subsubsection}{If the initial solution is in collision, extend the existing vertices by a vertex located on the straight line solution. Repeat this step until the trajectory is collision-free.}{26}{section*.9}
+\contentsline {subsubsection}{Perform a nonlinear optimization on the collision-free trajectory.}{27}{section*.10}
 \contentsline {chapter}{\numberline {A}Irgendwas}{29}{appendix.A}
-\contentsline {chapter}{Bibliography}{31}{appendix*.9}
+\contentsline {chapter}{Bibliography}{31}{appendix*.11}
