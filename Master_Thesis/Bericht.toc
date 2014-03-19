@@ -1,5 +1,5 @@
-\contentsline {chapter}{Abstract}{iii}{chapter*.3}
-\contentsline {chapter}{Symbols}{iv}{chapter*.4}
+\contentsline {chapter}{Abstract}{v}{chapter*.3}
+\contentsline {chapter}{Symbols}{vi}{chapter*.4}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}State of the Art}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Quadratic Programming}{1}{section.1.2}
@@ -26,19 +26,20 @@
 \contentsline {subsection}{\numberline {3.3.1}Rewiring}{19}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}Bounding Box}{20}{subsection.3.3.2}
 \contentsline {subsection}{\numberline {3.3.3}Ray Check}{21}{subsection.3.3.3}
-<<<<<<< HEAD
 \contentsline {chapter}{\numberline {4}Path Plananing}{23}{chapter.4}
 \contentsline {section}{\numberline {4.1}Usage of the RRT* Vertices}{23}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Vertex Extension}{23}{subsection.4.1.1}
-\contentsline {subsubsection}{Generate a collision-free straight line solution using the RRT* algorithm.}{24}{section*.7}
-\contentsline {subsubsection}{Create an initial trajectory passing through the vertices of the straight line solution.}{25}{section*.8}
-\contentsline {subsubsection}{If the initial solution is in collision, extend the existing vertices by a vertex located on the straight line solution. Repeat this step until the trajectory is collision-free.}{26}{section*.9}
-\contentsline {subsubsection}{Perform a nonlinear optimization on the collision-free trajectory.}{27}{section*.10}
-\contentsline {chapter}{\numberline {A}Irgendwas}{29}{appendix.A}
-\contentsline {chapter}{Bibliography}{31}{appendix*.11}
-=======
-\contentsline {chapter}{\numberline {4}Plananing}{23}{chapter.4}
-\contentsline {subsection}{\numberline {4.0.4}Multiple Vertex Extension}{23}{subsection.4.0.4}
+\contentsline {subsubsection}{Generate a collision-free straight line solution using the RRT* algorithm.}{24}{section*.21}
+\contentsline {subsubsection}{Create an initial trajectory passing through the vertices of the straight line solution.}{25}{section*.23}
+\contentsline {subsubsection}{If the initial solution is in collision, extend the existing vertices by a vertex located on the straight line solution. Compute the initial solution including the new vertex. Repeat this step until the trajectory is collision-free.}{26}{section*.25}
+\contentsline {subsubsection}{Perform a nonlinear optimization on the collision-free trajectory.}{27}{section*.27}
+\contentsline {subsubsection}{If the optimized solution is in collision, extend the existing vertices by a vertex located on the straight line solution and restart the nonlinear optimization. Repeat this step until the optimized trajectory is collision-free.}{28}{section*.29}
+\contentsline {subsection}{\numberline {4.1.2}Enlargement of the Bounding Box}{28}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}RRT* Replanning}{28}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Threshold for the RRT* Replanning}{29}{subsection.4.2.1}
+\contentsline {section}{\numberline {4.3}Overall Implementation}{30}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Store the Best Initial Solution}{31}{subsection.4.3.1}
+\contentsline {chapter}{\numberline {5}Results}{33}{chapter.5}
+\contentsline {section}{\numberline {5.1}Performance of NLopt}{33}{section.5.1}
 \contentsline {chapter}{\numberline {A}Irgendwas}{35}{appendix.A}
-\contentsline {chapter}{Bibliography}{37}{appendix*.7}
->>>>>>> FETCH_HEAD
+\contentsline {chapter}{Bibliography}{37}{appendix*.36}
