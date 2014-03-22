@@ -17,24 +17,26 @@
 \BOOKMARK [2][-]{subsection.2.4.1}{Nonlinear Optimization}{section.2.4}% 17
 \BOOKMARK [1][-]{section.2.5}{Pathway of the Trajectory}{chapter.2}% 18
 \BOOKMARK [1][-]{section.2.6}{NLopt}{chapter.2}% 19
-\BOOKMARK [1][-]{section.2.7}{Reduction of the Optimization Variables}{chapter.2}% 20
-\BOOKMARK [0][-]{chapter.3}{RRT}{}% 21
-\BOOKMARK [1][-]{section.3.1}{General}{chapter.3}% 22
-\BOOKMARK [1][-]{section.3.2}{RRT Algorithm}{chapter.3}% 23
-\BOOKMARK [2][-]{subsection.3.2.1}{Goal State}{section.3.2}% 24
-\BOOKMARK [1][-]{section.3.3}{RRT* Algorithm}{chapter.3}% 25
-\BOOKMARK [2][-]{subsection.3.3.1}{Rewiring}{section.3.3}% 26
-\BOOKMARK [2][-]{subsection.3.3.2}{Bounding Box}{section.3.3}% 27
-\BOOKMARK [2][-]{subsection.3.3.3}{Ray Check}{section.3.3}% 28
-\BOOKMARK [0][-]{chapter.4}{Path Plananing}{}% 29
-\BOOKMARK [1][-]{section.4.1}{Usage of the RRT* Vertices}{chapter.4}% 30
-\BOOKMARK [2][-]{subsection.4.1.1}{Vertex Extension}{section.4.1}% 31
-\BOOKMARK [2][-]{subsection.4.1.2}{Enlargement of the Bounding Box}{section.4.1}% 32
-\BOOKMARK [1][-]{section.4.2}{RRT* Replanning}{chapter.4}% 33
-\BOOKMARK [2][-]{subsection.4.2.1}{Threshold for the RRT* Replanning}{section.4.2}% 34
-\BOOKMARK [1][-]{section.4.3}{Overall Implementation}{chapter.4}% 35
-\BOOKMARK [2][-]{subsection.4.3.1}{Store the Best Initial Solution}{section.4.3}% 36
-\BOOKMARK [0][-]{chapter.5}{Results}{}% 37
-\BOOKMARK [1][-]{section.5.1}{Performance of NLopt}{chapter.5}% 38
-\BOOKMARK [0][-]{appendix.A}{Irgendwas}{}% 39
-\BOOKMARK [0][-]{appendix*.36}{Bibliography}{}% 40
+\BOOKMARK [0][-]{chapter.3}{RRT}{}% 20
+\BOOKMARK [1][-]{section.3.1}{General}{chapter.3}% 21
+\BOOKMARK [1][-]{section.3.2}{RRT Algorithm}{chapter.3}% 22
+\BOOKMARK [2][-]{subsection.3.2.1}{Goal State}{section.3.2}% 23
+\BOOKMARK [1][-]{section.3.3}{RRT* Algorithm}{chapter.3}% 24
+\BOOKMARK [2][-]{subsection.3.3.1}{Rewiring}{section.3.3}% 25
+\BOOKMARK [2][-]{subsection.3.3.2}{Bounding Box}{section.3.3}% 26
+\BOOKMARK [2][-]{subsection.3.3.3}{Ray Check}{section.3.3}% 27
+\BOOKMARK [0][-]{chapter.4}{Path Plananing}{}% 28
+\BOOKMARK [1][-]{section.4.1}{Usage of the RRT* Vertices}{chapter.4}% 29
+\BOOKMARK [2][-]{subsection.4.1.1}{Vertex Extension}{section.4.1}% 30
+\BOOKMARK [2][-]{subsection.4.1.2}{Enlargement of the Bounding Box}{section.4.1}% 31
+\BOOKMARK [1][-]{section.4.2}{RRT* Replanning}{chapter.4}% 32
+\BOOKMARK [2][-]{subsection.4.2.1}{Threshold for the RRT* Replanning}{section.4.2}% 33
+\BOOKMARK [1][-]{section.4.3}{Overall Implementation}{chapter.4}% 34
+\BOOKMARK [2][-]{subsection.4.3.1}{Store the Best Initial Solution}{section.4.3}% 35
+\BOOKMARK [0][-]{chapter.5}{Results}{}% 36
+\BOOKMARK [1][-]{section.5.1}{Performance of NLopt}{chapter.5}% 37
+\BOOKMARK [1][-]{section.5.2}{Reduction of the Optimization Variables}{chapter.5}% 38
+\BOOKMARK [2][-]{subsection.5.2.1}{Cost Function Without Endpoint Derivatives}{section.5.2}% 39
+\BOOKMARK [1][-]{section.5.3}{Performance of the RRT* Algorithm}{chapter.5}% 40
+\BOOKMARK [0][-]{appendix.A}{Irgendwas}{}% 41
+\BOOKMARK [0][-]{appendix*.39}{Bibliography}{}% 42
