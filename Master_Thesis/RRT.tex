@@ -2,13 +2,13 @@
 
 \section{General}
 
-The goal of this thesis was not only to generate a numerically stable, snap optimized polynomial trajectory but also to explore a densely packed (indoor) environment and plan an aggressive trajectory in between the obstacles. Hence, the Rapidly-Exploring Random Tree (RRT) algorithm is used to find a collision-free straight line solution through densely packed environments. The sampling points oft the RRT (or RRT*) algorithm are then used as the vertices in the polynomial optimization.
+The goal of this thesis is not only to generate a numerically stable, snap optimized polynomial trajectory but also to explore a densely packed (indoor) environment and plan an aggressive trajectory in between the obstacles. Hence, the Rapidly-Exploring Random Tree (RRT) algorithm is used to find a collision-free straight line solution through densely packed environments. The sampling points of the RRT (or RRT*) algorithm are then used as the vertices in the polynomial optimization.
 
 
 \section{RRT Algorithm}\label{sec:RRT}
 
 RRT is a computational efficient algorithm to find a path in a high dimensional space by randomly building a space-filling tree. The sampling points are drawn randomly from the sample space and the tree grows incrementally. 
-For each new sample the algorithm attempts to build a collision-free connection to the nearest state in the tree. If a collision-free connection is possible the sample and the connection are added to the tree. \newline
+For each new sample the algorithm attempts to build a collision-free connection to the nearest state in the tree. If a collision-free connection is possible, the sample and the connection are added to the tree. \newline
 
 An iteration of the RRT algorithm can be depicted schematically:
 
@@ -36,12 +36,12 @@ Another strategy is to steer the RRT algorithm directly to the goal state. In ad
 
 In all the cases where a direct collision-free connection between start and goal state is not possible the iteration with the goal state will not succeed in a first attempt. Hence the iterations with the randomly sampled states described in section \ref{sec:RRT} are needed to build the space filling tree.\newline
 
-Figure \ref{pic:smallGamma} depicts the straight line solution of the RRT algorithm with a fixed goal state. The figure is in bird's eye perspective and shows a crossing of different hallways. The blue cells represents the floor and the green cells represents the walls. The map was generated with a stereo camera and was not reworked. Therefore some of the cells of the floor which should be occupied/blue are left free. 
+Figure \ref{pic:smallGamma} depicts the straight line solution of the RRT algorithm with a fixed goal state. The figure is in bird's eye perspective and shows a crossing of different hallways. The blue cells represent the floor and the green cells represent the walls. The map was generated with a stereo camera and was not reworked. Therefore, some of the cells of the floor which should be occupied/blue are left free. 
 
 \begin{figure}[H]
    \centering
    \includegraphics[trim = 50mm 0mm 30mm 0mm,clip,width=0.8\textwidth]{pics/smallGammaP.png}
-   \caption{Straight line solution of the RRT algorithm with a fixed goal state. Start and goal state are each represented by a red $x$-vector and a green $y$-vector. The random sampled states are depicted as orange dots.}
+   \caption{Straight line solution of the RRT algorithm with a fixed goal state. The start state (upper left corner) and the goal state (lower right corner) are each represented by a $x$ and  $y$-vector. The random sampled states are depicted as orange dots.}
    \label{pic:smallGamma}
 \end{figure}
 
@@ -49,20 +49,20 @@ Figure \ref{pic:smallGamma} depicts the straight line solution of the RRT algori
 
 \section{RRT* Algorithm}\label{sec:RRTstar}
 
-In contrast to the RRT algorithm the RRT* (or RRT Star) algorithm not only tries to connect to the nearest state in the tree but to several states near the sampled state. The user can define a threshold (on the distance) which defines which states of the tree belongs to the "near states". If there is no state within the user specified range the algorithm attempts to build a collision-free connection to the nearest state in the tree just as the RRT algorithm.  \newline
-As a first step, the sampled state is connected to the best state among the near states whereas best means minimum cost/distance. Once the sampled state is added to the tree all the other states among the set of near states are connected to the sampled state. If the connection is collision-free and the cost of the total path is smaller than the cost of the existing path, the old path is replaced. \newline
+In contrast to the RRT algorithm, the RRT* (or RRT Star) algorithm not only tries to connect to the nearest state in the tree but to several states near the sampled state. The user can define a threshold (on the distance) which defines which states of the tree belongs to the "near states". If there is no state within the user specified range the algorithm attempts to build a collision-free connection to the nearest state in the tree just as the RRT algorithm.  \newline
+As a first step, the sampled state is connected to the best state among the near states whereas "best" means minimum cost/distance. Once the sampled state is added to the tree, all the other states among the set of near states are connected to the sampled state. If the connection is collision-free and the cost of the total path is smaller than the cost of the existing path, the old path is replaced. \newline
 
 An iteration of the RRT* algorithm can be depicted schematically:
 
 
 \begin{enumerate}
   \item Generate a random sample
-  \item A threshold defines a set of near states
+  \item Define a threshold for a set of near states
   \item Try to build a collision-free connection to best state among the near states
   \item Add the sampled state and the connection to the tree 
   \item Try to connect all the other states from the set with the sampled state 
   \item Replace the old path if the new one has a smaller cost
-  \item If there is no near state within the threshold apply the RRT algorithm
+  \item If there is no near state within the threshold, apply the RRT algorithm
 \end{enumerate}
 
 
@@ -70,8 +70,7 @@ Because the RRT* algorithm tries to connect to several states each iteration, th
 
 \subsection{Rewiring}
 
-The sequence of step 5 and step 6 of the RRT* algorithm ("Try to connect all the other states from the set with the sampled state", "Replace the old path if the new one has a smaller cost") are called "rewiring". \newline 
-The threshold which defines the set of near states depends on a user specified parameter $\gamma$. In this case, the threshold is the radius of a sphere, i.e. all the near states are located within this sphere. The radius $r$ can be calculated according to
+The sequence of step 5 and step 6 of the RRT* algorithm is called "rewiring". The amount of rewiring is defined by a threshold which specifies the set of near states. The threshold, in our case the radius of a sphere, depends on an user specified parameter $\gamma$. I.e. all the near states are located within this sphere. The radius $r$ can be calculated according to
 
 
 \begin{equation}
@@ -81,29 +80,29 @@ r = \gamma * \left(\frac{ln(n+1)}{n+1}\right)^{1/d}
 
 where $n$ is the number of states which are already in the tree. The dimension of the state space $d$ is a fixed parameter and $ln$ represents the natural logarithm.\newline
 
-As mention in section \ref{sec:RRTstar} the RRT* algorithm is computationally more expensive but returns trajectory with lower cost. Both aspects are caused by the rewiring and are therefore strongly influenced by the parameter $\gamma$. A large $\gamma$ defines a large sphere, hence it is likely to have more states (which are already in the tree) to be located within the sphere. The rewiring of the near states tends to result in shorter trajectories with fewer segments.
+As mentioned in section \ref{sec:RRTstar}, the RRT* algorithm is computationally more expensive but delivers trajectories with lower cost. Both aspects are caused by the rewiring and are therefore strongly influenced by the parameter $\gamma$. A large $\gamma$ defines a large sphere, hence it is likely to have more states (which are already in the tree) to be located within the sphere. The rewiring of the near states tends to result in shorter trajectories with fewer segments.\newline
 
-Figure \ref{pic:smallBBX} depicts the straight line solution of the RRT* algorithm with a fixed goal state. Compared to figure \ref{pic:smallGamma} a superior trajectory is found since a rewiring of the states in the tree was performed.
+Figure \ref{pic:smallBBX} depicts the straight line solution of the RRT* algorithm with a fixed goal state. Compared to figure \ref{pic:smallGamma}, a superior trajectory is found due to rewiring of the states in the tree.
 
 \begin{figure}[H]
    \centering
    \includegraphics[trim = 50mm 0mm 30mm 0mm,clip,width=0.8\textwidth]{pics/smallBBXP.png}
-   \caption{Straight line solution of the RRT* algorithm with a fixed goal state. Start and goal state are each represented by a red $x$-vector and a green $y$-vector. The random sampled states are depicted as orange dots. The $\gamma$ parameter in this example was set to $\gamma = 1.5$.}
+   \caption{Straight line solution of the RRT* algorithm with a fixed goal state. The start state and the goal state are each represented by a $x$ and  $y$-vector. The random sampled states are depicted as orange dots. The $\gamma$ parameter in this example was set to $\gamma = 1.5$.}
    \label{pic:smallBBX}
 \end{figure}
 
 
 \subsection{Bounding Box}\label{sec:bbx}
 
-The straight line solution in figure \ref{pic:smallBBX} is collision-free but passes by very close to the walls. In real life application not only a point mass but a object (in this master thesis a UAV) should follow the trajectory. Therefore a bounding box is installed around the trajectory. \newline
-The bounding box is implemented as a cuboid. The 3 dimension of the cuboid can be defined individually. The trajectory is then divided into a discrete trajectory and the bounding box is installed around the discrete points. If there is a obstacle in one of the bounding boxes the hole straight line is considered as  in collision. \newline
+The straight line solution in figure \ref{pic:smallBBX} is collision-free but very close to the walls. In real life application not only a point mass but a object (in this master thesis a UAV) should follow the trajectory. Therefore a bounding box needs to be installed around the trajectory. \newline
+The bounding box is implemented as a cuboid. The 3 dimensions of the cuboid can be defined individually. The trajectory is then divided into a discrete trajectory and the bounding box is installed around the discrete points. If there is a obstacle in one of the bounding boxes the hole straight line is considered "in collision". \newline
 
-Figure \ref{pic:bbx} depicts the straight line solution of the RRT* algorithm with a bounding box. In contrast to figure \ref{pic:smallBBX} the trajectory is now located more central in the hallway because the bounding box makes it impossible to pass by the wall very close. Because the trajectory proceeds less direct from start to goal state the total distance of the trajectory increases. 
+Figure \ref{pic:bbx} depicts the straight line solution of the RRT* algorithm with a bounding box. In contrast to figure \ref{pic:smallBBX}, the trajectory is now located more central in the hallway because the bounding box makes it impossible to pass by the wall very close. Because the trajectory proceeds less direct from the start state to the goal state, the total distance of the trajectory increases. 
 
 \begin{figure}[H]
    \centering
    \includegraphics[trim = 50mm 0mm 30mm 0mm,clip,width=0.8\textwidth]{pics/largeBBXP.png}
-   \caption{Straight line solution of the RRT* algorithm with bounding box. Due to the bounding box the trajectory is located more central in the hallway because the bounding box makes it impossible to pass by the wall very close. The $\gamma$ parameter in this example was set to $\gamma = 1.5$.}
+   \caption{Straight line solution of the RRT* algorithm with bounding box. Due to the bounding box the trajectory is located more central in the hallway. The $\gamma$ parameter in this example was set to $\gamma = 1.5$.}
    \label{pic:bbx}
 \end{figure}
 
