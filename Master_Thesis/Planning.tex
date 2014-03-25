@@ -22,7 +22,7 @@ The process of generating a collision-free optimized trajectory can be summarize
 
 This schematic description of the process is depicted step by step in the subsequent figures for a better understanding.
 
-\subsubsection{Generate a collision-free straight line solution using the RRT* algorithm.}
+\subsubsection{1. Generate a collision-free straight line solution using the RRT* algorithm}
 
 Figure \ref{pic:RRTstepOne} depicts the straight line solution of the RRT* algorithm, which is explained in section \ref{sec:RRTstar}.  The $\gamma$ parameter, which is needed to calculate the radius $r$ in equation \ref{equ:ballradius}, is set to $\gamma = 1.5$. Furthermore, the side length of the bounding box is set to $0.5m$ for each dimension. Although the hight of a UAV is commonly smaller than the length and the width this is required if great roll and pitch angles are permitted. \newline
 
@@ -31,40 +31,41 @@ Please note that, due to the randomness of the RRT* algorithm, the straight line
 
 \begin{figure}[h]
    \centering
-   \includegraphics[trim = 45mm 0mm 35mm 0mm,clip,width=1\textwidth]{pics/extensionLongP.png}
+   \includegraphics[trim = 45mm 0mm 35mm 0mm,clip,width=0.8\textwidth]{pics/extensionLongP.png}
    \caption{A collision-free straight line solution with 4 segments.}
    \label{pic:RRTstepOne}
 \end{figure}
 
 
-\subsubsection{Create an initial trajectory passing through the vertices of the straight line solution.}
+\subsubsection{2. Create an initial trajectory passing through the vertices of the straight line solution}
 
 The start and goal vertex (each marked by a red and green arrow in figure \ref{pic:RRTstepOne}) as well ass the 3 vertices (each marked by a orange dot in figure \ref{pic:RRTstepOne}) defined by the solution of the RRT* algorithm are now used to generate the initial polynomial solution according to equation \ref{equ:dpstar} and equation \ref{equ:segmentTime}. \newline
 
-The initial trajectory passing through the vertices of the RRT* algorithm is depicted in figure \ref{pic:RRTstepTwo}. In the second segment there is a collision between the trajectory and the wall of the hallway (represented by green boxes). 
-
-
+The initial trajectory passing through the vertices of the RRT* algorithm is depicted in figure \ref{pic:RRTstepTwo}. The start vertex is in the upper left corner and the goal vertex is in the lower right corner. In the second segment there is a collision between the trajectory and the wall of the hallway (represented by green boxes). 
 
 \begin{figure}[h]
    \centering
-   \includegraphics[trim = 45mm 0mm 35mm 0mm,clip,width=1\textwidth]{pics/extensionALongP.png}
+   \includegraphics[trim = 45mm 0mm 35mm 0mm,clip,width=0.8\textwidth]{pics/extensionALongP.png}
    \caption{Initial trajectory with 4 segments. The start vertex is located in the upper left corner and the goal vertex is located in the lower right corner. There is a collision in the second segment of the trajectory.}
 \label{pic:RRTstepTwo}
 \end{figure}
 
-\subsubsection{If the initial solution is in collision, extend the existing vertices by a vertex located on the straight line solution. Compute the initial solution including the new vertex. Repeat this step until the trajectory is collision-free.}
+\subsubsection{3. If the initial solution is in collision, extend the existing vertices by a vertex located on the straight line solution. Compute the initial solution including the new vertex. Repeat this step until the trajectory is collision-free}
 
 To avoid the collision, a new vertex which is located on the straight line connection of the second segment has to be added. As a result, the trajectory is forced to stay closer to the straight line solution which is collision-free. \newline
-The trajectory after one cycle of vertex extension is depicted in figure \ref{pic:RRTstep3}. A new vertex, represented by a red dot, is placed on the straight line connection of the second segment.
+
+The trajectory after one cycle of vertex extension is depicted in figure \ref{pic:RRTstep3}. A new vertex, represented by a red dot, is placed on the straight line connection of the second segment. \newline
+As can be seen in figure \ref{pic:RRTstep3} the new vertex is not placed in the middle of the straight line connection. Especially if the segment is long and the collision is close to the start or the end of the segment, placing the new vertex in the middle is not an appropriate approach. \newline
 
 \begin{figure}[h]
    \centering
-   \includegraphics[trim = 45mm 0mm 35mm 5mm, clip,width=1\textwidth]{pics/extensionBLongPred.eps}
+   \includegraphics[trim = 45mm 0mm 35mm 5mm, clip,width=0.8\textwidth]{pics/extensionBLongPred.eps}
    \caption{Polynomial trajectory after a vertex extension, whereas the new vertex is represented by a red dot. The red line is not part of the trajectory but depicts the straight line connection of this segment.}
 \label{pic:RRTstep3}
 \end{figure}
 
-As can be seen in figure \ref{pic:RRTstep3} the new vertex is not placed in the middle of the straight line connection. Especially if the segment is long and the collision is close to the start or the end of the segment, placing the new vertex in the middle is not an appropriate approach. To get an idea in which part of the trajectory the collision takes place, the length of the trajectory from the start of the segment to the collision is compared to the total trajectory length in this segment. This ratio is then mapped to the straight line solution and the additional vertex is placed. 
+
+To get an idea in which part of the trajectory the collision takes place, the length of the trajectory from the start of the segment to the collision is compared to the total trajectory length in this segment. This ratio is then mapped to the straight line solution and the additional vertex is placed. 
 As explained in section \ref{sec:bbx}, the trajectory is in collision as soon as there is any obstacle inside the bounding box. Applied to the trajectory in figure \ref{pic:RRTstepTwo} this means that the collision is detected in the first half of the second segment before the trajectory itself proceeds through the wall of the hallway. Hence, the new vertex in figure \ref{pic:RRTstep3} is closer to the start of the second segment than to the end.
 
 
@@ -77,27 +78,32 @@ As explained in section \ref{sec:bbx}, the trajectory is in collision as soon as
 
 
 
-\subsubsection{Perform a nonlinear optimization on the collision-free trajectory.}
+\subsubsection{4. Perform a nonlinear optimization on the collision-free trajectory}
 
-Using the trajectory depicted in figure \ref{pic:RRTstep3} initial values a nonlinear optimization is performed. The optimized trajectory is depicted in figure \ref{pic:RRTstep4}.
+Using the trajectory depicted in figure \ref{pic:RRTstep3} as initial values a nonlinear optimization is performed. The optimized trajectory is depicted in figure \ref{pic:RRTstep4}. \newline
+
+
+As mentioned in section \ref{sec:pathway}, the pathway of a snap minimized trajectory is mainly determined by the ratio of the segment times. Since the the ratio of the segment times of the trajectory in figure \ref{pic:RRTstep3} is no optimal the pathway contains unnecessary detours. \newline
+After the nonlinear optimization, which includes an implicit optimization of the ratio of the segment times, the pathway is smoother and more suitable for a dynamic UAV flight.
+
 
 \begin{figure}[h]
    \centering
-   \includegraphics[trim = 45mm 0mm 35mm 0mm, clip,width=1\textwidth]{pics/extensionCLongP.png}
+   \includegraphics[trim = 45mm 0mm 35mm 0mm, clip,width=0.8\textwidth]{pics/extensionCLongP.png}
    \caption{The optimized trajectory with 5 segments.}
 \label{pic:RRTstep4}
 \end{figure}
 
-As mentioned in section \ref{sec:pathway}, the pathway of a snap minimized trajectory is mainly determined by the ratio of the segment times. Since the the ratio of the segment times of the trajectory in figure \ref{pic:RRTstep3} is no optimal the pathway contains unnecessary detours. After the nonlinear optimization, which includes an implicit optimization of the ratio of the segment times, the pathway is smoother and more suitable for a dynamic UAV flight.
-
-\subsubsection{If the optimized solution is in collision, extend the existing vertices by a vertex located on the straight line solution and restart the nonlinear optimization. Repeat this step until the optimized trajectory is collision-free.}
+\subsubsection{5. If the optimized solution is in collision, extend the existing vertices by a vertex located on the straight line solution and restart the nonlinear optimization. Repeat this step until the optimized trajectory is collision-free}
 In this example the optimized trajectory is collision free without any further vertex extensions. Since the optimization smooths the trajectory but does not change the pathway of the trajectory completely, this is the general case. \newline
 
 Nevertheless, if the optimized trajectory is in collision the vertex extension is equivalent to the procedure depicted in figure \ref{pic:RRTstep3}.
 
 \subsection{Enlargement of the Bounding Box}\label{sec:enlargementBBX}
 
-The initial trajectory passing through the vertices of the RRT* solution can be in collision although the straight line solution is collision free. This scenario is depicted in figure \ref{pic:RRTstepTwo}. As demonstrated, the collision can be bypassed by a vertex extension. But an additional vertex means additional optimization variables (endpoint derivatives and segment times). Thus not only the nonlinear optimization takes longer but the trajectory is more restricted and looses the possibility of more efficient and dynamical maneuvers.  \newline
+The initial trajectory passing through the vertices of the RRT* solution can be in collision although the straight line solution is collision free. This scenario is depicted in figure \ref{pic:RRTstepTwo}. \newpage
+
+As demonstrated, the collision can be bypassed by a vertex extension. But an additional vertex means additional optimization variables (endpoint derivatives and segment times). Thus not only the nonlinear optimization takes longer but the trajectory is more restricted and looses the possibility of more efficient and dynamical maneuvers.  \newline
 
 Regarding the drawbacks listed above, it is preferable to avoid the necessity of a vertex extension. Therefore the bounding box is enlarged during the RRT* algorithm and then reduced to its original size for the trajectory planning. The resulting enlarged security corridor reduces the possibility of a collision in the initial trajectory. This enlargement of the bounding box can not be arbitrary high since the RRT* algorithm would no longer be able to find any solution through a densely packed environment if the bounding box for the straight line solution is to high. \newline
 In this master thesis the individual dimension of the bounding box are enlarged by $20\%$ for the straight line solution. This range reduces the necessity of a vertex extension but still enables the RRT* algorithm to find a solution through a densely packed environment.
@@ -126,14 +132,14 @@ There has to be a user specified threshold which defines after how many vertex e
 
 Since one cycle of vertex extension defines a new vertex in every segment which is in collision, it is not trivial to find the difficult segment in the initial solution.
 
-\begin{figure}[h]
+\begin{figure}[H]
    \centering
    \includegraphics[width=0.5\textwidth]{pics/recogniseSegment.eps}
    \caption{One cycle of vertex extension. In the initial solution on the left there is a collision in segment 1 and segment 3. After one cycle of vertex extension there are 6 segments. }
    \label{pic:recognise}
 \end{figure}
 
-In figure \ref{pic:recognise} the segments are numbered. The left side depicts the initial lines solution with a collision in segment 1 and segment 3. For both segments, a new vertex is added an illustrated as a red dot in the right side of figure \ref{pic:recognise}. To find the difficult segment, 4 pairs of numbers have to be stored. The pairs consists of the initial segment which is in collision and of the corresponding segment after the vertex extension. \newpage
+In figure \ref{pic:recognise} the segments are numbered. The left side depicts the initial lines solution with a collision in segment 1 and segment 3. For both segments, a new vertex is added an illustrated as a red dot in the right side of figure \ref{pic:recognise}. To find the difficult segment, 4 pairs of numbers have to be stored. The pairs consists of the initial segment which is in collision and of the corresponding segment after the vertex extension. \newline
 
 The four pairs resulting from figure \ref{pic:recognise} are listed in the following table:
 
@@ -154,20 +160,20 @@ The four pairs resulting from figure \ref{pic:recognise} are listed in the follo
 \end{table}
 
 In the example depicted in figure \ref{pic:recognise} there is a collision in segment 5 after the vertex extension. 
-Therefore, pair iv) gets significant and segment 3 (from the initial straight line solution) is exposed as a difficult segment.
+Therefore, pair iv) gets significant and segment 3 (from the initial straight line solution) is exposed as a difficult segment.\newpage
 
 \section{Overall Implementation}
 
-All the features which are discussed so far can now be combined to the final implementation:
+All the features which are discussed so far can now be combined to the final implementation: \newline
 
-\begin{figure}[h]
+\begin{figure}[H]
    \centering
    \includegraphics[width=0.6\textwidth]{pics/overall.eps}
    \caption{Schematic depiction of the final implementation of the path planning algorithm.}
    \label{pic:overall}
 \end{figure}
 
-Figure \ref{pic:overall} is simplified and does not describe all the necessary information but is useful to understand the basic process. For instance, the schematic depiction does not explain exactly how to proceed after the RRT* replanning and ow many replannings should be allowed.
+Figure \ref{pic:overall} is simplified and does not describe all the necessary information but is useful to understand the basic process. For instance, the schematic depiction does not explain exactly how to proceed after the RRT* replanning and ow many replannings should be allowed. 
 
 \subsection{Store the Best Initial Solution}
 
