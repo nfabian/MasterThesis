@@ -186,6 +186,52 @@ A difficult segment in the initial solution does not mean that is impossible to 
 
 Not until then, the RRT* replanning is performed. The difficult section of the original straight line solution is then replaced by the replanned section and a polynomial trajectory passing trough the vertices is computed. The new trajectory on his part can be in collision and vertex extensions have to be performed until the trajectory is collision-free. Once the trajectory is collision-free, the total cost of the new trajectory is compared to the total cost of the first trajectory and the one with the lower cost is used for the nonlinear optimization.
 
+\section{Robot Operating System}
+
+The whole program is built using the \href{http://www.ros.org/}{Robot Operating System (ROS)} \cite{ROS}. To be exact, it is built as a ROS node. A node is a process that performs computation. Nodes are combined together into a graph and communicate with one another using streaming topics, services, and the Parameter Server. A very powerful feature of ROS is "Dynamic Reconfigure". This tool allows the user to change parameters during runtime. Runtime is the period of time when a program is running. It begins when a program is opened (or executed) and ends with the program is quit or closed.
+
+\subsection{Dynamic Reconfigure}
+
+In this master thesis, several imported parameters are modifiable by Dynamic Reconfigure. Two of them mainly determine the performance of the RRT* algorithm:
+
+\begin{itemize}
+  \item $\gamma$
+  \item $endRRT$
+\end{itemize}
+
+The $\gamma$ parameter determines the amount of rewiring and is described in detail in section \ref{sec:Rewiring}. $endRRT$ defines how many additional RRT* iteration are performed after a collision-free straight line connection is found. Thus, $endRRT = 2000$ leads to 2000 additional iterations in which the algorithm can improve the straight lines solution via rewiring. \newline
+
+The next two parameters which are included into Dynamic Reconfigure are used to modify NLopt:
+
+\begin{itemize}
+  \item $J_{rel}$
+  \item $k_T$
+\end{itemize}
+
+
+$J_{rel}$ is defined in section \ref{sec:NLopt} and is a ending criteria for NLopt. The weighting factor $k_T$ is defined in equation \ref{equ:total_cost} in section \ref{sec:penalty} and specifies the aggressiveness of a trajectory. \newline
+
+The next parameter concerns the RRT* replanning. As explained in section \ref{sec:replanningPassages}, a RRT* replanning is beneficial if there are difficult passages in the initial straight line solution. It may happen, that the straight line solution with the replanned segments still has difficult passages. 
+
+\begin{itemize}
+  \item $maxReplanning$
+\end{itemize}
+
+$maxReplanning$ defines the max. number of RRT* replannings. After this number of replannings, the optimization starts with the best solution so fare. If no collision-free solution has been found, the complete RRT* planning starts again. \newline
+
+The last parameter is bool parameter (either "true" or "false") affects the start vertex of a trajectory:
+
+\begin{itemize}
+  \item $currentPose$
+\end{itemize}
+
+
+$currentPose$ defines if the start vertex is either manually chosen or the current pose of the UAV. In this master thesis, the current pose is provided by \href{http://www.vicon.com/}{Vicon} \cite{Vicon}.
+
+
+
+
+
 
 %\subsection{Multiple Vertex Extension}
 

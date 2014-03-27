@@ -393,7 +393,7 @@ Figure \ref{pic:optiSpace} depicts the optimized trajectory (from figure \ref{pi
 
 \section{NLopt}\label{sec:NLopt}
 
-For all the nonlinear optimizations which were performed in the previous sections, NLopt, an open-source library for nonlinear optimization, was applied. The optimization algorithm tries to minimize the cost function every iteration and needs parameters for termination condition in order to know when to stop.\newline
+For all the nonlinear optimizations which were performed in the previous sections, \href{http://ab-initio.mit.edu/wiki/index.php/NLopt}{NLopt} \cite{NLopt}, an open-source library for nonlinear optimization, was applied. The optimization algorithm tries to minimize the cost function every iteration and needs parameters for termination condition in order to know when to stop.\newline
 The termination condition of the optimization can be specified by the optimization variables as well as by the total cost. Generally, the termination conditions are formulated relative to the current value(s). For instance, if the relative termination condition for the total cost $J_{rel}$ is set to $0.01$ the optimization ends if the total cost changes less than one percent during an iteration. The relative termination condition for the optimization variables $x_{rel}$ is only fulfilled if all of the optimization variables change less than the threshold in one iteration.
 Additionally, an absolute termination condition $x_{abs}$ can be applied to the optimization variables. This termination condition is only needed if one or several optimization variables are close to zero and the relative criteria therefore does not work properly. \newline 
 

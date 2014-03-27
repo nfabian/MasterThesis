@@ -68,7 +68,7 @@ An iteration of the RRT* algorithm can be depicted schematically:
 
 Because the RRT* algorithm tries to connect to several states each iteration, the procedure to find a path takes longer and is computationally more expensive. However, solutions with lower cost can be found which is more important for most real life applications.
 
-\subsection{Rewiring}
+\subsection{Rewiring}\label{sec:Rewiring}
 
 The sequence of step 5 and step 6 of the RRT* algorithm is called "rewiring". The amount of rewiring is defined by a threshold which specifies the set of near states. The threshold, in our case the radius of a sphere, depends on an user specified parameter $\gamma$. I.e. all the near states are located within this sphere. The radius $r$ can be calculated according to
 
@@ -108,9 +108,64 @@ Figure \ref{pic:bbx} depicts the straight line solution of the RRT* algorithm wi
 
 \subsection{Ray Check}
 
- TODO: verbindung zu Octompa
- 
- matlab figure
+In the figures above, the map depicting the hallways is a so-called "OctoMap" \cite{OctoMap}. In an OctoMap, the obstacles are stored as cells. Every cell has its individually key, which defines the location in the map. This keys are stored in a tree, named octree.\newline
+
+As discussed in section \ref{sec:bbx}, a bounding box is used to check the trajectory for collisions. To do so, the trajectory is discretized and the bounding box is installed around every discrete trajectory-point. The bounding box is implemented as a cuboid with its edges aligned to the coordinate system of the map. Since the straight line connections can be situated arbitrary in space, a certain amount of overlap of the bounding boxes is required to guarantee that all the space around the trajectory is collision-free. As a downside of this overlap, several cells of the OctoMap are checked twice.\newline
+
+To avoid the unnecessary double-check of the cells, a new approach called "Ray Check" is implemented. The idea is to generate a ray from one point in the OctoMap to another. Then, all the keys of the cells through which the trajectory passes are stored. Subsequently, the keys are checked if one of them represent a occupied cell. \newpage
+
+Since a single ray does not represent any volume, multiple rays have to be tested. This corridor of rays is implemented as a tube in this master thesis.\newline
+
+Figure \ref{pic:RayCheck} depicts the start of a straight line connection (red) which is situated arbitrary in space. Around the start point, a set of points is arranged on a circle. The same set of points have to be installed around the end point of the straight line connection (which is not depicted in figure \ref{pic:RayCheck}). If all the points around the start point are connected via a ray to the corresponding point around the end point, a tube develops.
+
+
+
+
+\begin{figure}[h]
+   \centering
+   \includegraphics[trim = 25mm 10mm 30mm 10mm,clip,width=0.8\textwidth]{pics/RayCheck.eps}
+   \caption{Points are arranged on a circle around the start point of a straight line connection. The points have to be connected to the corresponding point from the end point.}
+   \label{pic:RayCheck}
+\end{figure}
+
+A problem with the Ray Check approach are floating objects. A object which is floating, i.e. has no connection to any wall, could be located inside the corridor without being touched by a ray. Generally, there are no floating objects in a indoor environment. Still, a lamp which hangs on a thin cable could lead to a floating object in the OctoMap if the cable is not detected.\newpage
+
+To resolve the problem, the OctoMap has either to be reworked or more points on different circles, each with a different radius, have to be added. Both possibilities would need additional computational time. First, the simple approach depicted in figure \ref{pic:RayCheck} is compared to the Bounding Box approach to decide if a further development of the Ray Check approach makes sense.\newline
+
+The two approaches have been tested for the start and goal point depicted in figure \ref{pic:differentGoalRRT}. The RRT* algorithm has been stopped as soon as a collision-free straight line solution was found. 
+
+\begin{figure}[H]
+   \centering
+   \includegraphics[trim = 0mm 86mm 94mm 0mm,clip,width=0.8\textwidth]{pics/ML4.eps}
+   \caption{Bird's eye perspective on a hallway in the "ML" building of the ETH Zurich. The start and the end point are illustrated.}
+   \label{pic:differentGoalRRT}
+\end{figure}
+
+The size of the bounding box was $0.5m$ in all dimensions. The straight line connection was discretized in $0.3m$ steps. The radius for the Ray Check was $0.5m$ and the points were place every 0.2 radian. The comparison has been performed for $\gamma = 1$ and $\gamma = 1.5$. All the combinations have been executed 10 times and the average computational times are listed in the following table:
+
+
+
+
+
+\begin{table}[H] 
+\begin{center}
+    \begin{tabular}{ | c | c | c |}
+    \hline
+    Approach &  Time for $\gamma = 1$ &  Time for $\gamma = 1.5$ \\ \hline
+    Bounding Box & 0.343  & 0.643  \\ \hline
+    Ray Check & 0.473 & 1.233 \\
+    \hline
+    \end{tabular}
+\caption{Average computational time for the two approaches "Bounding Box" and "Ray Check".}
+    \label{tab:RayCheck}
+\end{center}
+\end{table}
+
+As can bee seen, the Bound Box approach performs better, independent of the $\gamma$ parameter. Anyway, the difference gets more significant if $\gamma$ and therefore the amount of rewiring increases.\newline
+
+The Bounding Box approach performs better according to table \ref{tab:RayCheck} and does not have any problems with floating objects. Therefore, only the Bounding Box approach is progressed. 
+
+
 
 
 

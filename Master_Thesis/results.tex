@@ -1,7 +1,7 @@
 \chapter{Results}\label{chap:Results}
 
 
-\section{Performance of the RRT* Algorithm}
+\section{Performance of the RRT* Algorithm}\label{sec:performanceRRT}
 
 In this master thesis, the performance of the RRT* algorithm itself was not improved but the parameters were tuned to serve the nonlinear optimization in an optimal manner.\newline
 As mentioned in section \ref{sec:RRTstar}, the calculation time of the RRT* algorithm is mainly defined by the "rewiring" and therefore by the user specified parameter $\gamma$ (used in equation \ref{equ:ballradius}). A good straight line solution, whereas good means a small length of the straight line solution, does not necessarily lead to a good polynomial trajectory. The influence of the user specified parameter $\gamma$ on the final trajectory and the corresponding calculation time is evaluated in this section. \newline
@@ -231,7 +231,7 @@ The result of the three techniques are listed in the following table:
 \end{center}
 \end{table}
 
-As mentioned above $FullPivLU$ is very accurate. In the two above noted tests (and also in other performed tests) the other two techniques led to the same result as $FullPivLU$, meaning there were no numerical stability issues. This is due to the fact, that $R_{pp}$ is quadratic and a band matrix. A band matrix is a sparse matrix whose non-zero entries are confined to a diagonal band. Band matrices are beneficial from a computational point of view. \newline
+As mentioned above $FullPivLU$ is very accurate. In the two above noted tests (and also in other performed tests) the other two techniques led to the same result as $FullPivLU$, meaning there were no numerical instability issues. This is due to the fact, that $R_{pp}$ is quadratic and a band matrix. A band matrix is a sparse matrix whose non-zero entries are confined to a diagonal band. Band matrices are beneficial from a computational point of view. \newline
 
 Since the numerical stability is given for all of the techniques the determining factor is the computational time. Therefore, the $Inverse$ is the preferable technique! \newline
 
@@ -246,11 +246,103 @@ Although the number of segments are slightly different (based on the randomness 
 
 
 During the further procedure of comparing the two approaches, the focus is on the final trajectory cost.
-As a consequence of the reduction of the optimization variables, approach B is not able to reach the global minimum of the cost function in all cases. Approach A on the other hand, is theoretical allays able to reach the global minimum of the cost function. In practice, depending on the initial values and on the ending criteria, it happens that the optimization only finds a local minimum. The performance of the two strategies has therefore to be testes experimentally. \newline
+As a consequence of the reduction of the optimization variables, approach B is not able to reach the global minimum of the cost function in all cases. Approach A on the other hand, is theoretical allays able to reach the global minimum of the cost function. In practice, depending on the initial values and on the ending criteria, it happens that the optimization only finds a local minimum. The performance of the two strategies has therefore to be testes experimentally. \newpage
 
-Here comes the comparison!!!!!
+In addition, a third approach is tested. In one trajectory optimization, approach B is applied in the first place and this result is than used as the initial value for approach A. Thus, the third approach is a combination of approach A and approach B and is called approach BA because of the chronological order. \newline
 
-\newpage
+To start with, the simple set of vertices from table \ref{tab:vertices} is reused. As depited in figure \ref{pic:optimizedSolution}, a weighting factor of $k_T = 100$ does not lead to any values near the limitation. In this case, the global minimum of the cost function \ref{pic:optimizedSolution} can be found by only manipulating the segment times $T_i$. The endpoint derivatives $d_p$ as optimization variables are redundant. The only termination criteria for NLopt was $J_{rel} = 0.001$.
+
+
+
+\begin{table}[H] 
+\begin{center}
+    \begin{tabular}{| c | c |  c |}
+    \hline
+    Approach & Optimization Time & Final Cost \\ \hline
+  A & $1.48s$ & 944.887 \\ \hline
+  B & $0.01s$ & 944.319 \\ \hline
+ BA & $0.04s$ & 944.318 \\
+    \hline
+    \end{tabular}
+    \caption{Optimization time and final cost for a trajectory with 2 segments. Weighting factor $k_T$ was set to 100 and NLopt ending criteria $J_{rel}$ was set to 0.001.}
+    \label{tab:ABBA1}
+\end{center}
+\end{table}
+
+
+As explained above, the final cost depicted in table \ref{tab:ABBA1} is (beside some numerical differences) the same for the three approaches. Approach B is the fastest and approach A is by fare the slowest. \newline
+
+Now, the weighting factor $k_T$ is increased to 2000 (corresponding to figure \ref{pic:optimizedSolution2k2000}). This  aggressive trajectory stays at the velocity limit for a certain time. Due to that, the segment times $T_i$ are no longer sufficient to reach the global minimum of the cost function.
+
+\begin{table}[H] 
+\begin{center}
+    \begin{tabular}{| c | c |  c |}
+    \hline
+    Approach & Optimization Time & Final Cost \\ \hline
+  A & $0.17s$ & 15295.9 \\ \hline
+  B & $0.02s$ &  15994.5\\ \hline
+ BA & $0.12s$ &  15047.9\\
+    \hline
+    \end{tabular}
+    \caption{Optimization time and final cost for a trajectory with 2 segments. Weighting factor $k_T$ was set to 2000 and NLopt ending criteria $J_{rel}$ was set to 0.001.}
+    \label{tab:ABBA2}
+\end{center}
+\end{table}
+
+As can be seen in table \ref{tab:ABBA2}, approach B is again the fastest one. Due to the velocity limitation, approach B is not able to reach the global minimum of the cost function. Comparing the cost of approach A (which could theoretically reach the global minimum) and approach BA, is seems surprising that approach A could not find a trajectory as good as approach BA did. The reason is that approach A got stuck in a local minimum. \newline
+
+But how could approach BA overcome this local minimum? Part A of approach BA only starts as soon as part B is terminated. Therefore, the initial values for part A are closer to the global minimum and the estimation of the initial step size for NLopt is improved. Both factors lead to a better overall performance of the NLopt algorithm and approach BA can find the best trajectory. \newpage
+
+\subsubsection{Interim Conclusion}
+
+As can bee seen in table \ref{tab:MLoptimizationTime}, approach A is very slow if the number of segments is high. In addition, approach BA performs better in terms of final cost as can be seen in talbe \ref{tab:ABBA2}. Taken together, approach A is the approach with the worst performance and is not used any longer.\newline
+
+So far, approach B and approach BA have been compared for a trajectory with 2 segments. In a next step, approach BA was used to find a trajectory from the start vertex to "Goal 1" in figure \ref{pic:differentGoal}. For 5 iterations, the number of segments fluctuated between 6 and 9, i.e. between 55 and 105 optimization variables for approach A. The parameters for this examination were: $\gamma = 1$, $J_{rel} = 0.02$ and $k_T = 5000$. A high $k_T$ guaranties that the limitation on velocity/acceleration are called into action. Otherwise, part B would have no effect at all. The optimization times for both parts are measured individually, i.e. optimization time A is the additional time after part B.
+
+
+
+\begin{table}[H] 
+\begin{center}
+    \begin{tabular}{| c | c | c |  c | c |}
+    \hline
+   Segments  & Opt. Time B & Final Cost B & Opt. Time A & Final Cost A \\ \hline
+ 7& $0.54s$ & 51577.7 & $2.79s$ & 51575 \\ \hline
+ 6& $0.09s$ & 54142.9 & $1.72s$ & 53917.5 \\ \hline
+ 9& $0.38s$ &56145.4  & $8.53s$ & 56129.6 \\ \hline
+ 7& $0.49s$ & 57110.4 & $1.47s$ & 57104.4 \\ \hline
+ 6& $0.03s$ & 56020.7  & $1.76s$ & 55553.2\\
+    \hline
+    \end{tabular}
+    \caption{Multiple trajectories from start to "Goal 1". Parameters were: $\gamma = 1$, $J_{rel} = 0.02$ and $k_T = 5000$.}
+    \label{tab:BA_compare}
+\end{center}
+\end{table}
+
+\subsubsection{Conclusion}
+
+Apparent from table \ref{tab:BA_compare}, the benefit of connecting part A in series with part B is little. Furthermore, part B (and therefore approach B) is much faster than part A. \newline
+
+As a consequence, approach B has the best overall performance. Approach BA only makes sense if a trajectory with little segments has to be optimized to its  limits.
+
+
+
+%\begin{table}[H] 
+%\begin{center}
+%    \begin{tabular}{| c | c |  c |}
+%    \hline
+%    Approach & Optimization Time & Final Cost \\ \hline
+%  A & $0.42s$ &  29429.3\\ \hline
+%  B & $0.08s$ & 26651.4\\ \hline
+% BA & $0.71s$ &  25726\\
+%    \hline
+%    \end{tabular}
+%    \caption{Optimization time and final cost for a trajectory with 4 segments. Weighting factor $k_T$ was set to 2000 and NLopt ending criteria $J_{rel}$ was set to 0.001.}
+%    \label{tab:ABBA3}
+%\end{center}
+%\end{table}
+
+
+%\newpage
 
 
 %\section{Performance of the RRT* Algorithm}
