@@ -190,7 +190,7 @@ Not until then, the RRT* replanning is performed. The difficult section of the o
 
 The whole program is built using the \href{http://www.ros.org/}{Robot Operating System (ROS)} \cite{ROS}. To be exact, it is built as a ROS node. A node is a process that performs computation. Nodes are combined together into a graph and communicate with one another using streaming topics, services, and the Parameter Server. A very powerful feature of ROS is "Dynamic Reconfigure". This tool allows the user to change parameters during runtime. Runtime is the period of time when a program is running. It begins when a program is opened (or executed) and ends with the program is quit or closed.
 
-\subsection{Dynamic Reconfigure}
+\subsection{Dynamic Reconfigure}\label{sec:dynamicRec}
 
 In this master thesis, several imported parameters are modifiable by Dynamic Reconfigure. Two of them mainly determine the performance of the RRT* algorithm:
 
@@ -226,7 +226,7 @@ The last parameter is bool parameter (either "true" or "false") affects the star
 \end{itemize}
 
 
-$currentPose$ defines if the start vertex is either manually chosen or the current pose of the UAV. In this master thesis, the current pose is provided by \href{http://www.vicon.com/}{Vicon} \cite{Vicon}.
+$currentPose$ defines if the start vertex is either manually chosen or the actual current pose of the UAV. In this master thesis, the current pose is provided by \href{http://www.vicon.com/}{Vicon} \cite{Vicon}, a powerful object tracking solution providing unrivaled data accuracy for integration in to 3D applications. If $currentPose$ is set to "true" the current pose provided by Vicon is used as the start vertex.
 
 
 

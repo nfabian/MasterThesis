@@ -1,15 +1,24 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.9.19)  27 MAR 2014 16:13
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  28 MAR 2014 16:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **Bericht.tex
 (./Bericht.tex
 LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, lo
-aded.
-(/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman-x-2012-05-30, ngerman-x-2012-05-30, afrikaans, ancientgreek, ibycus, arabi
+c, armenian, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danis
+h, dutch, ukenglish, usenglishmax, esperanto, estonian, ethiopic, farsi, finnis
+h, french, friulan, galician, german, ngerman, swissgerman, monogreek, greek, h
+ungarian, icelandic, assamese, bengali, gujarati, hindi, kannada, malayalam, ma
+rathi, oriya, panjabi, tamil, telugu, indonesian, interlingua, irish, italian, 
+kurmanji, latin, latvian, lithuanian, mongolian, mongolianlmc, bokmal, nynorsk,
+ polish, portuguese, romanian, romansh, russian, sanskrit, serbian, serbianc, s
+lovak, slovenian, spanish, swedish, turkish, turkmen, ukrainian, uppersorbian, 
+welsh, loaded.
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -28,10 +37,10 @@ File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 Package: ethasl 2008/07/01, v. 1.1
 
 providing new style definitions and commands ---
-(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
 
-(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/tools/array.sty
 Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen103
 \extrarowheight=\dimen104
@@ -39,21 +48,21 @@ Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \extratabsurround=\skip43
 \backup@length=\skip44
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 130.
 
-(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+(/usr/local/texlive/2012/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count88
@@ -61,35 +70,34 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \everycr=\toks15
 \minrowclearance=\skip45
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/ntgclass/a4.sty
-Package: a4 2004/04/15 v1.2g A4 based page layout
-)
-(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+(./a4.sty
+Package: a4 1999/03/03 v1.2f A4 based page layout
+) (/usr/local/texlive/2012/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks16
 \inpenc@posthook=\toks17
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/latin1.def
 File: latin1.def 2008/03/30 v1.1d Input encoding file
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2000/07/18 v2.13 AMS math features
 \@mathmargin=\skip46
 
 For additional information on amsmath, use the `?' option.
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks18
 \ex@=\dimen105
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen106
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count89
@@ -130,30 +138,30 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 LaTeX Info: Redefining \[ on input line 2666.
 LaTeX Info: Redefining \] on input line 2667.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2009/06/22 v3.00
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks23
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
@@ -161,20 +169,19 @@ Package graphics Info: Driver file: pdftex.def on input line 91.
 \Gin@req@height=\dimen114
 \Gin@req@width=\dimen115
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/epsfig.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/epsfig.sty
 Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
 \epsfxsize=\dimen116
 \epsfysize=\dimen117
 )
-(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count101
 \float@exts=\toks24
 \float@box=\box28
 \@float@everytoks=\toks25
 \@floatcapt=\box29
-)
-(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+) (./fancyhdr.sty
 \fancy@headwidth=\skip49
 \f@ncyO@elh=\skip50
 \f@ncyO@erh=\skip51
@@ -184,11 +191,10 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \f@ncyO@erf=\skip55
 \f@ncyO@olf=\skip56
 \f@ncyO@orf=\skip57
-)
-(/usr/share/texlive/texmf-dist/tex/latex/rotating/rotating.sty
+) (/usr/local/texlive/2012/texmf-dist/tex/latex/rotating/rotating.sty
 Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \c@r@tfl@t=\count102
@@ -197,21 +203,21 @@ Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 \rot@float@box=\box30
 \rot@mess@toks=\toks26
 )
-(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/multirow/multirow.sty
 \bigstrutjot=\dimen118
 )
-(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2012/02/19 v3.2f Customizing captions (AR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2012/01/12 v1.4b caption3 kernel (AR)
 \captionmargin=\dimen119
 \captionmargin@=\dimen120
@@ -224,19 +230,19 @@ Package: caption3 2012/01/12 v1.4b caption3 kernel (AR)
 Package caption Info: float package is loaded.
 Package caption Info: rotating package is loaded.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2012/01/12 v1.1d Sub-captions (AR)
 \c@subfigure=\count104
 \c@subtable=\count105
 )
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2012/05/13 v6.82q Hypertext links for LaTeX
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
 
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
 Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
@@ -276,22 +282,22 @@ Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
 Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+(/usr/local/texlive/2012/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen125
 \Hy@linkcounter=\count106
 \Hy@pagecounter=\count107
 
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+(/usr/local/texlive/2012/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/05/13 v6.82q Hyperref: PDFDocEncoding definition (HO)
 )
 \Hy@SavedSpaceFactor=\count108
 
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Hyper figures OFF on input line 4062.
@@ -322,12 +328,12 @@ LaTeX Info: Redefining \pageref on input line 5847.
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/local/texlive/2012/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/05/13 v6.82q Hyperref driver for pdfTeX
 \Fld@listcount=\count114
 \c@bookmark@seq@number=\count115
 
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
@@ -338,13 +344,13 @@ Package color Info: Redefining color black on input line 34.
 Package color Info: Redefining color white on input line 35.
 Package hyperref Info: Option `colorlinks' set `true' on input line 46.
 
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/epstopdf.sty
 Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)
 
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 )
 Package grfext Info: Graphics extension search list:
@@ -352,12 +358,13 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 452.
 
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 )))
 (./Bericht.aux (./preamble.aux) (./introduction.aux) (./trajectory.aux)
-(./RRT.aux) (./Planning.aux) (./results.aux) (./bibliography.aux))
+(./RRT.aux) (./Planning.aux) (./results.aux) (./future.aux) (./bibliography.aux
+))
 \openout1 = `Bericht.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 82.
@@ -374,8 +381,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 82.
 LaTeX Font Info:    ... okay on input line 82.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 82.
 LaTeX Font Info:    ... okay on input line 82.
-
-(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+ (/usr/local/texlive/2012/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count116
 \scratchdimen=\dimen128
@@ -394,10 +400,10 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box32
 Package hyperref Info: Link coloring ON on input line 82.
- (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+ (/usr/local/texlive/2012/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count122
@@ -412,12 +418,12 @@ LaTeX Info: Redefining \nameref on input line 82.
 
 LaTeX Font Info:    Try loading font information for U+msa on input line 88.
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 88.
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
 Package epstopdf Info: Source file: <pics/ethlogo.eps>
@@ -431,7 +437,7 @@ Package epstopdf Info: Source file: <pics/ethlogo.eps>
 (epstopdf)             \includegraphics on input line 88.
 Package epstopdf Info: Output file is already uptodate.
 
-<pics/ethlogo-eps-converted-to.pdf, id=184, 192.72pt x 59.22125pt>
+<pics/ethlogo-eps-converted-to.pdf, id=213, 192.72pt x 59.22125pt>
 File: pics/ethlogo-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pics/ethlogo-eps-converted-to.pdf>
@@ -452,7 +458,7 @@ Package epstopdf Info: Source file: <pics/asllogo.eps>
 -to.pdf pics/asllogo.eps>
 (epstopdf)             \includegraphics on input line 88.
 Package epstopdf Info: Output file is already uptodate.
-<pics/asllogo-eps-converted-to.pdf, id=185, 429.605pt x 196.735pt>
+<pics/asllogo-eps-converted-to.pdf, id=214, 429.605pt x 196.735pt>
 File: pics/asllogo-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pics/asllogo-eps-converted-to.pdf>
@@ -488,14 +494,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./pics/ethlogo-eps-convert
-ed-to.pdf> <./pics/asllogo-eps-converted-to.pdf>] [2
+{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./pics/
+ethlogo-eps-converted-to.pdf> <./pics/asllogo-eps-converted-to.pdf>] [2
 
 ]
 \openout2 = `preamble.aux'.
 
- (./preamble.tex (./Bericht.toc
-[1
+
+(./preamble.tex (./Bericht.toc [1
 
 
 ])
@@ -504,6 +510,11 @@ ed-to.pdf> <./pics/asllogo-eps-converted-to.pdf>] [2
 
  [2]
 Underfull \hbox (badness 10000) in paragraph at lines 33--34
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
  []
 
@@ -614,7 +625,7 @@ Package epstopdf Info: Source file: <pics/time_estimation.eps>
 onverted-to.pdf pics/time_estimation.eps>
 (epstopdf)             \includegraphics on input line 187.
 Package epstopdf Info: Output file is already uptodate.
-<pics/time_estimation-eps-converted-to.pdf, id=350, 664.4825pt x 441.65pt>
+<pics/time_estimation-eps-converted-to.pdf, id=386, 664.4825pt x 441.65pt>
 File: pics/time_estimation-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pics/time_estimation-eps-converted-to.pdf>
@@ -636,7 +647,7 @@ Package epstopdf Info: Source file: <pics/2SegInit7s43.eps>
 erted-to.pdf pics/2SegInit7s43.eps>
 (epstopdf)             \includegraphics on input line 217.
 Package epstopdf Info: Output file is already uptodate.
-<pics/2SegInit7s43-eps-converted-to.pdf, id=365, 1000.73875pt x 1038.88126pt>
+<pics/2SegInit7s43-eps-converted-to.pdf, id=401, 1000.73875pt x 1038.88126pt>
 File: pics/2SegInit7s43-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pics/2SegInit7s43-eps-converted-to.pdf>
@@ -681,7 +692,7 @@ converted-to.pdf pics/2SegOpti6s52k100.eps>
 (epstopdf)             \includegraphics on input line 270.
 Package epstopdf Info: Output file is already uptodate.
 
-<pics/2SegOpti6s52k100-eps-converted-to.pdf, id=408, 1000.73875pt x 1038.88126p
+<pics/2SegOpti6s52k100-eps-converted-to.pdf, id=445, 1000.73875pt x 1038.88126p
 t>
 File: pics/2SegOpti6s52k100-eps-converted-to.pdf Graphic file (type pdf)
  <use pics/2SegOpti6s52k100-eps-converted-to.pdf>
@@ -706,7 +717,7 @@ converted-to.pdf pics/2SegOpti6s01k190.eps>
 (epstopdf)             \includegraphics on input line 285.
 Package epstopdf Info: Output file is already uptodate.
 
-<pics/2SegOpti6s01k190-eps-converted-to.pdf, id=430, 1000.73875pt x 1038.88126p
+<pics/2SegOpti6s01k190-eps-converted-to.pdf, id=467, 1000.73875pt x 1038.88126p
 t>
 File: pics/2SegOpti6s01k190-eps-converted-to.pdf Graphic file (type pdf)
  <use pics/2SegOpti6s01k190-eps-converted-to.pdf>
@@ -729,7 +740,7 @@ f>
 (epstopdf)             \includegraphics on input line 296.
 Package epstopdf Info: Output file is already uptodate.
 
-<pics/2SegOpti5s16k2000-eps-converted-to.pdf, id=449, 1000.73875pt x 1038.88126
+<pics/2SegOpti5s16k2000-eps-converted-to.pdf, id=485, 1000.73875pt x 1038.88126
 pt>
 File: pics/2SegOpti5s16k2000-eps-converted-to.pdf Graphic file (type pdf)
  <use pics/2SegOpti5s16k2000-eps-converted-to.pdf>
@@ -753,7 +764,7 @@ verted-to.pdf pics/4SegInit15s67.eps>
 (epstopdf)             \includegraphics on input line 332.
 Package epstopdf Info: Output file is already uptodate.
 
-<pics/4SegInit15s67-eps-converted-to.pdf, id=469, 1000.73875pt x 1038.88126pt>
+<pics/4SegInit15s67-eps-converted-to.pdf, id=505, 1000.73875pt x 1038.88126pt>
 File: pics/4SegInit15s67-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pics/4SegInit15s67-eps-converted-to.pdf>
@@ -773,7 +784,7 @@ s-converted-to.pdf pics/4SegOpti10s01k2000.eps>
 (epstopdf)             \includegraphics on input line 355.
 Package epstopdf Info: Output file is already uptodate.
 
-<pics/4SegOpti10s01k2000-eps-converted-to.pdf, id=489, 1000.73875pt x 1038.8812
+<pics/4SegOpti10s01k2000-eps-converted-to.pdf, id=525, 1000.73875pt x 1038.8812
 6pt>
 File: pics/4SegOpti10s01k2000-eps-converted-to.pdf Graphic file (type pdf)
  <use pics/4SegOpti10s01k2000-eps-converted-to.pdf>
@@ -795,7 +806,7 @@ verted-to.pdf pics/4SegInitSpace.eps>
 (epstopdf)             \includegraphics on input line 372.
 Package epstopdf Info: Output file is already uptodate.
 
-<pics/4SegInitSpace-eps-converted-to.pdf, id=512, 1000.73875pt x 1038.88126pt>
+<pics/4SegInitSpace-eps-converted-to.pdf, id=548, 1000.73875pt x 1038.88126pt>
 File: pics/4SegInitSpace-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pics/4SegInitSpace-eps-converted-to.pdf>
@@ -819,7 +830,7 @@ verted-to.pdf pics/4SegOptiSpace.eps>
 (epstopdf)             \includegraphics on input line 387.
 Package epstopdf Info: Output file is already uptodate.
 
-<pics/4SegOptiSpace-eps-converted-to.pdf, id=531, 1000.73875pt x 1038.88126pt>
+<pics/4SegOptiSpace-eps-converted-to.pdf, id=567, 1000.73875pt x 1038.88126pt>
 File: pics/4SegOptiSpace-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pics/4SegOptiSpace-eps-converted-to.pdf>
@@ -861,7 +872,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--38
 
  []
 
-<pics/smallGammaP.png, id=564, 1343.0175pt x 1124.2pt>
+<pics/smallGammaP.png, id=600, 1343.0175pt x 1124.2pt>
 File: pics/smallGammaP.png Graphic file (type png)
 
 <use pics/smallGammaP.png>
@@ -882,7 +893,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 83--84
 
  []
 
-<pics/smallBBXP.png, id=579, 1365.1pt x 1197.47375pt>
+<pics/smallBBXP.png, id=615, 1365.1pt x 1197.47375pt>
 File: pics/smallBBXP.png Graphic file (type png)
  <use pics/smallBBXP.png>
 Package pdftex.def Info: pics/smallBBXP.png used on input line 89.
@@ -893,7 +904,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 97--99
 
  []
 
-<pics/largeBBXP.png, id=597, 1334.9875pt x 1245.65375pt>
+<pics/largeBBXP.png, id=633, 1334.9875pt x 1245.65375pt>
 File: pics/largeBBXP.png Graphic file (type png)
 
 <use pics/largeBBXP.png>
@@ -927,7 +938,7 @@ Package epstopdf Info: Source file: <pics/RayCheck.eps>
 d-to.pdf pics/RayCheck.eps>
 (epstopdf)             \includegraphics on input line 126.
 Package epstopdf Info: Output file is already uptodate.
-<pics/RayCheck-eps-converted-to.pdf, id=616, 691.58376pt x 743.77875pt>
+<pics/RayCheck-eps-converted-to.pdf, id=652, 691.58376pt x 743.77875pt>
 File: pics/RayCheck-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pics/RayCheck-eps-converted-to.pdf>
@@ -949,7 +960,7 @@ Package epstopdf Info: Source file: <pics/ML4.eps>
 pdf pics/ML4.eps>
 (epstopdf)             \includegraphics on input line 139.
 Package epstopdf Info: Output file is already uptodate.
-<pics/ML4-eps-converted-to.pdf, id=632, 586.19pt x 355.3275pt>
+<pics/ML4-eps-converted-to.pdf, id=668, 586.19pt x 355.3275pt>
 File: pics/ML4-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pics/ML4-eps-converted-to.pdf>
@@ -981,7 +992,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--28
 [25
 
 
-] <pics/extensionLongP.png, id=670, 1180.41pt x 1142.2675pt>
+] <pics/extensionLongP.png, id=707, 1180.41pt x 1142.2675pt>
 File: pics/extensionLongP.png Graphic file (type png)
 
 <use pics/extensionLongP.png>
@@ -993,7 +1004,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--43
  []
 
 [26 <./pics/extensionLongP.png>]
-<pics/extensionALongP.png, id=686, 1222.5675pt x 1131.22626pt>
+<pics/extensionALongP.png, id=722, 1222.5675pt x 1131.22626pt>
 File: pics/extensionALongP.png Graphic file (type png)
 
 <use pics/extensionALongP.png>
@@ -1020,7 +1031,7 @@ df>
 s-converted-to.pdf pics/extensionBLongPred.eps>
 (epstopdf)             \includegraphics on input line 62.
 Package epstopdf Info: Output file is already uptodate.
-<pics/extensionBLongPred-eps-converted-to.pdf, id=690, 971.63pt x 897.3525pt>
+<pics/extensionBLongPred-eps-converted-to.pdf, id=726, 971.63pt x 897.3525pt>
 File: pics/extensionBLongPred-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pics/extensionBLongPred-eps-converted-to.pdf>
@@ -1033,7 +1044,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 83--84
  []
 
 [28 <./pics/extensionBLongPred-eps-converted-to.pdf>]
-<pics/extensionCLongP.png, id=717, 1202.4925pt x 1124.2pt>
+<pics/extensionCLongP.png, id=753, 1202.4925pt x 1124.2pt>
 File: pics/extensionCLongP.png Graphic file (type png)
 
 <use pics/extensionCLongP.png>
@@ -1076,7 +1087,7 @@ s-converted-to.pdf pics/vertexExtensionRRT.eps>
 (epstopdf)             \includegraphics on input line 124.
 Package epstopdf Info: Output file is already uptodate.
 
-<pics/vertexExtensionRRT-eps-converted-to.pdf, id=728, 174.6525pt x 276.03125pt
+<pics/vertexExtensionRRT-eps-converted-to.pdf, id=764, 174.6525pt x 276.03125pt
 >
 File: pics/vertexExtensionRRT-eps-converted-to.pdf Graphic file (type pdf)
  <use pics/vertexExtensionRRT-eps-converted-to.pdf>
@@ -1101,7 +1112,7 @@ converted-to.pdf pics/recogniseSegment.eps>
 (epstopdf)             \includegraphics on input line 138.
 Package epstopdf Info: Output file is already uptodate.
 
-<pics/recogniseSegment-eps-converted-to.pdf, id=740, 398.48875pt x 274.02374pt>
+<pics/recogniseSegment-eps-converted-to.pdf, id=776, 398.48875pt x 274.02374pt>
 File: pics/recogniseSegment-eps-converted-to.pdf Graphic file (type pdf)
 <use pics/recogniseSegment-eps-converted-to.pdf>
 Package pdftex.def Info: pics/recogniseSegment-eps-converted-to.pdf used on inp
@@ -1137,7 +1148,7 @@ Package epstopdf Info: Source file: <pics/overall.eps>
 (epstopdf)             \includegraphics on input line 174.
 Package epstopdf Info: Output file is already uptodate.
 
-<pics/overall-eps-converted-to.pdf, id=759, 370.38374pt x 490.83376pt>
+<pics/overall-eps-converted-to.pdf, id=795, 370.38374pt x 490.83376pt>
 File: pics/overall-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pics/overall-eps-converted-to.pdf>
@@ -1158,7 +1169,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 185--186
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 198.
 
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
@@ -1198,7 +1209,7 @@ Package epstopdf Info: Source file: <pics/boxplot1.eps>
 d-to.pdf pics/boxplot1.eps>
 (epstopdf)             \includegraphics on input line 12.
 Package epstopdf Info: Output file is already uptodate.
-<pics/boxplot1-eps-converted-to.pdf, id=797, 560.0925pt x 421.575pt>
+<pics/boxplot1-eps-converted-to.pdf, id=834, 560.0925pt x 421.575pt>
 File: pics/boxplot1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pics/boxplot1-eps-converted-to.pdf>
@@ -1230,7 +1241,7 @@ Package epstopdf Info: Source file: <pics/boxplot_time.eps>
 erted-to.pdf pics/boxplot_time.eps>
 (epstopdf)             \includegraphics on input line 30.
 Package epstopdf Info: Output file is already uptodate.
-<pics/boxplot_time-eps-converted-to.pdf, id=814, 560.0925pt x 421.575pt>
+<pics/boxplot_time-eps-converted-to.pdf, id=850, 560.0925pt x 421.575pt>
 File: pics/boxplot_time-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pics/boxplot_time-eps-converted-to.pdf>
@@ -1259,7 +1270,7 @@ File: pics/ML4-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: pics/ML4-eps-converted-to.pdf used on input line 49.
 (pdftex.def)             Requested size: 361.34999pt x 192.72842pt.
 
-<pics/MapNlopt.png, id=836, 890.32625pt x 1264.725pt>
+<pics/MapNlopt.png, id=872, 890.32625pt x 1264.725pt>
 File: pics/MapNlopt.png Graphic file (type png)
  <use pics/MapNlopt.png>
 Package pdftex.def Info: pics/MapNlopt.png used on input line 72.
@@ -1368,48 +1379,84 @@ Underfull \hbox (badness 10000) in paragraph at lines 323--324
 
 
 ]
+\openout2 = `future.aux'.
+
+ (./future.tex
+Chapter 6.
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--16
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
+
+ []
+
+[45
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
+
+ []
+
+) [46]
 \openout2 = `bibliography.aux'.
 
- (./bibliography.tex [45
+ (./bibliography.tex [47
 
 
-]) [46]
+
+
+]) [48]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 143.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 143.
  (./Bericht.aux (./preamble.aux)
 (./introduction.aux) (./trajectory.aux) (./RRT.aux) (./Planning.aux)
-(./results.aux) (./bibliography.aux))
+(./results.aux) (./future.aux) (./bibliography.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 143.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 143.
 Package rerunfilecheck Info: File `Bericht.out' has not changed.
-(rerunfilecheck)             Checksum: 941459A3A565CF3E7BAE70ADD19F8D6A;3103.
+(rerunfilecheck)             Checksum: AA75572A4FAA2AA1968A315ECFCDEEBA;3626.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 143.
  ) 
 Here is how much of TeX's memory you used:
- 7964 strings out of 495059
- 119351 string characters out of 3182030
- 225034 words of memory out of 3000000
- 10764 multiletter control sequences out of 15000+200000
+ 7998 strings out of 493488
+ 120093 string characters out of 3141326
+ 227252 words of memory out of 3000000
+ 10905 multiletter control sequences out of 15000+200000
  9335 words of font info for 35 fonts, out of 3000000 for 9000
- 14 hyphenation exceptions out of 8191
+ 957 hyphenation exceptions out of 8191
  41i,15n,43p,1088b,436s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Bericht.pdf (52 pages, 4334430 bytes).
+</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
+</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></us
+r/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
+local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
+cal/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/loca
+l/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/t
+exlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texl
+ive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
+ve/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive
+/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on Bericht.pdf (54 pages, 4343712 bytes).
 PDF statistics:
- 1027 PDF objects out of 1200 (max. 8388607)
- 870 compressed objects within 9 object streams
- 199 named destinations out of 1000 (max. 500000)
- 617 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1082 PDF objects out of 1200 (max. 8388607)
+ 922 compressed objects within 10 object streams
+ 211 named destinations out of 1000 (max. 500000)
+ 673 words of extra memory for PDF output out of 10000 (max. 10000000)
 

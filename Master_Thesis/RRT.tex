@@ -106,7 +106,7 @@ Figure \ref{pic:bbx} depicts the straight line solution of the RRT* algorithm wi
    \label{pic:bbx}
 \end{figure}
 
-\subsection{Ray Check}
+\subsection{Ray Check}\label{sec:RayCheck}
 
 In the figures above, the map depicting the hallways is a so-called "OctoMap" \cite{OctoMap}. In an OctoMap, the obstacles are stored as cells. Every cell has its individually key, which defines the location in the map. This keys are stored in a tree, named octree.\newline
 
@@ -152,8 +152,8 @@ The size of the bounding box was $0.5m$ in all dimensions. The straight line con
     \begin{tabular}{ | c | c | c |}
     \hline
     Approach &  Time for $\gamma = 1$ &  Time for $\gamma = 1.5$ \\ \hline
-    Bounding Box & 0.343  & 0.643  \\ \hline
-    Ray Check & 0.473 & 1.233 \\
+    Bounding Box & $0.343s$  & $0.643s$  \\ \hline
+    Ray Check & $0.473s$ & $1.233s$ \\
     \hline
     \end{tabular}
 \caption{Average computational time for the two approaches "Bounding Box" and "Ray Check".}

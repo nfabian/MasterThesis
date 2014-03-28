@@ -28,11 +28,11 @@
 \contentsline {chapter}{\numberline {4}Path Plananing}{25}{chapter.4}
 \contentsline {section}{\numberline {4.1}Usage of the RRT* Vertices}{25}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Vertex Extension}{25}{subsection.4.1.1}
-\contentsline {subsubsection}{1. Generate a collision-free straight line solution using the RRT* algorithm}{26}{section*.23}
-\contentsline {subsubsection}{2. Create an initial trajectory passing through the vertices of the straight line solution}{26}{section*.25}
-\contentsline {subsubsection}{3. If the initial solution is in collision, extend the existing vertices by a vertex located on the straight line solution. Compute the initial solution including the new vertex. Repeat this step until the trajectory is collision-free}{27}{section*.27}
-\contentsline {subsubsection}{4. Perform a nonlinear optimization on the collision-free trajectory}{28}{section*.29}
-\contentsline {subsubsection}{5. If the optimized solution is in collision, extend the existing vertices by a vertex located on the straight line solution and restart the nonlinear optimization. Repeat this step until the optimized trajectory is collision-free}{29}{section*.31}
+\contentsline {subsubsection}{1. Generate a collision-free straight line solution using the RRT* algorithm}{26}{section*.24}
+\contentsline {subsubsection}{2. Create an initial trajectory passing through the vertices of the straight line solution}{26}{section*.26}
+\contentsline {subsubsection}{3. If the initial solution is in collision, extend the existing vertices by a vertex located on the straight line solution. Compute the initial solution including the new vertex. Repeat this step until the trajectory is collision-free}{27}{section*.28}
+\contentsline {subsubsection}{4. Perform a nonlinear optimization on the collision-free trajectory}{28}{section*.30}
+\contentsline {subsubsection}{5. If the optimized solution is in collision, extend the existing vertices by a vertex located on the straight line solution and restart the nonlinear optimization. Repeat this step until the optimized trajectory is collision-free}{29}{section*.32}
 \contentsline {subsection}{\numberline {4.1.2}Enlargement of the Bounding Box}{29}{subsection.4.1.2}
 \contentsline {section}{\numberline {4.2}RRT* Replanning}{30}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Threshold for the RRT* Replanning}{31}{subsection.4.2.1}
@@ -46,10 +46,17 @@
 \contentsline {section}{\numberline {5.3}Reduction of the Optimization Variables}{38}{section.5.3}
 \contentsline {subsection}{\numberline {5.3.1}Cost Function Without Endpoint Derivatives}{39}{subsection.5.3.1}
 \contentsline {subsection}{\numberline {5.3.2}Comparison of the Analytical Solvers}{39}{subsection.5.3.2}
-\contentsline {subsubsection}{FullPivLU}{40}{section*.41}
-\contentsline {subsubsection}{HouseholderQR}{40}{section*.42}
-\contentsline {subsubsection}{Inverse}{40}{section*.43}
+\contentsline {subsubsection}{FullPivLU}{40}{section*.42}
+\contentsline {subsubsection}{HouseholderQR}{40}{section*.43}
+\contentsline {subsubsection}{Inverse}{40}{section*.44}
 \contentsline {subsection}{\numberline {5.3.3}Comparison of the Different Approaches}{41}{subsection.5.3.3}
-\contentsline {subsubsection}{Interim Conclusion}{43}{section*.48}
-\contentsline {subsubsection}{Conclusion}{43}{section*.50}
-\contentsline {chapter}{Bibliography}{45}{chapter*.51}
+\contentsline {subsubsection}{Interim Conclusion}{43}{section*.49}
+\contentsline {subsubsection}{Conclusion}{43}{section*.51}
+\contentsline {chapter}{\numberline {6}Future Work}{45}{chapter.6}
+\contentsline {section}{\numberline {6.1}Segment Times of the Initial Solution}{45}{section.6.1}
+\contentsline {section}{\numberline {6.2}Straight Line Characteristics}{45}{section.6.2}
+\contentsline {section}{\numberline {6.3}Improvement of the Ray Check}{45}{section.6.3}
+\contentsline {section}{\numberline {6.4}Improvement of the Boundig Box}{46}{section.6.4}
+\contentsline {section}{\numberline {6.5}Improvement of the Nonlinear Optimization}{46}{section.6.5}
+\contentsline {section}{\numberline {6.6}Feasibility of the Trajectory}{46}{section.6.6}
+\contentsline {chapter}{Bibliography}{47}{chapter*.52}

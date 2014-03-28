@@ -5,38 +5,39 @@
 \newlabel{chap:Planning}{{4}{25}{Path Plananing\relax }{chapter.4}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {4.1}Usage of the RRT* Vertices}{25}{section.4.1}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}Vertex Extension}{25}{subsection.4.1.1}}
-\@writefile{toc}{\contentsline {subsubsection}{1. Generate a collision-free straight line solution using the RRT* algorithm}{26}{section*.23}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces A collision-free straight line solution with 4 segments.\relax }}{26}{figure.caption.24}}
-\newlabel{pic:RRTstepOne}{{4.1}{26}{A collision-free straight line solution with 4 segments.\relax \relax }{figure.caption.24}{}}
-\@writefile{toc}{\contentsline {subsubsection}{2. Create an initial trajectory passing through the vertices of the straight line solution}{26}{section*.25}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Initial trajectory with 4 segments. The start vertex is located in the upper left corner and the goal vertex is located in the lower right corner. There is a collision in the second segment of the trajectory.\relax }}{27}{figure.caption.26}}
-\newlabel{pic:RRTstepTwo}{{4.2}{27}{Initial trajectory with 4 segments. The start vertex is located in the upper left corner and the goal vertex is located in the lower right corner. There is a collision in the second segment of the trajectory.\relax \relax }{figure.caption.26}{}}
-\@writefile{toc}{\contentsline {subsubsection}{3. If the initial solution is in collision, extend the existing vertices by a vertex located on the straight line solution. Compute the initial solution including the new vertex. Repeat this step until the trajectory is collision-free}{27}{section*.27}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Polynomial trajectory after a vertex extension, whereas the new vertex is represented by a red dot. The red line is not part of the trajectory but depicts the straight line connection of this segment.\relax }}{28}{figure.caption.28}}
-\newlabel{pic:RRTstep3}{{4.3}{28}{Polynomial trajectory after a vertex extension, whereas the new vertex is represented by a red dot. The red line is not part of the trajectory but depicts the straight line connection of this segment.\relax \relax }{figure.caption.28}{}}
-\@writefile{toc}{\contentsline {subsubsection}{4. Perform a nonlinear optimization on the collision-free trajectory}{28}{section*.29}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces The optimized trajectory with 5 segments.\relax }}{29}{figure.caption.30}}
-\newlabel{pic:RRTstep4}{{4.4}{29}{The optimized trajectory with 5 segments.\relax \relax }{figure.caption.30}{}}
-\@writefile{toc}{\contentsline {subsubsection}{5. If the optimized solution is in collision, extend the existing vertices by a vertex located on the straight line solution and restart the nonlinear optimization. Repeat this step until the optimized trajectory is collision-free}{29}{section*.31}}
+\@writefile{toc}{\contentsline {subsubsection}{1. Generate a collision-free straight line solution using the RRT* algorithm}{26}{section*.24}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces A collision-free straight line solution with 4 segments.\relax }}{26}{figure.caption.25}}
+\newlabel{pic:RRTstepOne}{{4.1}{26}{A collision-free straight line solution with 4 segments.\relax \relax }{figure.caption.25}{}}
+\@writefile{toc}{\contentsline {subsubsection}{2. Create an initial trajectory passing through the vertices of the straight line solution}{26}{section*.26}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Initial trajectory with 4 segments. The start vertex is located in the upper left corner and the goal vertex is located in the lower right corner. There is a collision in the second segment of the trajectory.\relax }}{27}{figure.caption.27}}
+\newlabel{pic:RRTstepTwo}{{4.2}{27}{Initial trajectory with 4 segments. The start vertex is located in the upper left corner and the goal vertex is located in the lower right corner. There is a collision in the second segment of the trajectory.\relax \relax }{figure.caption.27}{}}
+\@writefile{toc}{\contentsline {subsubsection}{3. If the initial solution is in collision, extend the existing vertices by a vertex located on the straight line solution. Compute the initial solution including the new vertex. Repeat this step until the trajectory is collision-free}{27}{section*.28}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Polynomial trajectory after a vertex extension, whereas the new vertex is represented by a red dot. The red line is not part of the trajectory but depicts the straight line connection of this segment.\relax }}{28}{figure.caption.29}}
+\newlabel{pic:RRTstep3}{{4.3}{28}{Polynomial trajectory after a vertex extension, whereas the new vertex is represented by a red dot. The red line is not part of the trajectory but depicts the straight line connection of this segment.\relax \relax }{figure.caption.29}{}}
+\@writefile{toc}{\contentsline {subsubsection}{4. Perform a nonlinear optimization on the collision-free trajectory}{28}{section*.30}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces The optimized trajectory with 5 segments.\relax }}{29}{figure.caption.31}}
+\newlabel{pic:RRTstep4}{{4.4}{29}{The optimized trajectory with 5 segments.\relax \relax }{figure.caption.31}{}}
+\@writefile{toc}{\contentsline {subsubsection}{5. If the optimized solution is in collision, extend the existing vertices by a vertex located on the straight line solution and restart the nonlinear optimization. Repeat this step until the optimized trajectory is collision-free}{29}{section*.32}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.1.2}Enlargement of the Bounding Box}{29}{subsection.4.1.2}}
 \newlabel{sec:enlargementBBX}{{4.1.2}{29}{Enlargement of the Bounding Box\relax }{subsection.4.1.2}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {4.2}RRT* Replanning}{30}{section.4.2}}
 \newlabel{sec:replanningPassages}{{4.2}{30}{RRT* Replanning\relax }{section.4.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces Schematic depiction of a initial polynomial solution with 4 segments. There is a collision in the third segment, marked as red cross. The replanning takes place between vertex 1 and vertex 4.\relax }}{30}{figure.caption.32}}
-\newlabel{pic:vertexExtensionRRT}{{4.5}{30}{Schematic depiction of a initial polynomial solution with 4 segments. There is a collision in the third segment, marked as red cross. The replanning takes place between vertex 1 and vertex 4.\relax \relax }{figure.caption.32}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces Schematic depiction of a initial polynomial solution with 4 segments. There is a collision in the third segment, marked as red cross. The replanning takes place between vertex 1 and vertex 4.\relax }}{30}{figure.caption.33}}
+\newlabel{pic:vertexExtensionRRT}{{4.5}{30}{Schematic depiction of a initial polynomial solution with 4 segments. There is a collision in the third segment, marked as red cross. The replanning takes place between vertex 1 and vertex 4.\relax \relax }{figure.caption.33}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}Threshold for the RRT* Replanning}{31}{subsection.4.2.1}}
 \newlabel{sec:RRTreplanning}{{4.2.1}{31}{Threshold for the RRT* Replanning\relax }{subsection.4.2.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces One cycle of vertex extension. In the initial solution on the left-hand side of the figure there is a collision in segment 1 and segment 3. After one cycle of vertex extension there are 6 segments. \relax }}{31}{figure.caption.33}}
-\newlabel{pic:recognise}{{4.6}{31}{One cycle of vertex extension. In the initial solution on the left-hand side of the figure there is a collision in segment 1 and segment 3. After one cycle of vertex extension there are 6 segments. \relax \relax }{figure.caption.33}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces Four pairs of numbers, representing possible difficult segments. Every initial segment is connected to two extended segments.\relax }}{31}{table.caption.34}}
-\newlabel{tab:pairsOfNumbers}{{4.1}{31}{Four pairs of numbers, representing possible difficult segments. Every initial segment is connected to two extended segments.\relax \relax }{table.caption.34}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces One cycle of vertex extension. In the initial solution on the left-hand side of the figure there is a collision in segment 1 and segment 3. After one cycle of vertex extension there are 6 segments. \relax }}{31}{figure.caption.34}}
+\newlabel{pic:recognise}{{4.6}{31}{One cycle of vertex extension. In the initial solution on the left-hand side of the figure there is a collision in segment 1 and segment 3. After one cycle of vertex extension there are 6 segments. \relax \relax }{figure.caption.34}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces Four pairs of numbers, representing possible difficult segments. Every initial segment is connected to two extended segments.\relax }}{31}{table.caption.35}}
+\newlabel{tab:pairsOfNumbers}{{4.1}{31}{Four pairs of numbers, representing possible difficult segments. Every initial segment is connected to two extended segments.\relax \relax }{table.caption.35}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {4.3}Overall Implementation}{32}{section.4.3}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces Schematic depiction of the final implementation of the path planning algorithm.\relax }}{32}{figure.caption.35}}
-\newlabel{pic:overall}{{4.7}{32}{Schematic depiction of the final implementation of the path planning algorithm.\relax \relax }{figure.caption.35}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces Schematic depiction of the final implementation of the path planning algorithm.\relax }}{32}{figure.caption.36}}
+\newlabel{pic:overall}{{4.7}{32}{Schematic depiction of the final implementation of the path planning algorithm.\relax \relax }{figure.caption.36}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}Store the Best Initial Solution}{32}{subsection.4.3.1}}
 \citation{ROS}
 \@writefile{toc}{\contentsline {section}{\numberline {4.4}Robot Operating System}{33}{section.4.4}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.4.1}Dynamic Reconfigure}{33}{subsection.4.4.1}}
+\newlabel{sec:dynamicRec}{{4.4.1}{33}{Dynamic Reconfigure\relax }{subsection.4.4.1}{}}
 \citation{Vicon}
 \@setckpt{Planning}{
 \setcounter{page}{35}

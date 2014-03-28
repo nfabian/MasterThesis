@@ -42,4 +42,11 @@
 \BOOKMARK [2][-]{subsection.5.3.1}{Cost Function Without Endpoint Derivatives}{section.5.3}% 42
 \BOOKMARK [2][-]{subsection.5.3.2}{Comparison of the Analytical Solvers}{section.5.3}% 43
 \BOOKMARK [2][-]{subsection.5.3.3}{Comparison of the Different Approaches}{section.5.3}% 44
-\BOOKMARK [0][-]{chapter*.51}{Bibliography}{}% 45
+\BOOKMARK [0][-]{chapter.6}{Future Work}{}% 45
+\BOOKMARK [1][-]{section.6.1}{Segment Times of the Initial Solution}{chapter.6}% 46
+\BOOKMARK [1][-]{section.6.2}{Straight Line Characteristics}{chapter.6}% 47
+\BOOKMARK [1][-]{section.6.3}{Improvement of the Ray Check}{chapter.6}% 48
+\BOOKMARK [1][-]{section.6.4}{Improvement of the Boundig Box}{chapter.6}% 49
+\BOOKMARK [1][-]{section.6.5}{Improvement of the Nonlinear Optimization}{chapter.6}% 50
+\BOOKMARK [1][-]{section.6.6}{Feasibility of the Trajectory}{chapter.6}% 51
+\BOOKMARK [0][-]{chapter*.52}{Bibliography}{}% 52

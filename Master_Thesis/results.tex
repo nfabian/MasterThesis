@@ -238,7 +238,7 @@ Since the numerical stability is given for all of the techniques the determining
 Please note that the $FullPivLU$ and $HouseholderQR$ have to solve equation \ref{equ:dpstar_Result} separate for each dimension. In contrast, the inverse has to be computed once and can then be applied to the three dimensions. This means that $HouseholderQR$ would be faster than $Inverse$ if only on dimension had to be optimized. However, in this master thesis with three dimension the inverse can display his advantages.
 
 
-\subsection{Comparison of the Different Approaches}
+\subsection{Comparison of the Different Approaches}\label{sec:CompDiffApp}
 
 Table \ref{tab:MLoptimizationTime} depicts the optimization time from the start vertex to "Goal 6" using the approach with the full number of optimization variables (approach A). Table \ref{tab:883iter} depicts the computational time for the same start and goal vertex using the approach with the reduced number of optimization variables (approach B). Caution, the time needed for the limit check $v_{max}$ and $a_{max}$ is not included in table \ref{tab:883iter}. \newline 
 
