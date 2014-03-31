@@ -17,7 +17,7 @@
 \BOOKMARK [2][-]{subsection.2.4.1}{Nonlinear Optimization}{section.2.4}% 17
 \BOOKMARK [1][-]{section.2.5}{Pathway of the Trajectory}{chapter.2}% 18
 \BOOKMARK [1][-]{section.2.6}{NLopt}{chapter.2}% 19
-\BOOKMARK [0][-]{chapter.3}{RRT}{}% 20
+\BOOKMARK [0][-]{chapter.3}{Rapidly-Exploring Random Tree}{}% 20
 \BOOKMARK [1][-]{section.3.1}{General}{chapter.3}% 21
 \BOOKMARK [1][-]{section.3.2}{RRT Algorithm}{chapter.3}% 22
 \BOOKMARK [2][-]{subsection.3.2.1}{Goal State}{section.3.2}% 23
@@ -25,14 +25,14 @@
 \BOOKMARK [2][-]{subsection.3.3.1}{Rewiring}{section.3.3}% 25
 \BOOKMARK [2][-]{subsection.3.3.2}{Bounding Box}{section.3.3}% 26
 \BOOKMARK [2][-]{subsection.3.3.3}{Ray Check}{section.3.3}% 27
-\BOOKMARK [0][-]{chapter.4}{Path Plananing}{}% 28
+\BOOKMARK [0][-]{chapter.4}{Path Planning}{}% 28
 \BOOKMARK [1][-]{section.4.1}{Usage of the RRT* Vertices}{chapter.4}% 29
 \BOOKMARK [2][-]{subsection.4.1.1}{Vertex Extension}{section.4.1}% 30
 \BOOKMARK [2][-]{subsection.4.1.2}{Enlargement of the Bounding Box}{section.4.1}% 31
 \BOOKMARK [1][-]{section.4.2}{RRT* Replanning}{chapter.4}% 32
 \BOOKMARK [2][-]{subsection.4.2.1}{Threshold for the RRT* Replanning}{section.4.2}% 33
-\BOOKMARK [1][-]{section.4.3}{Overall Implementation}{chapter.4}% 34
-\BOOKMARK [2][-]{subsection.4.3.1}{Store the Best Initial Solution}{section.4.3}% 35
+\BOOKMARK [2][-]{subsection.4.2.2}{Store the Best Initial Solution}{section.4.2}% 34
+\BOOKMARK [1][-]{section.4.3}{Overall Implementation}{chapter.4}% 35
 \BOOKMARK [1][-]{section.4.4}{Robot Operating System}{chapter.4}% 36
 \BOOKMARK [2][-]{subsection.4.4.1}{Dynamic Reconfigure}{section.4.4}% 37
 \BOOKMARK [0][-]{chapter.5}{Results}{}% 38
@@ -42,11 +42,12 @@
 \BOOKMARK [2][-]{subsection.5.3.1}{Cost Function Without Endpoint Derivatives}{section.5.3}% 42
 \BOOKMARK [2][-]{subsection.5.3.2}{Comparison of the Analytical Solvers}{section.5.3}% 43
 \BOOKMARK [2][-]{subsection.5.3.3}{Comparison of the Different Approaches}{section.5.3}% 44
-\BOOKMARK [0][-]{chapter.6}{Future Work}{}% 45
-\BOOKMARK [1][-]{section.6.1}{Segment Times of the Initial Solution}{chapter.6}% 46
-\BOOKMARK [1][-]{section.6.2}{Straight Line Characteristics}{chapter.6}% 47
-\BOOKMARK [1][-]{section.6.3}{Improvement of the Ray Check}{chapter.6}% 48
-\BOOKMARK [1][-]{section.6.4}{Improvement of the Boundig Box}{chapter.6}% 49
-\BOOKMARK [1][-]{section.6.5}{Improvement of the Nonlinear Optimization}{chapter.6}% 50
-\BOOKMARK [1][-]{section.6.6}{Feasibility of the Trajectory}{chapter.6}% 51
-\BOOKMARK [0][-]{chapter*.52}{Bibliography}{}% 52
+\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 45
+\BOOKMARK [0][-]{chapter.7}{Future Work}{}% 46
+\BOOKMARK [1][-]{section.7.1}{Segment Times of the Initial Solution}{chapter.7}% 47
+\BOOKMARK [1][-]{section.7.2}{Straight Line Characteristics}{chapter.7}% 48
+\BOOKMARK [1][-]{section.7.3}{Improvement of the Ray Check}{chapter.7}% 49
+\BOOKMARK [1][-]{section.7.4}{Improvement of the Boundig Box}{chapter.7}% 50
+\BOOKMARK [1][-]{section.7.5}{Improvement of the Nonlinear Optimization}{chapter.7}% 51
+\BOOKMARK [1][-]{section.7.6}{Feasibility of the Trajectory}{chapter.7}% 52
+\BOOKMARK [0][-]{chapter*.52}{Bibliography}{}% 53

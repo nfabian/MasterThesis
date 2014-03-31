@@ -17,7 +17,7 @@
 \contentsline {subsection}{\numberline {2.4.1}Nonlinear Optimization}{8}{subsection.2.4.1}
 \contentsline {section}{\numberline {2.5}Pathway of the Trajectory}{14}{section.2.5}
 \contentsline {section}{\numberline {2.6}NLopt}{16}{section.2.6}
-\contentsline {chapter}{\numberline {3}RRT}{17}{chapter.3}
+\contentsline {chapter}{\numberline {3}Rapidly-Exploring Random Tree}{17}{chapter.3}
 \contentsline {section}{\numberline {3.1}General}{17}{section.3.1}
 \contentsline {section}{\numberline {3.2}RRT Algorithm}{17}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Goal State}{17}{subsection.3.2.1}
@@ -25,7 +25,7 @@
 \contentsline {subsection}{\numberline {3.3.1}Rewiring}{19}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}Bounding Box}{20}{subsection.3.3.2}
 \contentsline {subsection}{\numberline {3.3.3}Ray Check}{21}{subsection.3.3.3}
-\contentsline {chapter}{\numberline {4}Path Plananing}{25}{chapter.4}
+\contentsline {chapter}{\numberline {4}Path Planning}{25}{chapter.4}
 \contentsline {section}{\numberline {4.1}Usage of the RRT* Vertices}{25}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Vertex Extension}{25}{subsection.4.1.1}
 \contentsline {subsubsection}{1. Generate a collision-free straight line solution using the RRT* algorithm}{26}{section*.24}
@@ -36,8 +36,8 @@
 \contentsline {subsection}{\numberline {4.1.2}Enlargement of the Bounding Box}{29}{subsection.4.1.2}
 \contentsline {section}{\numberline {4.2}RRT* Replanning}{30}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Threshold for the RRT* Replanning}{31}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Store the Best Initial Solution}{32}{subsection.4.2.2}
 \contentsline {section}{\numberline {4.3}Overall Implementation}{32}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Store the Best Initial Solution}{32}{subsection.4.3.1}
 \contentsline {section}{\numberline {4.4}Robot Operating System}{33}{section.4.4}
 \contentsline {subsection}{\numberline {4.4.1}Dynamic Reconfigure}{33}{subsection.4.4.1}
 \contentsline {chapter}{\numberline {5}Results}{35}{chapter.5}
@@ -52,11 +52,12 @@
 \contentsline {subsection}{\numberline {5.3.3}Comparison of the Different Approaches}{41}{subsection.5.3.3}
 \contentsline {subsubsection}{Interim Conclusion}{43}{section*.49}
 \contentsline {subsubsection}{Conclusion}{43}{section*.51}
-\contentsline {chapter}{\numberline {6}Future Work}{45}{chapter.6}
-\contentsline {section}{\numberline {6.1}Segment Times of the Initial Solution}{45}{section.6.1}
-\contentsline {section}{\numberline {6.2}Straight Line Characteristics}{45}{section.6.2}
-\contentsline {section}{\numberline {6.3}Improvement of the Ray Check}{45}{section.6.3}
-\contentsline {section}{\numberline {6.4}Improvement of the Boundig Box}{46}{section.6.4}
-\contentsline {section}{\numberline {6.5}Improvement of the Nonlinear Optimization}{46}{section.6.5}
-\contentsline {section}{\numberline {6.6}Feasibility of the Trajectory}{46}{section.6.6}
-\contentsline {chapter}{Bibliography}{47}{chapter*.52}
+\contentsline {chapter}{\numberline {6}Conclusion}{45}{chapter.6}
+\contentsline {chapter}{\numberline {7}Future Work}{47}{chapter.7}
+\contentsline {section}{\numberline {7.1}Segment Times of the Initial Solution}{47}{section.7.1}
+\contentsline {section}{\numberline {7.2}Straight Line Characteristics}{47}{section.7.2}
+\contentsline {section}{\numberline {7.3}Improvement of the Ray Check}{47}{section.7.3}
+\contentsline {section}{\numberline {7.4}Improvement of the Boundig Box}{48}{section.7.4}
+\contentsline {section}{\numberline {7.5}Improvement of the Nonlinear Optimization}{48}{section.7.5}
+\contentsline {section}{\numberline {7.6}Feasibility of the Trajectory}{48}{section.7.6}
+\contentsline {chapter}{Bibliography}{49}{chapter*.52}
