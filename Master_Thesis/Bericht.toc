@@ -10,7 +10,7 @@
 \contentsline {section}{\numberline {2.2}Optimization}{3}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Cost Function}{3}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Polynomial Optimization as a Constrained QP}{4}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Polynomial Optimization as a Unconstrained QP}{4}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.3}Polynomial Optimization as an Unconstrained QP}{4}{subsection.2.2.3}
 \contentsline {section}{\numberline {2.3}Initial Solution}{5}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Drawbacks of the Initial Solution}{7}{subsection.2.3.1}
 \contentsline {section}{\numberline {2.4}Time Allocation}{8}{section.2.4}
@@ -44,14 +44,12 @@
 \contentsline {section}{\numberline {5.1}Performance of the RRT* Algorithm}{35}{section.5.1}
 \contentsline {section}{\numberline {5.2}Performance of NLopt}{36}{section.5.2}
 \contentsline {section}{\numberline {5.3}Reduction of the Optimization Variables}{38}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Cost Function Without Endpoint Derivatives}{39}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Comparison of the Analytical Solvers}{39}{subsection.5.3.2}
-\contentsline {subsubsection}{FullPivLU}{40}{section*.42}
-\contentsline {subsubsection}{HouseholderQR}{40}{section*.43}
-\contentsline {subsubsection}{Inverse}{40}{section*.44}
+\contentsline {subsection}{\numberline {5.3.1}Cost Function Without Endpoint Derivatives}{38}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Linear Solver}{39}{subsection.5.3.2}
+\contentsline {subsubsection}{Technique 1: FullPivLU}{39}{section*.42}
+\contentsline {subsubsection}{Technique 2: HouseholderQR}{40}{section*.43}
+\contentsline {subsubsection}{Technique 3: Inverse}{40}{section*.44}
 \contentsline {subsection}{\numberline {5.3.3}Comparison of the Different Approaches}{41}{subsection.5.3.3}
-\contentsline {subsubsection}{Interim Conclusion}{43}{section*.49}
-\contentsline {subsubsection}{Conclusion}{43}{section*.51}
 \contentsline {chapter}{\numberline {6}Conclusion}{45}{chapter.6}
 \contentsline {chapter}{\numberline {7}Future Work}{47}{chapter.7}
 \contentsline {section}{\numberline {7.1}Segment Times of the Initial Solution}{47}{section.7.1}
@@ -60,4 +58,4 @@
 \contentsline {section}{\numberline {7.4}Improvement of the Boundig Box}{48}{section.7.4}
 \contentsline {section}{\numberline {7.5}Improvement of the Nonlinear Optimization}{48}{section.7.5}
 \contentsline {section}{\numberline {7.6}Feasibility of the Trajectory}{48}{section.7.6}
-\contentsline {chapter}{Bibliography}{49}{chapter*.52}
+\contentsline {chapter}{Bibliography}{49}{chapter*.50}

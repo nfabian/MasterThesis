@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  31 MAR 2014 16:56
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  2 APR 2014 18:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -363,7 +363,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 )))
 (./Bericht.aux (./preamble.aux) (./introduction.aux) (./trajectory.aux)
-(./RRT.aux) (./Planning.aux) (./results.aux) (./conclusion.aux) (./future.aux)
+(./RRT.aux) (./Planning.aux) (./result.aux) (./conclusion.aux) (./future.aux)
 (./bibliography.aux))
 \openout1 = `Bericht.aux'.
 
@@ -1088,48 +1088,48 @@ Underfull \hbox (badness 10000) in paragraph at lines 118--119
 
  []
 
-Package epstopdf Info: Source file: <pics/vertexExtensionRRT.eps>
-(epstopdf)                    date: 2014-03-18 10:11:20
-(epstopdf)                    size: 8619 bytes
-(epstopdf)             Output file: <pics/vertexExtensionRRT-eps-converted-to.p
-df>
-(epstopdf)                    date: 2014-03-18 10:19:56
-(epstopdf)                    size: 5588 bytes
-(epstopdf)             Command: <repstopdf --outfile=pics/vertexExtensionRRT-ep
-s-converted-to.pdf pics/vertexExtensionRRT.eps>
+Package epstopdf Info: Source file: <pics/vertexExtensionRRT2.eps>
+(epstopdf)                    date: 2014-04-01 09:40:11
+(epstopdf)                    size: 8752 bytes
+(epstopdf)             Output file: <pics/vertexExtensionRRT2-eps-converted-to.
+pdf>
+(epstopdf)                    date: 2014-04-01 09:40:41
+(epstopdf)                    size: 5656 bytes
+(epstopdf)             Command: <repstopdf --outfile=pics/vertexExtensionRRT2-e
+ps-converted-to.pdf pics/vertexExtensionRRT2.eps>
 (epstopdf)             \includegraphics on input line 123.
 Package epstopdf Info: Output file is already uptodate.
 
-<pics/vertexExtensionRRT-eps-converted-to.pdf, id=770, 174.6525pt x 276.03125pt
->
-File: pics/vertexExtensionRRT-eps-converted-to.pdf Graphic file (type pdf)
- <use pics/vertexExtensionRRT-eps-converted-to.pdf>
-Package pdftex.def Info: pics/vertexExtensionRRT-eps-converted-to.pdf used on i
-nput line 123.
+<pics/vertexExtensionRRT2-eps-converted-to.pdf, id=770, 174.6525pt x 276.03125p
+t>
+File: pics/vertexExtensionRRT2-eps-converted-to.pdf Graphic file (type pdf)
+ <use pics/vertexExtensionRRT2-eps-converted-to.pdf>
+Package pdftex.def Info: pics/vertexExtensionRRT2-eps-converted-to.pdf used on 
+input line 123.
 (pdftex.def)             Requested size: 72.26889pt x 114.21808pt.
- [30 <./pics/vertexExtensionRRT-eps-converted-to.pdf>]
+ [30 <./pics/vertexExtensionRRT2-eps-converted-to.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 138--139
 
  []
 
-Package epstopdf Info: Source file: <pics/recogniseSegment.eps>
-(epstopdf)                    date: 2014-03-25 21:08:45
-(epstopdf)                    size: 17498 bytes
-(epstopdf)             Output file: <pics/recogniseSegment-eps-converted-to.pdf
->
-(epstopdf)                    date: 2014-03-25 21:09:06
-(epstopdf)                    size: 8028 bytes
-(epstopdf)             Command: <repstopdf --outfile=pics/recogniseSegment-eps-
-converted-to.pdf pics/recogniseSegment.eps>
+Package epstopdf Info: Source file: <pics/recogniseSegment2.eps>
+(epstopdf)                    date: 2014-04-01 10:07:28
+(epstopdf)                    size: 16517 bytes
+(epstopdf)             Output file: <pics/recogniseSegment2-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2014-04-01 10:07:45
+(epstopdf)                    size: 8335 bytes
+(epstopdf)             Command: <repstopdf --outfile=pics/recogniseSegment2-eps
+-converted-to.pdf pics/recogniseSegment2.eps>
 (epstopdf)             \includegraphics on input line 144.
 Package epstopdf Info: Output file is already uptodate.
 
-<pics/recogniseSegment-eps-converted-to.pdf, id=782, 398.48875pt x 274.02374pt>
-File: pics/recogniseSegment-eps-converted-to.pdf Graphic file (type pdf)
-<use pics/recogniseSegment-eps-converted-to.pdf>
-Package pdftex.def Info: pics/recogniseSegment-eps-converted-to.pdf used on inp
-ut line 144.
-(pdftex.def)             Requested size: 216.8122pt x 149.09119pt.
+<pics/recogniseSegment2-eps-converted-to.pdf, id=782, 423.5825pt x 274.02374pt>
+File: pics/recogniseSegment2-eps-converted-to.pdf Graphic file (type pdf)
+<use pics/recogniseSegment2-eps-converted-to.pdf>
+Package pdftex.def Info: pics/recogniseSegment2-eps-converted-to.pdf used on in
+put line 144.
+(pdftex.def)             Requested size: 216.8122pt x 140.26036pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 149--150
 
@@ -1140,13 +1140,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 174--175
 
  []
 
-[31 <./pics/recogniseSegment-eps-converted-to.pdf>]
+[31 <./pics/recogniseSegment2-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <pics/overall2.eps>
-(epstopdf)                    date: 2014-03-31 14:20:12
-(epstopdf)                    size: 28263 bytes
+(epstopdf)                    date: 2014-04-01 09:36:27
+(epstopdf)                    size: 27424 bytes
 (epstopdf)             Output file: <pics/overall2-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-03-31 14:20:27
-(epstopdf)                    size: 10933 bytes
+(epstopdf)                    date: 2014-04-01 09:37:00
+(epstopdf)                    size: 11143 bytes
 (epstopdf)             Command: <repstopdf --outfile=pics/overall2-eps-converte
 d-to.pdf pics/overall2.eps>
 (epstopdf)             \includegraphics on input line 191.
@@ -1186,12 +1186,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 234--235
 
 
 ]
-\openout2 = `results.aux'.
+\openout2 = `result.aux'.
 
- (./results.tex
+ (./result.tex
 Chapter 5.
 
-Underfull \hbox (badness 10000) in paragraph at lines 6--9
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--9
 
  []
 
@@ -1221,7 +1226,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--19
 
 
  <./pics/boxplot1-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 24--25
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
 
  []
 
@@ -1233,79 +1238,97 @@ Package epstopdf Info: Source file: <pics/boxplot_time.eps>
 (epstopdf)                    size: 6684 bytes
 (epstopdf)             Command: <repstopdf --outfile=pics/boxplot_time-eps-conv
 erted-to.pdf pics/boxplot_time.eps>
-(epstopdf)             \includegraphics on input line 30.
+(epstopdf)             \includegraphics on input line 26.
 Package epstopdf Info: Output file is already uptodate.
 <pics/boxplot_time-eps-converted-to.pdf, id=855, 560.0925pt x 421.575pt>
 File: pics/boxplot_time-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pics/boxplot_time-eps-converted-to.pdf>
 Package pdftex.def Info: pics/boxplot_time-eps-converted-to.pdf used on input l
-ine 30.
+ine 26.
 (pdftex.def)             Requested size: 289.08109pt x 237.96266pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--36
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
 
  []
 
 [36 <./pics/boxplot_time-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <pics/ML4.eps>
-(epstopdf)                    date: 2014-03-19 15:42:09
-(epstopdf)                    size: 208292 bytes
-(epstopdf)             Output file: <pics/ML4-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-03-19 15:43:46
-(epstopdf)                    size: 266776 bytes
-(epstopdf)             Command: <repstopdf --outfile=pics/ML4-eps-converted-to.
-pdf pics/ML4.eps>
-(epstopdf)             \includegraphics on input line 49.
+Package epstopdf Info: Source file: <pics/ML4a.eps>
+(epstopdf)                    date: 2014-04-02 13:43:51
+(epstopdf)                    size: 245786 bytes
+(epstopdf)             Output file: <pics/ML4a-eps-converted-to.pdf>
+(epstopdf)                    date: 2014-04-02 13:45:48
+(epstopdf)                    size: 266657 bytes
+(epstopdf)             Command: <repstopdf --outfile=pics/ML4a-eps-converted-to
+.pdf pics/ML4a.eps>
+(epstopdf)             \includegraphics on input line 44.
 Package epstopdf Info: Output file is already uptodate.
-File: pics/ML4-eps-converted-to.pdf Graphic file (type pdf)
 
-<use pics/ML4-eps-converted-to.pdf>
-Package pdftex.def Info: pics/ML4-eps-converted-to.pdf used on input line 49.
-(pdftex.def)             Requested size: 361.34999pt x 192.72842pt.
+<pics/ML4a-eps-converted-to.pdf, id=873, 586.19pt x 355.3275pt>
+File: pics/ML4a-eps-converted-to.pdf Graphic file (type pdf)
+
+<use pics/ML4a-eps-converted-to.pdf>
+Package pdftex.def Info: pics/ML4a-eps-converted-to.pdf used on input line 44.
+(pdftex.def)             Requested size: 289.08109pt x 181.4936pt.
 
 <pics/MapNlopt.png, id=877, 890.32625pt x 1264.725pt>
 File: pics/MapNlopt.png Graphic file (type png)
  <use pics/MapNlopt.png>
-Package pdftex.def Info: pics/MapNlopt.png used on input line 72.
-(pdftex.def)             Requested size: 833.41873pt x 1264.72192pt.
+Package pdftex.def Info: pics/MapNlopt.png used on input line 53.
+(pdftex.def)             Requested size: 839.10927pt x 1264.72192pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--79
-
- []
-
-[37 <./pics/MapNlopt.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 108--109
+[37 <./pics/ML4a-eps-converted-to.pdf> <./pics/MapNlopt.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--111
+Underfull \hbox (badness 10000) in paragraph at lines 91--92
 
  []
 
 [38]
-Underfull \hbox (badness 10000) in paragraph at lines 150--151
+Underfull \hbox (badness 10000) in paragraph at lines 124--125
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 152--153
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--165
+Underfull \hbox (badness 10000) in paragraph at lines 139--140
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--175
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 161--162
 
  []
 
 [39]
-Underfull \hbox (badness 10000) in paragraph at lines 183--184
+Underfull \hbox (badness 10000) in paragraph at lines 166--167
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--169
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 187--188
 
  []
 
@@ -1315,37 +1338,50 @@ Underfull \hbox (badness 10000) in paragraph at lines 189--190
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--195
+Underfull \hbox (badness 10000) in paragraph at lines 191--192
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 196--197
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 213--214
 
  []
 
 [40]
-Underfull \hbox (badness 10000) in paragraph at lines 234--235
+Underfull \hbox (badness 10000) in paragraph at lines 219--220
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 236--237
+Underfull \hbox (badness 10000) in paragraph at lines 223--224
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 243--244
+Underfull \hbox (badness 10000) in paragraph at lines 225--227
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 245--246
+Underfull \hbox (badness 10000) in paragraph at lines 228--229
 
  []
 
 [41]
-Underfull \hbox (badness 10000) in paragraph at lines 251--252
+Underfull \hbox (badness 10000) in paragraph at lines 250--251
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 269--270
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 271--272
 
  []
 
@@ -1354,18 +1390,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 273--274
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 292--293
-
- []
-
 [42]
-Underfull \hbox (badness 10000) in paragraph at lines 298--299
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 323--324
+Underfull \hbox (badness 10000) in paragraph at lines 294--295
 
  []
 
@@ -1427,6 +1453,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--30
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 51--52
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 54--55
 
  []
@@ -1440,22 +1471,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 54--55
 
 
 ]) [50]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 143.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 143.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 145.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 145.
  (./Bericht.aux (./preamble.aux)
 (./introduction.aux) (./trajectory.aux) (./RRT.aux) (./Planning.aux)
-(./results.aux) (./conclusion.aux) (./future.aux) (./bibliography.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 143.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 143.
+(./result.aux) (./conclusion.aux) (./future.aux) (./bibliography.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 145.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 145.
 Package rerunfilecheck Info: File `Bericht.out' has not changed.
-(rerunfilecheck)             Checksum: E553B1B5594BBC0138B524B83CDDC856;3697.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 143.
+(rerunfilecheck)             Checksum: EC026FDE360D25079AB13B0CB5EBAD17;3675.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 145.
  ) 
 Here is how much of TeX's memory you used:
- 8011 strings out of 493488
- 120262 string characters out of 3141326
- 227726 words of memory out of 3000000
- 10908 multiletter control sequences out of 15000+200000
+ 8014 strings out of 493488
+ 120389 string characters out of 3141326
+ 227620 words of memory out of 3000000
+ 10912 multiletter control sequences out of 15000+200000
  9335 words of font info for 35 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
  41i,15n,43p,1088b,436s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1473,10 +1504,10 @@ exlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texl
 ive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
 ve/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive
 /2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Bericht.pdf (56 pages, 4347260 bytes).
+Output written on Bericht.pdf (56 pages, 4611824 bytes).
 PDF statistics:
- 1096 PDF objects out of 1200 (max. 8388607)
- 934 compressed objects within 10 object streams
- 214 named destinations out of 1000 (max. 500000)
- 681 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1104 PDF objects out of 1200 (max. 8388607)
+ 938 compressed objects within 10 object streams
+ 212 named destinations out of 1000 (max. 500000)
+ 686 words of extra memory for PDF output out of 10000 (max. 10000000)
 

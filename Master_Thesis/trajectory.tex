@@ -82,7 +82,7 @@ where $p$ is the vector containing the polynomial coefficients and $d$ is the ve
 
 The constrained QP is suitable for a small amount of segments but gets ill-conditioned for a large amount of segments and therefore large matrices. Especially if there are matrices which are close to singularity and have coefficients which are close to zero, the constrained QP can get numerical unstable.
 
-\subsection{Polynomial Optimization as a Unconstrained QP}\label{sec:polynomialQP}
+\subsection{Polynomial Optimization as an Unconstrained QP}\label{sec:polynomialQP}
 
 To avoid the numerical instability of a constrained QP the optimization problem is converted into a unconstrained QP. To achieve this, the polynomial coefficients $p_i$ from equation \ref{equ:cost} have to be substituted by the endpoint derivatives $d_i$ which are now the new optimization variables. The cost function of the unconstrained QP can now be written as 
 
@@ -224,7 +224,7 @@ As can be seen in plot b) the maximal spacial velocity is less then the user spe
 \subsection{Drawbacks of the Initial Solution}\label{sec:drawbackInitial}
 
 
-The individual segment times and consequently the total time of the initial trajectory are defined by equation \ref{equ:segmentTime}. Since equation \ref{equ:segmentTime} does not incorporate the circumstances from one segment to another it is likely to find a better trajectory (i.e. a trajectory with a smaller total cost) with the same total time but a different ratio between the segment time. Moreover, there is no possibility to adjust the aggressiveness of the initial solution since the segment times are calculated up-front. \newline
+The individual segment times and consequently the total time of the initial trajectory are defined by equation \ref{equ:segmentTime}. Since equation \ref{equ:segmentTime} does not incorporate the conditions from one segment to another it is likely to find a better trajectory (i.e. a trajectory with a smaller total cost) with the same total time but a different ratio between the segment time. Moreover, there is no possibility to adjust the aggressiveness of the initial solution since the segment times are calculated up-front. \newline
 
 In summary, the modification of the individual segment times and therefore the modification of the ratio of the segment times can lead to a solution with smaller cost. Supplementary, the modification of the individual segment times gives us the opportunity to adjust the aggressiveness of a trajectory.
 

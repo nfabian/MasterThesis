@@ -1,12 +1,13 @@
 \chapter{Conclusion}\label{chap:Conclusion}
 
-The goal of this master thesis was to explore a densely packed environment and then plan a collision-free trajectory for a dynamic UAV flight. \newline
+The goal of this master thesis was to develop a numerical robust trajectory planning algorithm for dynamic multi-copter flights in densely packed environments. \newline
 
-To explore the environment, the RRT* algorithm was applied. The parameters of RRT* have been tuned to serve the subsequent nonlinear optimization in an optimal manner. The vertices of the straight line solution have then been used to generate a polynomial trajectory. Here, the numerical advantages of the unconstrained Quadratic Programming (QP) take full effect. The unconstrained QP has been tested for a large number of optimization variables and is numerical stable for trajectories with more than 2000 segments! \newline
+To explore the environment, the RRT* algorithm was applied. The parameters of RRT* have been tuned to serve the subsequent nonlinear optimization in an optimal manner. The vertices of the straight line solution have then been used to generate a polynomial trajectory. Here, the numerical advantages of the unconstrained Quadratic Programming (QP) take full effect. The unconstrained QP has been tested for a large number of optimization variables and is numerically stable for an initial solution with more than 2'000 segments. \newline
 
-Furthermore, the nonlinear optimization benefits from the numerical stability of the unconstrained QP. The reduction of the optimization variables (i.e. excluding the endpoint derivatives $d_P$ from the cost function) led to a even better performance. The nonlinear optimization has been successfully tested for a trajectory with 200 segments. The NLopt ending criteria was $J_{rel} = 0.5$ and the algorithm converged. \newline
+Furthermore, the nonlinear optimization benefits from the numerical stability of the unconstrained QP. The reduction of the optimization variables (i.e. excluding the endpoint derivatives $d_P$ from the cost function) led to an even better performance. The nonlinear optimization has been successfully tested for a trajectory with 200 segments. \newline
 
-Flight tests in the ETH Vicon room have shown that the path planning algorithm is suitable for online planning. The UAV flew on a smooth, snap minimized trajectory from the current position between multiple obstacles to the user-specified goal position. The current position, which is also used by the controller, is provided by the Vicon motion tracking system. 
+Flight tests in the ETH Vicon room have shown that the developed path planning algorithm is suitable for online planning. The UAV flew on a smooth, snap minimized trajectory from the current position between multiple obstacles to the user-specified goal position. 
+%The current position, which is also used by the controller, is provided by the Vicon motion tracking system. 
 
 
 

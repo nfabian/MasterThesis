@@ -1,28 +1,28 @@
 \chapter{Future Work}\label{chap:Future}
 
 \section{Segment Times of the Initial Solution}
-As mentioned in section  \ref{sec:drawbackInitial}, the segment time calculation of the initial solution does not incorporate the circumstances from one segment to another. Hence, the segment time ratio is not optimal. \newline
+As mentioned in section \ref{sec:drawbackInitial}, the segment time calculation of the initial solution does not incorporate the conditions from one segment to another. Hence, the segment time ratio is not optimal. \newline
 
-If a segment has a similar orientation as the previous segment, the required segment time is generally shorter. On the other hand, if there are great changes in the orientation from one segment to another more time is required. If this characteristics are represented in the segment time calculation, unnecessary sharp corners and detours (as depicted in figure \ref{pic:initiSpace}) could be avoided.
+If a segment has a similar orientation as the previous segment, the required segment time is generally shorter. On the other hand, if there are great changes in the orientation from one segment to another more time is required. If these characteristics are represented in the segment time calculation, unnecessary sharp corners and detours (as depicted in figure \ref{pic:initiSpace}) could be avoided.
 
 \section{Straight Line Characteristics}
 
-In section \ref{sec:dynamicRec} it is explained, that additional RRT* iterations are performed after a collision-free straight line solution has been found. During this additional iterations the straight line solution can be improved via rewiring. The criterion for the improvement is the total length of the straight line segments. \newline
+In section \ref{sec:dynamicRec} is explained, that additional RRT* iterations are performed after a collision-free straight line solution has been found. During this additional iterations the straight line solution can be improved via rewiring. The criterion for the improvement is the total length of the straight line segments. \newline
 A short straight line solution does not necessarily lead to a god polynomial solution. If the RRT* cost criterion considers any parameters which are connected to the polynomial trajectory, a more suitable straight line solution could be found.
 
 \section{Improvement of the Ray Check}\label{sec:furureRayCheck}
 
 As discussed in section \ref{sec:RayCheck}, the Ray Check approach has theoretical advantages compared to the Bounding Box approach. The bounding boxes need a certain amount of overlap to guarantee a collision-free trajectory. Hence, several cells of the OctoMap are checked multiple times. However, the Bounding Box approach performed better in the experimental comparison. \newline
 
-There are some possible improvements of the Ray Check approach. If only one ray is in collision the whole straight line connection is considered in collision. Otherwise,  the rays are checked one after another. Although a key (which represents a cell) appears only once per ray it is possible that a key is check several times for different rays. The keys of each ray are stored in a list. Of course it is possible to check if a key of a new ray was already an element of an old ray. This method was tested during this master thesis but the performance strongly decreased. 
+There are some possible improvements of the Ray Check approach. If only one ray is in collision the whole straight line connection is considered in collision. Otherwise,  the rays are checked one after another. Although a key (which represents a cell) appears only once per ray it is possible that a key is checked several times for different rays. The keys of each ray are stored in a list. Of course it is possible to check if a key of a new ray was already an element of an old ray. This method was tested during this master thesis but the performance strongly decreased. 
 
 This is due to the fact, that the keys are complex structures (and not only integers or floating point numbers) which can not be stored in ascending order. That makes it difficult to find a particular key in the list of the old ray. \newline
 
-If it is possible to speed up the procedure of refinding the keys or to find a better solution to store them in an organized manner, a Ray Check algorithm which outperforms the Bounding Box approach is feasible.
+If it is possible to speed up the procedure of refinding the keys or to find a better solution to store them in an organized manner, a Ray Check algorithm which outperforms the Bounding Box approach seams to be feasible.
 
 \section{Improvement of the Boundig Box}\label{sec:furureBoundingBox}
 
-The above mentioned overlap of the bounding boxes could be reduced if the bounding boxes are oriented properly. At the moment, the bounding box is implemented as a cuboid with its edges aligned to the coordinate system of the map. It would be advantageous if the bounding boxes were aligned to the straight line connection. As a result, no overlap is required to check a RRT* straight line solution. 
+The above mentioned overlap of the bounding boxes could be reduced if the bounding boxes are oriented properly. Currently, the bounding box is implemented as a cuboid with its edges aligned to the coordinate system of the map. It would be advantageous if the bounding boxes were aligned to the straight line connection. As a result, no overlap is required to check a RRT* straight line solution. 
 
 \section{Improvement of the Nonlinear Optimization}\label{sec:furureNonOpt}
 
@@ -48,13 +48,13 @@ Speaking of multi-copter control, the input parameters for the controller are of
 \end{bmatrix}
 R^{-1}j
 \label{equ:mueller}
-\end{equation}
+\end{equation}\newline
 
 
 The optimization in this master thesis does not consider the orientation of the UAV. Therefore, no mapping from the body to the inertial frame is possible. Consequently, the values of $\omega$ can not be checked on limitations. \newline
 
-If the thrust $f$ is small, it is hard to reach the desired body rates $\omega$. Since the UAV needs an acceleration of $9.81 \frac{m}{s^2}$ to hover, the trust is only 0 if the UAV is in a free fall. 
-The acceleration in this master thesis is calculated excluding the gravity. I.e. a maximum acceleration of $4 \frac{m}{s^2}$ requires an actual acceleration of $13.81 \frac{m}{s^2}$ in the $z$-direction. Simultaneously, the UAV can not fall with an acceleration higher than $5.81 \frac{m}{s^2}$. In other words, an acceleration limit which is smaller than $g$ prevents small thrust values. However, checking the body rates would provide extra information and additional security.
+If the thrust $f$ is small, it is difficult to reach the desired body rates $\omega$. Since the UAV needs an acceleration of $9.81 \frac{m}{s^2}$ in $z$-direction to hover, the trust is only 0 in a free fall. 
+The acceleration in this master thesis is calculated excluding the gravity. I.e. a maximum vertical acceleration of $4 \frac{m}{s^2}$ requires an actual acceleration of $13.81 \frac{m}{s^2}$. Simultaneously, the UAV can not fall with an acceleration higher than $5.81 \frac{m}{s^2}$. In other words, an acceleration limit which is smaller than $g$ prevents small thrust values. However, checking the body rates would provide extra information and additional security.
 
 
 

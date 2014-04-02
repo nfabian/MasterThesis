@@ -10,7 +10,7 @@
 \BOOKMARK [1][-]{section.2.2}{Optimization}{chapter.2}% 10
 \BOOKMARK [2][-]{subsection.2.2.1}{Cost Function}{section.2.2}% 11
 \BOOKMARK [2][-]{subsection.2.2.2}{Polynomial Optimization as a Constrained QP}{section.2.2}% 12
-\BOOKMARK [2][-]{subsection.2.2.3}{Polynomial Optimization as a Unconstrained QP}{section.2.2}% 13
+\BOOKMARK [2][-]{subsection.2.2.3}{Polynomial Optimization as an Unconstrained QP}{section.2.2}% 13
 \BOOKMARK [1][-]{section.2.3}{Initial Solution}{chapter.2}% 14
 \BOOKMARK [2][-]{subsection.2.3.1}{Drawbacks of the Initial Solution}{section.2.3}% 15
 \BOOKMARK [1][-]{section.2.4}{Time Allocation}{chapter.2}% 16
@@ -40,7 +40,7 @@
 \BOOKMARK [1][-]{section.5.2}{Performance of NLopt}{chapter.5}% 40
 \BOOKMARK [1][-]{section.5.3}{Reduction of the Optimization Variables}{chapter.5}% 41
 \BOOKMARK [2][-]{subsection.5.3.1}{Cost Function Without Endpoint Derivatives}{section.5.3}% 42
-\BOOKMARK [2][-]{subsection.5.3.2}{Comparison of the Analytical Solvers}{section.5.3}% 43
+\BOOKMARK [2][-]{subsection.5.3.2}{Linear Solver}{section.5.3}% 43
 \BOOKMARK [2][-]{subsection.5.3.3}{Comparison of the Different Approaches}{section.5.3}% 44
 \BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 45
 \BOOKMARK [0][-]{chapter.7}{Future Work}{}% 46
@@ -50,4 +50,4 @@
 \BOOKMARK [1][-]{section.7.4}{Improvement of the Boundig Box}{chapter.7}% 50
 \BOOKMARK [1][-]{section.7.5}{Improvement of the Nonlinear Optimization}{chapter.7}% 51
 \BOOKMARK [1][-]{section.7.6}{Feasibility of the Trajectory}{chapter.7}% 52
-\BOOKMARK [0][-]{chapter*.52}{Bibliography}{}% 53
+\BOOKMARK [0][-]{chapter*.50}{Bibliography}{}% 53

@@ -23,7 +23,7 @@ datapoints the algorithm considers to be not outliers, and the outliers are plot
 
 It becomes apparent that the small amount of rewiring associated with $\gamma = 0.5$ is to little to obtain a good polynomial trajectory. The 4 remaining datasets have a similar performance in terms of the final trajectory cost. \newline
 
-The total computational times for the five different $\gamma$ parameters are depicted in figure \ref{pic:boxplot_time}. The total computational time is the combined duration of the RRT* algorithm and the nonlinear optimization.  In contrast to the final cost, the total computational times for $\gamma = 1 $, $\gamma = 1.5$, $\gamma = 2$ and $\gamma = 2.5$ are distinct. 
+The total computational times for the five different $\gamma$ parameters are depicted in figure \ref{pic:boxplot_time}. The total computational time is the combined duration of the RRT* algorithm and the nonlinear optimization. In contrast to the final cost, the total computational times for $\gamma = 1 $, $\gamma = 1.5$, $\gamma = 2$ and $\gamma = 2.5$ are distinct. 
 
 \begin{figure}[h]
    \centering
@@ -272,7 +272,7 @@ To start with, the simple set of vertices from table \ref{tab:vertices} is reuse
 
 As explained above, the final cost depicted in table \ref{tab:ABBA1} is (beside some numerical differences) the same for the three approaches. Approach B is the fastest and approach A is by fare the slowest. \newline
 
-Now, the weighting factor $k_T$ is increased to 2000 (corresponding to figure \ref{pic:optimizedSolution2k2000}). This  aggressive trajectory stays at the velocity limit for a certain time. Due to that, the segment times $T_i$ are no longer sufficient to reach the global minimum of the cost function.
+Now the weighting factor $k_T$ is increased to 2000 (corresponding to figure \ref{pic:optimizedSolution2k2000}). This  aggressive trajectory stays at the velocity limit for a certain time. Due to that, the segment times $T_i$ are no longer sufficient to reach the global minimum of the cost function.
 
 \begin{table}[H] 
 \begin{center}
